@@ -4,6 +4,7 @@ import { cors } from "hono/cors";
 import { auth } from "@server/api/v1/user/auth";
 import type { Variables } from "./lib/types";
 import OrganizationsRoute from "./api/v1/organizations/organization.route";
+import SpaceRoute from "./api/v1/spaces/spaces.route"
 
 export const app = new Hono<{ Variables: Variables }>().use(cors())
 
@@ -21,13 +22,15 @@ app.use("*", async (c, next) => {
 	return next();
 });
 
+const routes = [OrganizationsRoute, SpaceRoute]
 
 
 app.on(["POST", "GET"], "/api/auth/*", (c) => {
 	return auth.handler(c.req.raw);
 });
 
-
-app.route("/api/v1", OrganizationsRoute)
+routes.forEach((route) => {
+	app.route("/api/v1", route)
+})
 
 export default app;
