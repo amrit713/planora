@@ -1,13 +1,13 @@
-import { Hono, type Context } from "hono";
+import { Hono } from "hono";
 import { zValidator } from "@hono/zod-validator";
 import { HTTPException } from "hono/http-exception";
-import { z } from "zod"
 
-import { organizationSchema, } from "@shared/schemas";
+
+import { organizationSchema, updateOrganizationSchema } from "@shared/schemas";
 import type { Variables } from "@server/lib/types";
 import { db } from "@server/lib/db";
 import { MemberRole } from "@server/generated/prisma";
-import { updateOrganizationSchema } from "@shared/schemas/organizations";
+
 
 
 

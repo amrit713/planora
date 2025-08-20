@@ -144,7 +144,8 @@ model Space {
   name           String
   organizationId String
 
-  icon  String? // e.g. emoji 🚀 or image URL
+  //TODO: add default icon and color
+  icon  String? // e.g. emoji 🚀 or image URL 
   color String?
 
   organization Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)

@@ -20,7 +20,7 @@
     "build:server": "turbo build --filter=server",
     "lint": "turbo lint",
     "type-check": "turbo type-check",
-    "test": "turbo test",
+    "test": "vitest",
     "postinstall": "turbo build --filter=shared --filter=server"
   },
   "keywords": [

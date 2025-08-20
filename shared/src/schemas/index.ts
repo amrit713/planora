@@ -1,3 +1,4 @@
-import { organizationSchema, } from "./organizations"
+import { organizationSchema, updateOrganizationSchema } from "./organizations"
+import { spaceSchema, updateSpaceSchema } from "./spaces"
 
-export { organizationSchema, }
+export { organizationSchema, updateOrganizationSchema, spaceSchema, updateSpaceSchema }
