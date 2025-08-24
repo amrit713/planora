@@ -5,6 +5,7 @@ import { auth } from "@server/api/v1/user/auth";
 import type { Variables } from "./lib/types";
 import OrganizationsRoute from "./api/v1/organizations/organization.route";
 import SpaceRoute from "./api/v1/spaces/spaces.route"
+import ProjectRoute from "./api/v1/projects/projects.route"
 
 export const app = new Hono<{ Variables: Variables }>().use(cors())
 
@@ -22,7 +23,7 @@ app.use("*", async (c, next) => {
 	return next();
 });
 
-const routes = [OrganizationsRoute, SpaceRoute]
+const routes = [OrganizationsRoute, SpaceRoute, ProjectRoute]
 
 
 app.on(["POST", "GET"], "/api/auth/*", (c) => {

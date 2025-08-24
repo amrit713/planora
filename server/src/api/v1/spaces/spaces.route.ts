@@ -33,7 +33,7 @@ const router = new Hono<{ Variables: Variables }>().basePath("/spaces")
         const space = await db.space.create({
             data: {
                 name, organizationId, color, icon,
-                SpaceMember: {
+                spaceMembers: {
                     create: [
                         {
                             memberId: member.id,
@@ -42,7 +42,7 @@ const router = new Hono<{ Variables: Variables }>().basePath("/spaces")
                     ]
                 }
             },
-            include: { SpaceMember: true }
+            include: { spaceMembers: true }
         })
         if (!space) {
             throw new HTTPException(500, { message: "unable to create space" });
@@ -257,7 +257,7 @@ const router = new Hono<{ Variables: Variables }>().basePath("/spaces")
 
 
             return c.json({
-
+                data: spaceId
             })
         })
 

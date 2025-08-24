@@ -2567,11 +2567,11 @@ export namespace Prisma {
     accounts: number
     members: number
     invitations: number
-    ProjectWatcher: number
-    TaskWatcher: number
-    Comment: number
-    Activity: number
-    Notification: number
+    projectWatchers: number
+    taskWatchers: number
+    comments: number
+    activities: number
+    notifications: number
   }
 
   export type UserCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -2579,11 +2579,11 @@ export namespace Prisma {
     accounts?: boolean | UserCountOutputTypeCountAccountsArgs
     members?: boolean | UserCountOutputTypeCountMembersArgs
     invitations?: boolean | UserCountOutputTypeCountInvitationsArgs
-    ProjectWatcher?: boolean | UserCountOutputTypeCountProjectWatcherArgs
-    TaskWatcher?: boolean | UserCountOutputTypeCountTaskWatcherArgs
-    Comment?: boolean | UserCountOutputTypeCountCommentArgs
-    Activity?: boolean | UserCountOutputTypeCountActivityArgs
-    Notification?: boolean | UserCountOutputTypeCountNotificationArgs
+    projectWatchers?: boolean | UserCountOutputTypeCountProjectWatchersArgs
+    taskWatchers?: boolean | UserCountOutputTypeCountTaskWatchersArgs
+    comments?: boolean | UserCountOutputTypeCountCommentsArgs
+    activities?: boolean | UserCountOutputTypeCountActivitiesArgs
+    notifications?: boolean | UserCountOutputTypeCountNotificationsArgs
   }
 
   // Custom InputTypes
@@ -2628,35 +2628,35 @@ export namespace Prisma {
   /**
    * UserCountOutputType without action
    */
-  export type UserCountOutputTypeCountProjectWatcherArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type UserCountOutputTypeCountProjectWatchersArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     where?: ProjectWatcherWhereInput
   }
 
   /**
    * UserCountOutputType without action
    */
-  export type UserCountOutputTypeCountTaskWatcherArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type UserCountOutputTypeCountTaskWatchersArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     where?: TaskWatcherWhereInput
   }
 
   /**
    * UserCountOutputType without action
    */
-  export type UserCountOutputTypeCountCommentArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type UserCountOutputTypeCountCommentsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     where?: CommentWhereInput
   }
 
   /**
    * UserCountOutputType without action
    */
-  export type UserCountOutputTypeCountActivityArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type UserCountOutputTypeCountActivitiesArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     where?: ActivityWhereInput
   }
 
   /**
    * UserCountOutputType without action
    */
-  export type UserCountOutputTypeCountNotificationArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type UserCountOutputTypeCountNotificationsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     where?: NotificationWhereInput
   }
 
@@ -2715,13 +2715,13 @@ export namespace Prisma {
    */
 
   export type MemberCountOutputType = {
-    Task: number
-    SpaceMember: number
+    tasks: number
+    spaceMembers: number
   }
 
   export type MemberCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    Task?: boolean | MemberCountOutputTypeCountTaskArgs
-    SpaceMember?: boolean | MemberCountOutputTypeCountSpaceMemberArgs
+    tasks?: boolean | MemberCountOutputTypeCountTasksArgs
+    spaceMembers?: boolean | MemberCountOutputTypeCountSpaceMembersArgs
   }
 
   // Custom InputTypes
@@ -2738,14 +2738,14 @@ export namespace Prisma {
   /**
    * MemberCountOutputType without action
    */
-  export type MemberCountOutputTypeCountTaskArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type MemberCountOutputTypeCountTasksArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     where?: TaskWhereInput
   }
 
   /**
    * MemberCountOutputType without action
    */
-  export type MemberCountOutputTypeCountSpaceMemberArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type MemberCountOutputTypeCountSpaceMembersArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     where?: SpaceMemberWhereInput
   }
 
@@ -2755,13 +2755,13 @@ export namespace Prisma {
    */
 
   export type SpaceCountOutputType = {
-    Project: number
-    SpaceMember: number
+    projects: number
+    spaceMembers: number
   }
 
   export type SpaceCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    Project?: boolean | SpaceCountOutputTypeCountProjectArgs
-    SpaceMember?: boolean | SpaceCountOutputTypeCountSpaceMemberArgs
+    projects?: boolean | SpaceCountOutputTypeCountProjectsArgs
+    spaceMembers?: boolean | SpaceCountOutputTypeCountSpaceMembersArgs
   }
 
   // Custom InputTypes
@@ -2778,14 +2778,14 @@ export namespace Prisma {
   /**
    * SpaceCountOutputType without action
    */
-  export type SpaceCountOutputTypeCountProjectArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type SpaceCountOutputTypeCountProjectsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     where?: ProjectWhereInput
   }
 
   /**
    * SpaceCountOutputType without action
    */
-  export type SpaceCountOutputTypeCountSpaceMemberArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type SpaceCountOutputTypeCountSpaceMembersArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     where?: SpaceMemberWhereInput
   }
 
@@ -2795,13 +2795,13 @@ export namespace Prisma {
    */
 
   export type ProjectCountOutputType = {
-    ProjectWatcher: number
-    Task: number
+    projectWatchers: number
+    tasks: number
   }
 
   export type ProjectCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    ProjectWatcher?: boolean | ProjectCountOutputTypeCountProjectWatcherArgs
-    Task?: boolean | ProjectCountOutputTypeCountTaskArgs
+    projectWatchers?: boolean | ProjectCountOutputTypeCountProjectWatchersArgs
+    tasks?: boolean | ProjectCountOutputTypeCountTasksArgs
   }
 
   // Custom InputTypes
@@ -2818,14 +2818,14 @@ export namespace Prisma {
   /**
    * ProjectCountOutputType without action
    */
-  export type ProjectCountOutputTypeCountProjectWatcherArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type ProjectCountOutputTypeCountProjectWatchersArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     where?: ProjectWatcherWhereInput
   }
 
   /**
    * ProjectCountOutputType without action
    */
-  export type ProjectCountOutputTypeCountTaskArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type ProjectCountOutputTypeCountTasksArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     where?: TaskWhereInput
   }
 
@@ -2836,20 +2836,20 @@ export namespace Prisma {
 
   export type TaskCountOutputType = {
     subtasks: number
-    TaskWatcher: number
-    Attachment: number
-    TaskTag: number
-    Comment: number
-    Activity: number
+    taskWatchers: number
+    attachments: number
+    taskTags: number
+    comments: number
+    activities: number
   }
 
   export type TaskCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     subtasks?: boolean | TaskCountOutputTypeCountSubtasksArgs
-    TaskWatcher?: boolean | TaskCountOutputTypeCountTaskWatcherArgs
-    Attachment?: boolean | TaskCountOutputTypeCountAttachmentArgs
-    TaskTag?: boolean | TaskCountOutputTypeCountTaskTagArgs
-    Comment?: boolean | TaskCountOutputTypeCountCommentArgs
-    Activity?: boolean | TaskCountOutputTypeCountActivityArgs
+    taskWatchers?: boolean | TaskCountOutputTypeCountTaskWatchersArgs
+    attachments?: boolean | TaskCountOutputTypeCountAttachmentsArgs
+    taskTags?: boolean | TaskCountOutputTypeCountTaskTagsArgs
+    comments?: boolean | TaskCountOutputTypeCountCommentsArgs
+    activities?: boolean | TaskCountOutputTypeCountActivitiesArgs
   }
 
   // Custom InputTypes
@@ -2873,35 +2873,35 @@ export namespace Prisma {
   /**
    * TaskCountOutputType without action
    */
-  export type TaskCountOutputTypeCountTaskWatcherArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type TaskCountOutputTypeCountTaskWatchersArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     where?: TaskWatcherWhereInput
   }
 
   /**
    * TaskCountOutputType without action
    */
-  export type TaskCountOutputTypeCountAttachmentArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type TaskCountOutputTypeCountAttachmentsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     where?: AttachmentWhereInput
   }
 
   /**
    * TaskCountOutputType without action
    */
-  export type TaskCountOutputTypeCountTaskTagArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type TaskCountOutputTypeCountTaskTagsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     where?: TaskTagWhereInput
   }
 
   /**
    * TaskCountOutputType without action
    */
-  export type TaskCountOutputTypeCountCommentArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type TaskCountOutputTypeCountCommentsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     where?: CommentWhereInput
   }
 
   /**
    * TaskCountOutputType without action
    */
-  export type TaskCountOutputTypeCountActivityArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type TaskCountOutputTypeCountActivitiesArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     where?: ActivityWhereInput
   }
 
@@ -2911,11 +2911,11 @@ export namespace Prisma {
    */
 
   export type AttachmentCountOutputType = {
-    Activity: number
+    activities: number
   }
 
   export type AttachmentCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    Activity?: boolean | AttachmentCountOutputTypeCountActivityArgs
+    activities?: boolean | AttachmentCountOutputTypeCountActivitiesArgs
   }
 
   // Custom InputTypes
@@ -2932,7 +2932,7 @@ export namespace Prisma {
   /**
    * AttachmentCountOutputType without action
    */
-  export type AttachmentCountOutputTypeCountActivityArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type AttachmentCountOutputTypeCountActivitiesArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     where?: ActivityWhereInput
   }
 
@@ -2973,11 +2973,11 @@ export namespace Prisma {
    */
 
   export type CommentCountOutputType = {
-    Activity: number
+    activities: number
   }
 
   export type CommentCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    Activity?: boolean | CommentCountOutputTypeCountActivityArgs
+    activities?: boolean | CommentCountOutputTypeCountActivitiesArgs
   }
 
   // Custom InputTypes
@@ -2994,7 +2994,7 @@ export namespace Prisma {
   /**
    * CommentCountOutputType without action
    */
-  export type CommentCountOutputTypeCountActivityArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type CommentCountOutputTypeCountActivitiesArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     where?: ActivityWhereInput
   }
 
@@ -3004,11 +3004,11 @@ export namespace Prisma {
    */
 
   export type ActivityCountOutputType = {
-    Notification: number
+    notifications: number
   }
 
   export type ActivityCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    Notification?: boolean | ActivityCountOutputTypeCountNotificationArgs
+    notifications?: boolean | ActivityCountOutputTypeCountNotificationsArgs
   }
 
   // Custom InputTypes
@@ -3025,7 +3025,7 @@ export namespace Prisma {
   /**
    * ActivityCountOutputType without action
    */
-  export type ActivityCountOutputTypeCountNotificationArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type ActivityCountOutputTypeCountNotificationsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     where?: NotificationWhereInput
   }
 
@@ -3218,11 +3218,11 @@ export namespace Prisma {
     accounts?: boolean | User$accountsArgs<ExtArgs>
     members?: boolean | User$membersArgs<ExtArgs>
     invitations?: boolean | User$invitationsArgs<ExtArgs>
-    ProjectWatcher?: boolean | User$ProjectWatcherArgs<ExtArgs>
-    TaskWatcher?: boolean | User$TaskWatcherArgs<ExtArgs>
-    Comment?: boolean | User$CommentArgs<ExtArgs>
-    Activity?: boolean | User$ActivityArgs<ExtArgs>
-    Notification?: boolean | User$NotificationArgs<ExtArgs>
+    projectWatchers?: boolean | User$projectWatchersArgs<ExtArgs>
+    taskWatchers?: boolean | User$taskWatchersArgs<ExtArgs>
+    comments?: boolean | User$commentsArgs<ExtArgs>
+    activities?: boolean | User$activitiesArgs<ExtArgs>
+    notifications?: boolean | User$notificationsArgs<ExtArgs>
     _count?: boolean | UserCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["user"]>
 
@@ -3262,11 +3262,11 @@ export namespace Prisma {
     accounts?: boolean | User$accountsArgs<ExtArgs>
     members?: boolean | User$membersArgs<ExtArgs>
     invitations?: boolean | User$invitationsArgs<ExtArgs>
-    ProjectWatcher?: boolean | User$ProjectWatcherArgs<ExtArgs>
-    TaskWatcher?: boolean | User$TaskWatcherArgs<ExtArgs>
-    Comment?: boolean | User$CommentArgs<ExtArgs>
-    Activity?: boolean | User$ActivityArgs<ExtArgs>
-    Notification?: boolean | User$NotificationArgs<ExtArgs>
+    projectWatchers?: boolean | User$projectWatchersArgs<ExtArgs>
+    taskWatchers?: boolean | User$taskWatchersArgs<ExtArgs>
+    comments?: boolean | User$commentsArgs<ExtArgs>
+    activities?: boolean | User$activitiesArgs<ExtArgs>
+    notifications?: boolean | User$notificationsArgs<ExtArgs>
     _count?: boolean | UserCountOutputTypeDefaultArgs<ExtArgs>
   }
   export type UserIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
@@ -3279,11 +3279,11 @@ export namespace Prisma {
       accounts: Prisma.$AccountPayload<ExtArgs>[]
       members: Prisma.$MemberPayload<ExtArgs>[]
       invitations: Prisma.$InvitationPayload<ExtArgs>[]
-      ProjectWatcher: Prisma.$ProjectWatcherPayload<ExtArgs>[]
-      TaskWatcher: Prisma.$TaskWatcherPayload<ExtArgs>[]
-      Comment: Prisma.$CommentPayload<ExtArgs>[]
-      Activity: Prisma.$ActivityPayload<ExtArgs>[]
-      Notification: Prisma.$NotificationPayload<ExtArgs>[]
+      projectWatchers: Prisma.$ProjectWatcherPayload<ExtArgs>[]
+      taskWatchers: Prisma.$TaskWatcherPayload<ExtArgs>[]
+      comments: Prisma.$CommentPayload<ExtArgs>[]
+      activities: Prisma.$ActivityPayload<ExtArgs>[]
+      notifications: Prisma.$NotificationPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
       id: string
@@ -3691,11 +3691,11 @@ export namespace Prisma {
     accounts<T extends User$accountsArgs<ExtArgs> = {}>(args?: Subset<T, User$accountsArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$AccountPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     members<T extends User$membersArgs<ExtArgs> = {}>(args?: Subset<T, User$membersArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$MemberPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     invitations<T extends User$invitationsArgs<ExtArgs> = {}>(args?: Subset<T, User$invitationsArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$InvitationPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
-    ProjectWatcher<T extends User$ProjectWatcherArgs<ExtArgs> = {}>(args?: Subset<T, User$ProjectWatcherArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$ProjectWatcherPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
-    TaskWatcher<T extends User$TaskWatcherArgs<ExtArgs> = {}>(args?: Subset<T, User$TaskWatcherArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$TaskWatcherPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
-    Comment<T extends User$CommentArgs<ExtArgs> = {}>(args?: Subset<T, User$CommentArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$CommentPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
-    Activity<T extends User$ActivityArgs<ExtArgs> = {}>(args?: Subset<T, User$ActivityArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$ActivityPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
-    Notification<T extends User$NotificationArgs<ExtArgs> = {}>(args?: Subset<T, User$NotificationArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$NotificationPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    projectWatchers<T extends User$projectWatchersArgs<ExtArgs> = {}>(args?: Subset<T, User$projectWatchersArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$ProjectWatcherPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    taskWatchers<T extends User$taskWatchersArgs<ExtArgs> = {}>(args?: Subset<T, User$taskWatchersArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$TaskWatcherPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    comments<T extends User$commentsArgs<ExtArgs> = {}>(args?: Subset<T, User$commentsArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$CommentPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    activities<T extends User$activitiesArgs<ExtArgs> = {}>(args?: Subset<T, User$activitiesArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$ActivityPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    notifications<T extends User$notificationsArgs<ExtArgs> = {}>(args?: Subset<T, User$notificationsArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$NotificationPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
      * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -4216,9 +4216,9 @@ export namespace Prisma {
   }
 
   /**
-   * User.ProjectWatcher
+   * User.projectWatchers
    */
-  export type User$ProjectWatcherArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type User$projectWatchersArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
      * Select specific fields to fetch from the ProjectWatcher
      */
@@ -4240,9 +4240,9 @@ export namespace Prisma {
   }
 
   /**
-   * User.TaskWatcher
+   * User.taskWatchers
    */
-  export type User$TaskWatcherArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type User$taskWatchersArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
      * Select specific fields to fetch from the TaskWatcher
      */
@@ -4264,9 +4264,9 @@ export namespace Prisma {
   }
 
   /**
-   * User.Comment
+   * User.comments
    */
-  export type User$CommentArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type User$commentsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
      * Select specific fields to fetch from the Comment
      */
@@ -4288,9 +4288,9 @@ export namespace Prisma {
   }
 
   /**
-   * User.Activity
+   * User.activities
    */
-  export type User$ActivityArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type User$activitiesArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
      * Select specific fields to fetch from the Activity
      */
@@ -4312,9 +4312,9 @@ export namespace Prisma {
   }
 
   /**
-   * User.Notification
+   * User.notifications
    */
-  export type User$NotificationArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type User$notificationsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
      * Select specific fields to fetch from the Notification
      */
@@ -8934,8 +8934,8 @@ export namespace Prisma {
     updatedAt?: boolean
     user?: boolean | UserDefaultArgs<ExtArgs>
     organization?: boolean | OrganizationDefaultArgs<ExtArgs>
-    Task?: boolean | Member$TaskArgs<ExtArgs>
-    SpaceMember?: boolean | Member$SpaceMemberArgs<ExtArgs>
+    tasks?: boolean | Member$tasksArgs<ExtArgs>
+    spaceMembers?: boolean | Member$spaceMembersArgs<ExtArgs>
     _count?: boolean | MemberCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["member"]>
 
@@ -8974,8 +8974,8 @@ export namespace Prisma {
   export type MemberInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     user?: boolean | UserDefaultArgs<ExtArgs>
     organization?: boolean | OrganizationDefaultArgs<ExtArgs>
-    Task?: boolean | Member$TaskArgs<ExtArgs>
-    SpaceMember?: boolean | Member$SpaceMemberArgs<ExtArgs>
+    tasks?: boolean | Member$tasksArgs<ExtArgs>
+    spaceMembers?: boolean | Member$spaceMembersArgs<ExtArgs>
     _count?: boolean | MemberCountOutputTypeDefaultArgs<ExtArgs>
   }
   export type MemberIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -8992,8 +8992,8 @@ export namespace Prisma {
     objects: {
       user: Prisma.$UserPayload<ExtArgs>
       organization: Prisma.$OrganizationPayload<ExtArgs>
-      Task: Prisma.$TaskPayload<ExtArgs>[]
-      SpaceMember: Prisma.$SpaceMemberPayload<ExtArgs>[]
+      tasks: Prisma.$TaskPayload<ExtArgs>[]
+      spaceMembers: Prisma.$SpaceMemberPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
       id: string
@@ -9398,8 +9398,8 @@ export namespace Prisma {
     readonly [Symbol.toStringTag]: "PrismaPromise"
     user<T extends UserDefaultArgs<ExtArgs> = {}>(args?: Subset<T, UserDefaultArgs<ExtArgs>>): Prisma__UserClient<$Result.GetResult<Prisma.$UserPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
     organization<T extends OrganizationDefaultArgs<ExtArgs> = {}>(args?: Subset<T, OrganizationDefaultArgs<ExtArgs>>): Prisma__OrganizationClient<$Result.GetResult<Prisma.$OrganizationPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
-    Task<T extends Member$TaskArgs<ExtArgs> = {}>(args?: Subset<T, Member$TaskArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$TaskPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
-    SpaceMember<T extends Member$SpaceMemberArgs<ExtArgs> = {}>(args?: Subset<T, Member$SpaceMemberArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$SpaceMemberPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    tasks<T extends Member$tasksArgs<ExtArgs> = {}>(args?: Subset<T, Member$tasksArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$TaskPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    spaceMembers<T extends Member$spaceMembersArgs<ExtArgs> = {}>(args?: Subset<T, Member$spaceMembersArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$SpaceMemberPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
      * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -9831,9 +9831,9 @@ export namespace Prisma {
   }
 
   /**
-   * Member.Task
+   * Member.tasks
    */
-  export type Member$TaskArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Member$tasksArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
      * Select specific fields to fetch from the Task
      */
@@ -9855,9 +9855,9 @@ export namespace Prisma {
   }
 
   /**
-   * Member.SpaceMember
+   * Member.spaceMembers
    */
-  export type Member$SpaceMemberArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Member$spaceMembersArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
      * Select specific fields to fetch from the SpaceMember
      */
@@ -11170,8 +11170,8 @@ export namespace Prisma {
     createdAt?: boolean
     updatedAt?: boolean
     organization?: boolean | OrganizationDefaultArgs<ExtArgs>
-    Project?: boolean | Space$ProjectArgs<ExtArgs>
-    SpaceMember?: boolean | Space$SpaceMemberArgs<ExtArgs>
+    projects?: boolean | Space$projectsArgs<ExtArgs>
+    spaceMembers?: boolean | Space$spaceMembersArgs<ExtArgs>
     _count?: boolean | SpaceCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["space"]>
 
@@ -11210,8 +11210,8 @@ export namespace Prisma {
   export type SpaceOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "name" | "organizationId" | "icon" | "color" | "createdAt" | "updatedAt", ExtArgs["result"]["space"]>
   export type SpaceInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     organization?: boolean | OrganizationDefaultArgs<ExtArgs>
-    Project?: boolean | Space$ProjectArgs<ExtArgs>
-    SpaceMember?: boolean | Space$SpaceMemberArgs<ExtArgs>
+    projects?: boolean | Space$projectsArgs<ExtArgs>
+    spaceMembers?: boolean | Space$spaceMembersArgs<ExtArgs>
     _count?: boolean | SpaceCountOutputTypeDefaultArgs<ExtArgs>
   }
   export type SpaceIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -11225,8 +11225,8 @@ export namespace Prisma {
     name: "Space"
     objects: {
       organization: Prisma.$OrganizationPayload<ExtArgs>
-      Project: Prisma.$ProjectPayload<ExtArgs>[]
-      SpaceMember: Prisma.$SpaceMemberPayload<ExtArgs>[]
+      projects: Prisma.$ProjectPayload<ExtArgs>[]
+      spaceMembers: Prisma.$SpaceMemberPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
       id: string
@@ -11631,8 +11631,8 @@ export namespace Prisma {
   export interface Prisma__SpaceClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
     readonly [Symbol.toStringTag]: "PrismaPromise"
     organization<T extends OrganizationDefaultArgs<ExtArgs> = {}>(args?: Subset<T, OrganizationDefaultArgs<ExtArgs>>): Prisma__OrganizationClient<$Result.GetResult<Prisma.$OrganizationPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
-    Project<T extends Space$ProjectArgs<ExtArgs> = {}>(args?: Subset<T, Space$ProjectArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$ProjectPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
-    SpaceMember<T extends Space$SpaceMemberArgs<ExtArgs> = {}>(args?: Subset<T, Space$SpaceMemberArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$SpaceMemberPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    projects<T extends Space$projectsArgs<ExtArgs> = {}>(args?: Subset<T, Space$projectsArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$ProjectPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    spaceMembers<T extends Space$spaceMembersArgs<ExtArgs> = {}>(args?: Subset<T, Space$spaceMembersArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$SpaceMemberPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
      * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -12065,9 +12065,9 @@ export namespace Prisma {
   }
 
   /**
-   * Space.Project
+   * Space.projects
    */
-  export type Space$ProjectArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Space$projectsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
      * Select specific fields to fetch from the Project
      */
@@ -12089,9 +12089,9 @@ export namespace Prisma {
   }
 
   /**
-   * Space.SpaceMember
+   * Space.spaceMembers
    */
-  export type Space$SpaceMemberArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Space$spaceMembersArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
      * Select specific fields to fetch from the SpaceMember
      */
@@ -13383,8 +13383,8 @@ export namespace Prisma {
     color?: boolean
     spaceId?: boolean
     space?: boolean | SpaceDefaultArgs<ExtArgs>
-    ProjectWatcher?: boolean | Project$ProjectWatcherArgs<ExtArgs>
-    Task?: boolean | Project$TaskArgs<ExtArgs>
+    projectWatchers?: boolean | Project$projectWatchersArgs<ExtArgs>
+    tasks?: boolean | Project$tasksArgs<ExtArgs>
     _count?: boolean | ProjectCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["project"]>
 
@@ -13420,8 +13420,8 @@ export namespace Prisma {
   export type ProjectOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "name" | "icon" | "image" | "color" | "spaceId", ExtArgs["result"]["project"]>
   export type ProjectInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     space?: boolean | SpaceDefaultArgs<ExtArgs>
-    ProjectWatcher?: boolean | Project$ProjectWatcherArgs<ExtArgs>
-    Task?: boolean | Project$TaskArgs<ExtArgs>
+    projectWatchers?: boolean | Project$projectWatchersArgs<ExtArgs>
+    tasks?: boolean | Project$tasksArgs<ExtArgs>
     _count?: boolean | ProjectCountOutputTypeDefaultArgs<ExtArgs>
   }
   export type ProjectIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -13435,8 +13435,8 @@ export namespace Prisma {
     name: "Project"
     objects: {
       space: Prisma.$SpacePayload<ExtArgs>
-      ProjectWatcher: Prisma.$ProjectWatcherPayload<ExtArgs>[]
-      Task: Prisma.$TaskPayload<ExtArgs>[]
+      projectWatchers: Prisma.$ProjectWatcherPayload<ExtArgs>[]
+      tasks: Prisma.$TaskPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
       id: string
@@ -13840,8 +13840,8 @@ export namespace Prisma {
   export interface Prisma__ProjectClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
     readonly [Symbol.toStringTag]: "PrismaPromise"
     space<T extends SpaceDefaultArgs<ExtArgs> = {}>(args?: Subset<T, SpaceDefaultArgs<ExtArgs>>): Prisma__SpaceClient<$Result.GetResult<Prisma.$SpacePayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
-    ProjectWatcher<T extends Project$ProjectWatcherArgs<ExtArgs> = {}>(args?: Subset<T, Project$ProjectWatcherArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$ProjectWatcherPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
-    Task<T extends Project$TaskArgs<ExtArgs> = {}>(args?: Subset<T, Project$TaskArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$TaskPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    projectWatchers<T extends Project$projectWatchersArgs<ExtArgs> = {}>(args?: Subset<T, Project$projectWatchersArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$ProjectWatcherPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    tasks<T extends Project$tasksArgs<ExtArgs> = {}>(args?: Subset<T, Project$tasksArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$TaskPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
      * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -14273,9 +14273,9 @@ export namespace Prisma {
   }
 
   /**
-   * Project.ProjectWatcher
+   * Project.projectWatchers
    */
-  export type Project$ProjectWatcherArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Project$projectWatchersArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
      * Select specific fields to fetch from the ProjectWatcher
      */
@@ -14297,9 +14297,9 @@ export namespace Prisma {
   }
 
   /**
-   * Project.Task
+   * Project.tasks
    */
-  export type Project$TaskArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Project$tasksArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
      * Select specific fields to fetch from the Task
      */
@@ -15650,11 +15650,11 @@ export namespace Prisma {
     assignee?: boolean | MemberDefaultArgs<ExtArgs>
     parent?: boolean | Task$parentArgs<ExtArgs>
     subtasks?: boolean | Task$subtasksArgs<ExtArgs>
-    TaskWatcher?: boolean | Task$TaskWatcherArgs<ExtArgs>
-    Attachment?: boolean | Task$AttachmentArgs<ExtArgs>
-    TaskTag?: boolean | Task$TaskTagArgs<ExtArgs>
-    Comment?: boolean | Task$CommentArgs<ExtArgs>
-    Activity?: boolean | Task$ActivityArgs<ExtArgs>
+    taskWatchers?: boolean | Task$taskWatchersArgs<ExtArgs>
+    attachments?: boolean | Task$attachmentsArgs<ExtArgs>
+    taskTags?: boolean | Task$taskTagsArgs<ExtArgs>
+    comments?: boolean | Task$commentsArgs<ExtArgs>
+    activities?: boolean | Task$activitiesArgs<ExtArgs>
     _count?: boolean | TaskCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["task"]>
 
@@ -15715,11 +15715,11 @@ export namespace Prisma {
     assignee?: boolean | MemberDefaultArgs<ExtArgs>
     parent?: boolean | Task$parentArgs<ExtArgs>
     subtasks?: boolean | Task$subtasksArgs<ExtArgs>
-    TaskWatcher?: boolean | Task$TaskWatcherArgs<ExtArgs>
-    Attachment?: boolean | Task$AttachmentArgs<ExtArgs>
-    TaskTag?: boolean | Task$TaskTagArgs<ExtArgs>
-    Comment?: boolean | Task$CommentArgs<ExtArgs>
-    Activity?: boolean | Task$ActivityArgs<ExtArgs>
+    taskWatchers?: boolean | Task$taskWatchersArgs<ExtArgs>
+    attachments?: boolean | Task$attachmentsArgs<ExtArgs>
+    taskTags?: boolean | Task$taskTagsArgs<ExtArgs>
+    comments?: boolean | Task$commentsArgs<ExtArgs>
+    activities?: boolean | Task$activitiesArgs<ExtArgs>
     _count?: boolean | TaskCountOutputTypeDefaultArgs<ExtArgs>
   }
   export type TaskIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -15740,11 +15740,11 @@ export namespace Prisma {
       assignee: Prisma.$MemberPayload<ExtArgs>
       parent: Prisma.$TaskPayload<ExtArgs> | null
       subtasks: Prisma.$TaskPayload<ExtArgs>[]
-      TaskWatcher: Prisma.$TaskWatcherPayload<ExtArgs>[]
-      Attachment: Prisma.$AttachmentPayload<ExtArgs>[]
-      TaskTag: Prisma.$TaskTagPayload<ExtArgs>[]
-      Comment: Prisma.$CommentPayload<ExtArgs>[]
-      Activity: Prisma.$ActivityPayload<ExtArgs>[]
+      taskWatchers: Prisma.$TaskWatcherPayload<ExtArgs>[]
+      attachments: Prisma.$AttachmentPayload<ExtArgs>[]
+      taskTags: Prisma.$TaskTagPayload<ExtArgs>[]
+      comments: Prisma.$CommentPayload<ExtArgs>[]
+      activities: Prisma.$ActivityPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
       id: string
@@ -16157,11 +16157,11 @@ export namespace Prisma {
     assignee<T extends MemberDefaultArgs<ExtArgs> = {}>(args?: Subset<T, MemberDefaultArgs<ExtArgs>>): Prisma__MemberClient<$Result.GetResult<Prisma.$MemberPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
     parent<T extends Task$parentArgs<ExtArgs> = {}>(args?: Subset<T, Task$parentArgs<ExtArgs>>): Prisma__TaskClient<$Result.GetResult<Prisma.$TaskPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
     subtasks<T extends Task$subtasksArgs<ExtArgs> = {}>(args?: Subset<T, Task$subtasksArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$TaskPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
-    TaskWatcher<T extends Task$TaskWatcherArgs<ExtArgs> = {}>(args?: Subset<T, Task$TaskWatcherArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$TaskWatcherPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
-    Attachment<T extends Task$AttachmentArgs<ExtArgs> = {}>(args?: Subset<T, Task$AttachmentArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$AttachmentPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
-    TaskTag<T extends Task$TaskTagArgs<ExtArgs> = {}>(args?: Subset<T, Task$TaskTagArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$TaskTagPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
-    Comment<T extends Task$CommentArgs<ExtArgs> = {}>(args?: Subset<T, Task$CommentArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$CommentPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
-    Activity<T extends Task$ActivityArgs<ExtArgs> = {}>(args?: Subset<T, Task$ActivityArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$ActivityPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    taskWatchers<T extends Task$taskWatchersArgs<ExtArgs> = {}>(args?: Subset<T, Task$taskWatchersArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$TaskWatcherPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    attachments<T extends Task$attachmentsArgs<ExtArgs> = {}>(args?: Subset<T, Task$attachmentsArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$AttachmentPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    taskTags<T extends Task$taskTagsArgs<ExtArgs> = {}>(args?: Subset<T, Task$taskTagsArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$TaskTagPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    comments<T extends Task$commentsArgs<ExtArgs> = {}>(args?: Subset<T, Task$commentsArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$CommentPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    activities<T extends Task$activitiesArgs<ExtArgs> = {}>(args?: Subset<T, Task$activitiesArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$ActivityPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
      * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -16642,9 +16642,9 @@ export namespace Prisma {
   }
 
   /**
-   * Task.TaskWatcher
+   * Task.taskWatchers
    */
-  export type Task$TaskWatcherArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Task$taskWatchersArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
      * Select specific fields to fetch from the TaskWatcher
      */
@@ -16666,9 +16666,9 @@ export namespace Prisma {
   }
 
   /**
-   * Task.Attachment
+   * Task.attachments
    */
-  export type Task$AttachmentArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Task$attachmentsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
      * Select specific fields to fetch from the Attachment
      */
@@ -16690,9 +16690,9 @@ export namespace Prisma {
   }
 
   /**
-   * Task.TaskTag
+   * Task.taskTags
    */
-  export type Task$TaskTagArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Task$taskTagsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
      * Select specific fields to fetch from the TaskTag
      */
@@ -16714,9 +16714,9 @@ export namespace Prisma {
   }
 
   /**
-   * Task.Comment
+   * Task.comments
    */
-  export type Task$CommentArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Task$commentsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
      * Select specific fields to fetch from the Comment
      */
@@ -16738,9 +16738,9 @@ export namespace Prisma {
   }
 
   /**
-   * Task.Activity
+   * Task.activities
    */
-  export type Task$ActivityArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Task$activitiesArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
      * Select specific fields to fetch from the Activity
      */
@@ -17998,7 +17998,7 @@ export namespace Prisma {
     taskId?: boolean
     createdAt?: boolean
     task?: boolean | TaskDefaultArgs<ExtArgs>
-    Activity?: boolean | Attachment$ActivityArgs<ExtArgs>
+    activities?: boolean | Attachment$activitiesArgs<ExtArgs>
     _count?: boolean | AttachmentCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["attachment"]>
 
@@ -18031,7 +18031,7 @@ export namespace Prisma {
   export type AttachmentOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "url" | "type" | "taskId" | "createdAt", ExtArgs["result"]["attachment"]>
   export type AttachmentInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     task?: boolean | TaskDefaultArgs<ExtArgs>
-    Activity?: boolean | Attachment$ActivityArgs<ExtArgs>
+    activities?: boolean | Attachment$activitiesArgs<ExtArgs>
     _count?: boolean | AttachmentCountOutputTypeDefaultArgs<ExtArgs>
   }
   export type AttachmentIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -18045,7 +18045,7 @@ export namespace Prisma {
     name: "Attachment"
     objects: {
       task: Prisma.$TaskPayload<ExtArgs>
-      Activity: Prisma.$ActivityPayload<ExtArgs>[]
+      activities: Prisma.$ActivityPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
       id: string
@@ -18448,7 +18448,7 @@ export namespace Prisma {
   export interface Prisma__AttachmentClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
     readonly [Symbol.toStringTag]: "PrismaPromise"
     task<T extends TaskDefaultArgs<ExtArgs> = {}>(args?: Subset<T, TaskDefaultArgs<ExtArgs>>): Prisma__TaskClient<$Result.GetResult<Prisma.$TaskPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
-    Activity<T extends Attachment$ActivityArgs<ExtArgs> = {}>(args?: Subset<T, Attachment$ActivityArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$ActivityPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    activities<T extends Attachment$activitiesArgs<ExtArgs> = {}>(args?: Subset<T, Attachment$activitiesArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$ActivityPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
      * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -18879,9 +18879,9 @@ export namespace Prisma {
   }
 
   /**
-   * Attachment.Activity
+   * Attachment.activities
    */
-  export type Attachment$ActivityArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Attachment$activitiesArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
      * Select specific fields to fetch from the Activity
      */
@@ -21166,7 +21166,7 @@ export namespace Prisma {
     updatedAt?: boolean
     task?: boolean | TaskDefaultArgs<ExtArgs>
     author?: boolean | UserDefaultArgs<ExtArgs>
-    Activity?: boolean | Comment$ActivityArgs<ExtArgs>
+    activities?: boolean | Comment$activitiesArgs<ExtArgs>
     _count?: boolean | CommentCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["comment"]>
 
@@ -21205,7 +21205,7 @@ export namespace Prisma {
   export type CommentInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     task?: boolean | TaskDefaultArgs<ExtArgs>
     author?: boolean | UserDefaultArgs<ExtArgs>
-    Activity?: boolean | Comment$ActivityArgs<ExtArgs>
+    activities?: boolean | Comment$activitiesArgs<ExtArgs>
     _count?: boolean | CommentCountOutputTypeDefaultArgs<ExtArgs>
   }
   export type CommentIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -21222,7 +21222,7 @@ export namespace Prisma {
     objects: {
       task: Prisma.$TaskPayload<ExtArgs>
       author: Prisma.$UserPayload<ExtArgs>
-      Activity: Prisma.$ActivityPayload<ExtArgs>[]
+      activities: Prisma.$ActivityPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
       id: string
@@ -21627,7 +21627,7 @@ export namespace Prisma {
     readonly [Symbol.toStringTag]: "PrismaPromise"
     task<T extends TaskDefaultArgs<ExtArgs> = {}>(args?: Subset<T, TaskDefaultArgs<ExtArgs>>): Prisma__TaskClient<$Result.GetResult<Prisma.$TaskPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
     author<T extends UserDefaultArgs<ExtArgs> = {}>(args?: Subset<T, UserDefaultArgs<ExtArgs>>): Prisma__UserClient<$Result.GetResult<Prisma.$UserPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
-    Activity<T extends Comment$ActivityArgs<ExtArgs> = {}>(args?: Subset<T, Comment$ActivityArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$ActivityPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    activities<T extends Comment$activitiesArgs<ExtArgs> = {}>(args?: Subset<T, Comment$activitiesArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$ActivityPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
      * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -22059,9 +22059,9 @@ export namespace Prisma {
   }
 
   /**
-   * Comment.Activity
+   * Comment.activities
    */
-  export type Comment$ActivityArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Comment$activitiesArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
      * Select specific fields to fetch from the Activity
      */
@@ -22285,7 +22285,7 @@ export namespace Prisma {
     task?: boolean | Activity$taskArgs<ExtArgs>
     comment?: boolean | Activity$commentArgs<ExtArgs>
     attachment?: boolean | Activity$attachmentArgs<ExtArgs>
-    Notification?: boolean | Activity$NotificationArgs<ExtArgs>
+    notifications?: boolean | Activity$notificationsArgs<ExtArgs>
     _count?: boolean | ActivityCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["activity"]>
 
@@ -22333,7 +22333,7 @@ export namespace Prisma {
     task?: boolean | Activity$taskArgs<ExtArgs>
     comment?: boolean | Activity$commentArgs<ExtArgs>
     attachment?: boolean | Activity$attachmentArgs<ExtArgs>
-    Notification?: boolean | Activity$NotificationArgs<ExtArgs>
+    notifications?: boolean | Activity$notificationsArgs<ExtArgs>
     _count?: boolean | ActivityCountOutputTypeDefaultArgs<ExtArgs>
   }
   export type ActivityIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -22356,7 +22356,7 @@ export namespace Prisma {
       task: Prisma.$TaskPayload<ExtArgs> | null
       comment: Prisma.$CommentPayload<ExtArgs> | null
       attachment: Prisma.$AttachmentPayload<ExtArgs> | null
-      Notification: Prisma.$NotificationPayload<ExtArgs>[]
+      notifications: Prisma.$NotificationPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
       id: string
@@ -22764,7 +22764,7 @@ export namespace Prisma {
     task<T extends Activity$taskArgs<ExtArgs> = {}>(args?: Subset<T, Activity$taskArgs<ExtArgs>>): Prisma__TaskClient<$Result.GetResult<Prisma.$TaskPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
     comment<T extends Activity$commentArgs<ExtArgs> = {}>(args?: Subset<T, Activity$commentArgs<ExtArgs>>): Prisma__CommentClient<$Result.GetResult<Prisma.$CommentPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
     attachment<T extends Activity$attachmentArgs<ExtArgs> = {}>(args?: Subset<T, Activity$attachmentArgs<ExtArgs>>): Prisma__AttachmentClient<$Result.GetResult<Prisma.$AttachmentPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
-    Notification<T extends Activity$NotificationArgs<ExtArgs> = {}>(args?: Subset<T, Activity$NotificationArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$NotificationPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    notifications<T extends Activity$notificationsArgs<ExtArgs> = {}>(args?: Subset<T, Activity$notificationsArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$NotificationPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
      * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -23254,9 +23254,9 @@ export namespace Prisma {
   }
 
   /**
-   * Activity.Notification
+   * Activity.notifications
    */
-  export type Activity$NotificationArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Activity$notificationsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
      * Select specific fields to fetch from the Notification
      */
@@ -24776,11 +24776,11 @@ export namespace Prisma {
     accounts?: AccountListRelationFilter
     members?: MemberListRelationFilter
     invitations?: InvitationListRelationFilter
-    ProjectWatcher?: ProjectWatcherListRelationFilter
-    TaskWatcher?: TaskWatcherListRelationFilter
-    Comment?: CommentListRelationFilter
-    Activity?: ActivityListRelationFilter
-    Notification?: NotificationListRelationFilter
+    projectWatchers?: ProjectWatcherListRelationFilter
+    taskWatchers?: TaskWatcherListRelationFilter
+    comments?: CommentListRelationFilter
+    activities?: ActivityListRelationFilter
+    notifications?: NotificationListRelationFilter
   }
 
   export type UserOrderByWithRelationInput = {
@@ -24795,11 +24795,11 @@ export namespace Prisma {
     accounts?: AccountOrderByRelationAggregateInput
     members?: MemberOrderByRelationAggregateInput
     invitations?: InvitationOrderByRelationAggregateInput
-    ProjectWatcher?: ProjectWatcherOrderByRelationAggregateInput
-    TaskWatcher?: TaskWatcherOrderByRelationAggregateInput
-    Comment?: CommentOrderByRelationAggregateInput
-    Activity?: ActivityOrderByRelationAggregateInput
-    Notification?: NotificationOrderByRelationAggregateInput
+    projectWatchers?: ProjectWatcherOrderByRelationAggregateInput
+    taskWatchers?: TaskWatcherOrderByRelationAggregateInput
+    comments?: CommentOrderByRelationAggregateInput
+    activities?: ActivityOrderByRelationAggregateInput
+    notifications?: NotificationOrderByRelationAggregateInput
   }
 
   export type UserWhereUniqueInput = Prisma.AtLeast<{
@@ -24817,11 +24817,11 @@ export namespace Prisma {
     accounts?: AccountListRelationFilter
     members?: MemberListRelationFilter
     invitations?: InvitationListRelationFilter
-    ProjectWatcher?: ProjectWatcherListRelationFilter
-    TaskWatcher?: TaskWatcherListRelationFilter
-    Comment?: CommentListRelationFilter
-    Activity?: ActivityListRelationFilter
-    Notification?: NotificationListRelationFilter
+    projectWatchers?: ProjectWatcherListRelationFilter
+    taskWatchers?: TaskWatcherListRelationFilter
+    comments?: CommentListRelationFilter
+    activities?: ActivityListRelationFilter
+    notifications?: NotificationListRelationFilter
   }, "id" | "email">
 
   export type UserOrderByWithAggregationInput = {
@@ -25150,8 +25150,8 @@ export namespace Prisma {
     updatedAt?: DateTimeFilter<"Member"> | Date | string
     user?: XOR<UserScalarRelationFilter, UserWhereInput>
     organization?: XOR<OrganizationScalarRelationFilter, OrganizationWhereInput>
-    Task?: TaskListRelationFilter
-    SpaceMember?: SpaceMemberListRelationFilter
+    tasks?: TaskListRelationFilter
+    spaceMembers?: SpaceMemberListRelationFilter
   }
 
   export type MemberOrderByWithRelationInput = {
@@ -25163,12 +25163,13 @@ export namespace Prisma {
     updatedAt?: SortOrder
     user?: UserOrderByWithRelationInput
     organization?: OrganizationOrderByWithRelationInput
-    Task?: TaskOrderByRelationAggregateInput
-    SpaceMember?: SpaceMemberOrderByRelationAggregateInput
+    tasks?: TaskOrderByRelationAggregateInput
+    spaceMembers?: SpaceMemberOrderByRelationAggregateInput
   }
 
   export type MemberWhereUniqueInput = Prisma.AtLeast<{
     id?: string
+    userId_organizationId?: MemberUserIdOrganizationIdCompoundUniqueInput
     AND?: MemberWhereInput | MemberWhereInput[]
     OR?: MemberWhereInput[]
     NOT?: MemberWhereInput | MemberWhereInput[]
@@ -25179,9 +25180,9 @@ export namespace Prisma {
     updatedAt?: DateTimeFilter<"Member"> | Date | string
     user?: XOR<UserScalarRelationFilter, UserWhereInput>
     organization?: XOR<OrganizationScalarRelationFilter, OrganizationWhereInput>
-    Task?: TaskListRelationFilter
-    SpaceMember?: SpaceMemberListRelationFilter
-  }, "id">
+    tasks?: TaskListRelationFilter
+    spaceMembers?: SpaceMemberListRelationFilter
+  }, "id" | "userId_organizationId">
 
   export type MemberOrderByWithAggregationInput = {
     id?: SortOrder
@@ -25287,8 +25288,8 @@ export namespace Prisma {
     createdAt?: DateTimeFilter<"Space"> | Date | string
     updatedAt?: DateTimeFilter<"Space"> | Date | string
     organization?: XOR<OrganizationScalarRelationFilter, OrganizationWhereInput>
-    Project?: ProjectListRelationFilter
-    SpaceMember?: SpaceMemberListRelationFilter
+    projects?: ProjectListRelationFilter
+    spaceMembers?: SpaceMemberListRelationFilter
   }
 
   export type SpaceOrderByWithRelationInput = {
@@ -25300,8 +25301,8 @@ export namespace Prisma {
     createdAt?: SortOrder
     updatedAt?: SortOrder
     organization?: OrganizationOrderByWithRelationInput
-    Project?: ProjectOrderByRelationAggregateInput
-    SpaceMember?: SpaceMemberOrderByRelationAggregateInput
+    projects?: ProjectOrderByRelationAggregateInput
+    spaceMembers?: SpaceMemberOrderByRelationAggregateInput
   }
 
   export type SpaceWhereUniqueInput = Prisma.AtLeast<{
@@ -25316,8 +25317,8 @@ export namespace Prisma {
     createdAt?: DateTimeFilter<"Space"> | Date | string
     updatedAt?: DateTimeFilter<"Space"> | Date | string
     organization?: XOR<OrganizationScalarRelationFilter, OrganizationWhereInput>
-    Project?: ProjectListRelationFilter
-    SpaceMember?: SpaceMemberListRelationFilter
+    projects?: ProjectListRelationFilter
+    spaceMembers?: SpaceMemberListRelationFilter
   }, "id">
 
   export type SpaceOrderByWithAggregationInput = {
@@ -25421,8 +25422,8 @@ export namespace Prisma {
     color?: StringNullableFilter<"Project"> | string | null
     spaceId?: StringFilter<"Project"> | string
     space?: XOR<SpaceScalarRelationFilter, SpaceWhereInput>
-    ProjectWatcher?: ProjectWatcherListRelationFilter
-    Task?: TaskListRelationFilter
+    projectWatchers?: ProjectWatcherListRelationFilter
+    tasks?: TaskListRelationFilter
   }
 
   export type ProjectOrderByWithRelationInput = {
@@ -25433,8 +25434,8 @@ export namespace Prisma {
     color?: SortOrderInput | SortOrder
     spaceId?: SortOrder
     space?: SpaceOrderByWithRelationInput
-    ProjectWatcher?: ProjectWatcherOrderByRelationAggregateInput
-    Task?: TaskOrderByRelationAggregateInput
+    projectWatchers?: ProjectWatcherOrderByRelationAggregateInput
+    tasks?: TaskOrderByRelationAggregateInput
   }
 
   export type ProjectWhereUniqueInput = Prisma.AtLeast<{
@@ -25448,8 +25449,8 @@ export namespace Prisma {
     color?: StringNullableFilter<"Project"> | string | null
     spaceId?: StringFilter<"Project"> | string
     space?: XOR<SpaceScalarRelationFilter, SpaceWhereInput>
-    ProjectWatcher?: ProjectWatcherListRelationFilter
-    Task?: TaskListRelationFilter
+    projectWatchers?: ProjectWatcherListRelationFilter
+    tasks?: TaskListRelationFilter
   }, "id">
 
   export type ProjectOrderByWithAggregationInput = {
@@ -25550,11 +25551,11 @@ export namespace Prisma {
     assignee?: XOR<MemberScalarRelationFilter, MemberWhereInput>
     parent?: XOR<TaskNullableScalarRelationFilter, TaskWhereInput> | null
     subtasks?: TaskListRelationFilter
-    TaskWatcher?: TaskWatcherListRelationFilter
-    Attachment?: AttachmentListRelationFilter
-    TaskTag?: TaskTagListRelationFilter
-    Comment?: CommentListRelationFilter
-    Activity?: ActivityListRelationFilter
+    taskWatchers?: TaskWatcherListRelationFilter
+    attachments?: AttachmentListRelationFilter
+    taskTags?: TaskTagListRelationFilter
+    comments?: CommentListRelationFilter
+    activities?: ActivityListRelationFilter
   }
 
   export type TaskOrderByWithRelationInput = {
@@ -25574,11 +25575,11 @@ export namespace Prisma {
     assignee?: MemberOrderByWithRelationInput
     parent?: TaskOrderByWithRelationInput
     subtasks?: TaskOrderByRelationAggregateInput
-    TaskWatcher?: TaskWatcherOrderByRelationAggregateInput
-    Attachment?: AttachmentOrderByRelationAggregateInput
-    TaskTag?: TaskTagOrderByRelationAggregateInput
-    Comment?: CommentOrderByRelationAggregateInput
-    Activity?: ActivityOrderByRelationAggregateInput
+    taskWatchers?: TaskWatcherOrderByRelationAggregateInput
+    attachments?: AttachmentOrderByRelationAggregateInput
+    taskTags?: TaskTagOrderByRelationAggregateInput
+    comments?: CommentOrderByRelationAggregateInput
+    activities?: ActivityOrderByRelationAggregateInput
   }
 
   export type TaskWhereUniqueInput = Prisma.AtLeast<{
@@ -25601,11 +25602,11 @@ export namespace Prisma {
     assignee?: XOR<MemberScalarRelationFilter, MemberWhereInput>
     parent?: XOR<TaskNullableScalarRelationFilter, TaskWhereInput> | null
     subtasks?: TaskListRelationFilter
-    TaskWatcher?: TaskWatcherListRelationFilter
-    Attachment?: AttachmentListRelationFilter
-    TaskTag?: TaskTagListRelationFilter
-    Comment?: CommentListRelationFilter
-    Activity?: ActivityListRelationFilter
+    taskWatchers?: TaskWatcherListRelationFilter
+    attachments?: AttachmentListRelationFilter
+    taskTags?: TaskTagListRelationFilter
+    comments?: CommentListRelationFilter
+    activities?: ActivityListRelationFilter
   }, "id">
 
   export type TaskOrderByWithAggregationInput = {
@@ -25710,7 +25711,7 @@ export namespace Prisma {
     taskId?: StringFilter<"Attachment"> | string
     createdAt?: DateTimeFilter<"Attachment"> | Date | string
     task?: XOR<TaskScalarRelationFilter, TaskWhereInput>
-    Activity?: ActivityListRelationFilter
+    activities?: ActivityListRelationFilter
   }
 
   export type AttachmentOrderByWithRelationInput = {
@@ -25720,7 +25721,7 @@ export namespace Prisma {
     taskId?: SortOrder
     createdAt?: SortOrder
     task?: TaskOrderByWithRelationInput
-    Activity?: ActivityOrderByRelationAggregateInput
+    activities?: ActivityOrderByRelationAggregateInput
   }
 
   export type AttachmentWhereUniqueInput = Prisma.AtLeast<{
@@ -25733,7 +25734,7 @@ export namespace Prisma {
     taskId?: StringFilter<"Attachment"> | string
     createdAt?: DateTimeFilter<"Attachment"> | Date | string
     task?: XOR<TaskScalarRelationFilter, TaskWhereInput>
-    Activity?: ActivityListRelationFilter
+    activities?: ActivityListRelationFilter
   }, "id">
 
   export type AttachmentOrderByWithAggregationInput = {
@@ -25859,7 +25860,7 @@ export namespace Prisma {
     updatedAt?: DateTimeFilter<"Comment"> | Date | string
     task?: XOR<TaskScalarRelationFilter, TaskWhereInput>
     author?: XOR<UserScalarRelationFilter, UserWhereInput>
-    Activity?: ActivityListRelationFilter
+    activities?: ActivityListRelationFilter
   }
 
   export type CommentOrderByWithRelationInput = {
@@ -25871,7 +25872,7 @@ export namespace Prisma {
     updatedAt?: SortOrder
     task?: TaskOrderByWithRelationInput
     author?: UserOrderByWithRelationInput
-    Activity?: ActivityOrderByRelationAggregateInput
+    activities?: ActivityOrderByRelationAggregateInput
   }
 
   export type CommentWhereUniqueInput = Prisma.AtLeast<{
@@ -25886,7 +25887,7 @@ export namespace Prisma {
     updatedAt?: DateTimeFilter<"Comment"> | Date | string
     task?: XOR<TaskScalarRelationFilter, TaskWhereInput>
     author?: XOR<UserScalarRelationFilter, UserWhereInput>
-    Activity?: ActivityListRelationFilter
+    activities?: ActivityListRelationFilter
   }, "id">
 
   export type CommentOrderByWithAggregationInput = {
@@ -25928,7 +25929,7 @@ export namespace Prisma {
     task?: XOR<TaskNullableScalarRelationFilter, TaskWhereInput> | null
     comment?: XOR<CommentNullableScalarRelationFilter, CommentWhereInput> | null
     attachment?: XOR<AttachmentNullableScalarRelationFilter, AttachmentWhereInput> | null
-    Notification?: NotificationListRelationFilter
+    notifications?: NotificationListRelationFilter
   }
 
   export type ActivityOrderByWithRelationInput = {
@@ -25943,7 +25944,7 @@ export namespace Prisma {
     task?: TaskOrderByWithRelationInput
     comment?: CommentOrderByWithRelationInput
     attachment?: AttachmentOrderByWithRelationInput
-    Notification?: NotificationOrderByRelationAggregateInput
+    notifications?: NotificationOrderByRelationAggregateInput
   }
 
   export type ActivityWhereUniqueInput = Prisma.AtLeast<{
@@ -25961,7 +25962,7 @@ export namespace Prisma {
     task?: XOR<TaskNullableScalarRelationFilter, TaskWhereInput> | null
     comment?: XOR<CommentNullableScalarRelationFilter, CommentWhereInput> | null
     attachment?: XOR<AttachmentNullableScalarRelationFilter, AttachmentWhereInput> | null
-    Notification?: NotificationListRelationFilter
+    notifications?: NotificationListRelationFilter
   }, "id">
 
   export type ActivityOrderByWithAggregationInput = {
@@ -26060,11 +26061,11 @@ export namespace Prisma {
     accounts?: AccountCreateNestedManyWithoutUserInput
     members?: MemberCreateNestedManyWithoutUserInput
     invitations?: InvitationCreateNestedManyWithoutUserInput
-    ProjectWatcher?: ProjectWatcherCreateNestedManyWithoutUserInput
-    TaskWatcher?: TaskWatcherCreateNestedManyWithoutUserInput
-    Comment?: CommentCreateNestedManyWithoutAuthorInput
-    Activity?: ActivityCreateNestedManyWithoutActorInput
-    Notification?: NotificationCreateNestedManyWithoutUserInput
+    projectWatchers?: ProjectWatcherCreateNestedManyWithoutUserInput
+    taskWatchers?: TaskWatcherCreateNestedManyWithoutUserInput
+    comments?: CommentCreateNestedManyWithoutAuthorInput
+    activities?: ActivityCreateNestedManyWithoutActorInput
+    notifications?: NotificationCreateNestedManyWithoutUserInput
   }
 
   export type UserUncheckedCreateInput = {
@@ -26079,11 +26080,11 @@ export namespace Prisma {
     accounts?: AccountUncheckedCreateNestedManyWithoutUserInput
     members?: MemberUncheckedCreateNestedManyWithoutUserInput
     invitations?: InvitationUncheckedCreateNestedManyWithoutUserInput
-    ProjectWatcher?: ProjectWatcherUncheckedCreateNestedManyWithoutUserInput
-    TaskWatcher?: TaskWatcherUncheckedCreateNestedManyWithoutUserInput
-    Comment?: CommentUncheckedCreateNestedManyWithoutAuthorInput
-    Activity?: ActivityUncheckedCreateNestedManyWithoutActorInput
-    Notification?: NotificationUncheckedCreateNestedManyWithoutUserInput
+    projectWatchers?: ProjectWatcherUncheckedCreateNestedManyWithoutUserInput
+    taskWatchers?: TaskWatcherUncheckedCreateNestedManyWithoutUserInput
+    comments?: CommentUncheckedCreateNestedManyWithoutAuthorInput
+    activities?: ActivityUncheckedCreateNestedManyWithoutActorInput
+    notifications?: NotificationUncheckedCreateNestedManyWithoutUserInput
   }
 
   export type UserUpdateInput = {
@@ -26098,11 +26099,11 @@ export namespace Prisma {
     accounts?: AccountUpdateManyWithoutUserNestedInput
     members?: MemberUpdateManyWithoutUserNestedInput
     invitations?: InvitationUpdateManyWithoutUserNestedInput
-    ProjectWatcher?: ProjectWatcherUpdateManyWithoutUserNestedInput
-    TaskWatcher?: TaskWatcherUpdateManyWithoutUserNestedInput
-    Comment?: CommentUpdateManyWithoutAuthorNestedInput
-    Activity?: ActivityUpdateManyWithoutActorNestedInput
-    Notification?: NotificationUpdateManyWithoutUserNestedInput
+    projectWatchers?: ProjectWatcherUpdateManyWithoutUserNestedInput
+    taskWatchers?: TaskWatcherUpdateManyWithoutUserNestedInput
+    comments?: CommentUpdateManyWithoutAuthorNestedInput
+    activities?: ActivityUpdateManyWithoutActorNestedInput
+    notifications?: NotificationUpdateManyWithoutUserNestedInput
   }
 
   export type UserUncheckedUpdateInput = {
@@ -26117,11 +26118,11 @@ export namespace Prisma {
     accounts?: AccountUncheckedUpdateManyWithoutUserNestedInput
     members?: MemberUncheckedUpdateManyWithoutUserNestedInput
     invitations?: InvitationUncheckedUpdateManyWithoutUserNestedInput
-    ProjectWatcher?: ProjectWatcherUncheckedUpdateManyWithoutUserNestedInput
-    TaskWatcher?: TaskWatcherUncheckedUpdateManyWithoutUserNestedInput
-    Comment?: CommentUncheckedUpdateManyWithoutAuthorNestedInput
-    Activity?: ActivityUncheckedUpdateManyWithoutActorNestedInput
-    Notification?: NotificationUncheckedUpdateManyWithoutUserNestedInput
+    projectWatchers?: ProjectWatcherUncheckedUpdateManyWithoutUserNestedInput
+    taskWatchers?: TaskWatcherUncheckedUpdateManyWithoutUserNestedInput
+    comments?: CommentUncheckedUpdateManyWithoutAuthorNestedInput
+    activities?: ActivityUncheckedUpdateManyWithoutActorNestedInput
+    notifications?: NotificationUncheckedUpdateManyWithoutUserNestedInput
   }
 
   export type UserCreateManyInput = {
@@ -26486,8 +26487,8 @@ export namespace Prisma {
     updatedAt?: Date | string
     user: UserCreateNestedOneWithoutMembersInput
     organization: OrganizationCreateNestedOneWithoutMembersInput
-    Task?: TaskCreateNestedManyWithoutAssigneeInput
-    SpaceMember?: SpaceMemberCreateNestedManyWithoutMemberInput
+    tasks?: TaskCreateNestedManyWithoutAssigneeInput
+    spaceMembers?: SpaceMemberCreateNestedManyWithoutMemberInput
   }
 
   export type MemberUncheckedCreateInput = {
@@ -26497,8 +26498,8 @@ export namespace Prisma {
     role?: $Enums.MemberRole
     createdAt?: Date | string
     updatedAt?: Date | string
-    Task?: TaskUncheckedCreateNestedManyWithoutAssigneeInput
-    SpaceMember?: SpaceMemberUncheckedCreateNestedManyWithoutMemberInput
+    tasks?: TaskUncheckedCreateNestedManyWithoutAssigneeInput
+    spaceMembers?: SpaceMemberUncheckedCreateNestedManyWithoutMemberInput
   }
 
   export type MemberUpdateInput = {
@@ -26508,8 +26509,8 @@ export namespace Prisma {
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     user?: UserUpdateOneRequiredWithoutMembersNestedInput
     organization?: OrganizationUpdateOneRequiredWithoutMembersNestedInput
-    Task?: TaskUpdateManyWithoutAssigneeNestedInput
-    SpaceMember?: SpaceMemberUpdateManyWithoutMemberNestedInput
+    tasks?: TaskUpdateManyWithoutAssigneeNestedInput
+    spaceMembers?: SpaceMemberUpdateManyWithoutMemberNestedInput
   }
 
   export type MemberUncheckedUpdateInput = {
@@ -26519,8 +26520,8 @@ export namespace Prisma {
     role?: EnumMemberRoleFieldUpdateOperationsInput | $Enums.MemberRole
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    Task?: TaskUncheckedUpdateManyWithoutAssigneeNestedInput
-    SpaceMember?: SpaceMemberUncheckedUpdateManyWithoutMemberNestedInput
+    tasks?: TaskUncheckedUpdateManyWithoutAssigneeNestedInput
+    spaceMembers?: SpaceMemberUncheckedUpdateManyWithoutMemberNestedInput
   }
 
   export type MemberCreateManyInput = {
@@ -26624,8 +26625,8 @@ export namespace Prisma {
     createdAt?: Date | string
     updatedAt?: Date | string
     organization: OrganizationCreateNestedOneWithoutSpacesInput
-    Project?: ProjectCreateNestedManyWithoutSpaceInput
-    SpaceMember?: SpaceMemberCreateNestedManyWithoutSpaceInput
+    projects?: ProjectCreateNestedManyWithoutSpaceInput
+    spaceMembers?: SpaceMemberCreateNestedManyWithoutSpaceInput
   }
 
   export type SpaceUncheckedCreateInput = {
@@ -26636,8 +26637,8 @@ export namespace Prisma {
     color?: string | null
     createdAt?: Date | string
     updatedAt?: Date | string
-    Project?: ProjectUncheckedCreateNestedManyWithoutSpaceInput
-    SpaceMember?: SpaceMemberUncheckedCreateNestedManyWithoutSpaceInput
+    projects?: ProjectUncheckedCreateNestedManyWithoutSpaceInput
+    spaceMembers?: SpaceMemberUncheckedCreateNestedManyWithoutSpaceInput
   }
 
   export type SpaceUpdateInput = {
@@ -26648,8 +26649,8 @@ export namespace Prisma {
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     organization?: OrganizationUpdateOneRequiredWithoutSpacesNestedInput
-    Project?: ProjectUpdateManyWithoutSpaceNestedInput
-    SpaceMember?: SpaceMemberUpdateManyWithoutSpaceNestedInput
+    projects?: ProjectUpdateManyWithoutSpaceNestedInput
+    spaceMembers?: SpaceMemberUpdateManyWithoutSpaceNestedInput
   }
 
   export type SpaceUncheckedUpdateInput = {
@@ -26660,8 +26661,8 @@ export namespace Prisma {
     color?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    Project?: ProjectUncheckedUpdateManyWithoutSpaceNestedInput
-    SpaceMember?: SpaceMemberUncheckedUpdateManyWithoutSpaceNestedInput
+    projects?: ProjectUncheckedUpdateManyWithoutSpaceNestedInput
+    spaceMembers?: SpaceMemberUncheckedUpdateManyWithoutSpaceNestedInput
   }
 
   export type SpaceCreateManyInput = {
@@ -26698,8 +26699,8 @@ export namespace Prisma {
     role?: $Enums.MemberRole
     createdAt?: Date | string
     updatedAt?: Date | string
-    space: SpaceCreateNestedOneWithoutSpaceMemberInput
-    member: MemberCreateNestedOneWithoutSpaceMemberInput
+    space: SpaceCreateNestedOneWithoutSpaceMembersInput
+    member: MemberCreateNestedOneWithoutSpaceMembersInput
   }
 
   export type SpaceMemberUncheckedCreateInput = {
@@ -26716,8 +26717,8 @@ export namespace Prisma {
     role?: EnumMemberRoleFieldUpdateOperationsInput | $Enums.MemberRole
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    space?: SpaceUpdateOneRequiredWithoutSpaceMemberNestedInput
-    member?: MemberUpdateOneRequiredWithoutSpaceMemberNestedInput
+    space?: SpaceUpdateOneRequiredWithoutSpaceMembersNestedInput
+    member?: MemberUpdateOneRequiredWithoutSpaceMembersNestedInput
   }
 
   export type SpaceMemberUncheckedUpdateInput = {
@@ -26760,9 +26761,9 @@ export namespace Prisma {
     icon?: string | null
     image?: string | null
     color?: string | null
-    space: SpaceCreateNestedOneWithoutProjectInput
-    ProjectWatcher?: ProjectWatcherCreateNestedManyWithoutProjectInput
-    Task?: TaskCreateNestedManyWithoutProjectInput
+    space: SpaceCreateNestedOneWithoutProjectsInput
+    projectWatchers?: ProjectWatcherCreateNestedManyWithoutProjectInput
+    tasks?: TaskCreateNestedManyWithoutProjectInput
   }
 
   export type ProjectUncheckedCreateInput = {
@@ -26772,8 +26773,8 @@ export namespace Prisma {
     image?: string | null
     color?: string | null
     spaceId: string
-    ProjectWatcher?: ProjectWatcherUncheckedCreateNestedManyWithoutProjectInput
-    Task?: TaskUncheckedCreateNestedManyWithoutProjectInput
+    projectWatchers?: ProjectWatcherUncheckedCreateNestedManyWithoutProjectInput
+    tasks?: TaskUncheckedCreateNestedManyWithoutProjectInput
   }
 
   export type ProjectUpdateInput = {
@@ -26782,9 +26783,9 @@ export namespace Prisma {
     icon?: NullableStringFieldUpdateOperationsInput | string | null
     image?: NullableStringFieldUpdateOperationsInput | string | null
     color?: NullableStringFieldUpdateOperationsInput | string | null
-    space?: SpaceUpdateOneRequiredWithoutProjectNestedInput
-    ProjectWatcher?: ProjectWatcherUpdateManyWithoutProjectNestedInput
-    Task?: TaskUpdateManyWithoutProjectNestedInput
+    space?: SpaceUpdateOneRequiredWithoutProjectsNestedInput
+    projectWatchers?: ProjectWatcherUpdateManyWithoutProjectNestedInput
+    tasks?: TaskUpdateManyWithoutProjectNestedInput
   }
 
   export type ProjectUncheckedUpdateInput = {
@@ -26794,8 +26795,8 @@ export namespace Prisma {
     image?: NullableStringFieldUpdateOperationsInput | string | null
     color?: NullableStringFieldUpdateOperationsInput | string | null
     spaceId?: StringFieldUpdateOperationsInput | string
-    ProjectWatcher?: ProjectWatcherUncheckedUpdateManyWithoutProjectNestedInput
-    Task?: TaskUncheckedUpdateManyWithoutProjectNestedInput
+    projectWatchers?: ProjectWatcherUncheckedUpdateManyWithoutProjectNestedInput
+    tasks?: TaskUncheckedUpdateManyWithoutProjectNestedInput
   }
 
   export type ProjectCreateManyInput = {
@@ -26827,8 +26828,8 @@ export namespace Prisma {
   export type ProjectWatcherCreateInput = {
     id?: string
     createdAt?: Date | string
-    project: ProjectCreateNestedOneWithoutProjectWatcherInput
-    user: UserCreateNestedOneWithoutProjectWatcherInput
+    project: ProjectCreateNestedOneWithoutProjectWatchersInput
+    user: UserCreateNestedOneWithoutProjectWatchersInput
   }
 
   export type ProjectWatcherUncheckedCreateInput = {
@@ -26841,8 +26842,8 @@ export namespace Prisma {
   export type ProjectWatcherUpdateInput = {
     id?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    project?: ProjectUpdateOneRequiredWithoutProjectWatcherNestedInput
-    user?: UserUpdateOneRequiredWithoutProjectWatcherNestedInput
+    project?: ProjectUpdateOneRequiredWithoutProjectWatchersNestedInput
+    user?: UserUpdateOneRequiredWithoutProjectWatchersNestedInput
   }
 
   export type ProjectWatcherUncheckedUpdateInput = {
@@ -26881,15 +26882,15 @@ export namespace Prisma {
     priority?: $Enums.TaskPriority
     createdAt?: Date | string
     updatedAt?: Date | string
-    project: ProjectCreateNestedOneWithoutTaskInput
-    assignee: MemberCreateNestedOneWithoutTaskInput
+    project: ProjectCreateNestedOneWithoutTasksInput
+    assignee: MemberCreateNestedOneWithoutTasksInput
     parent?: TaskCreateNestedOneWithoutSubtasksInput
     subtasks?: TaskCreateNestedManyWithoutParentInput
-    TaskWatcher?: TaskWatcherCreateNestedManyWithoutTaskInput
-    Attachment?: AttachmentCreateNestedManyWithoutTaskInput
-    TaskTag?: TaskTagCreateNestedManyWithoutTaskInput
-    Comment?: CommentCreateNestedManyWithoutTaskInput
-    Activity?: ActivityCreateNestedManyWithoutTaskInput
+    taskWatchers?: TaskWatcherCreateNestedManyWithoutTaskInput
+    attachments?: AttachmentCreateNestedManyWithoutTaskInput
+    taskTags?: TaskTagCreateNestedManyWithoutTaskInput
+    comments?: CommentCreateNestedManyWithoutTaskInput
+    activities?: ActivityCreateNestedManyWithoutTaskInput
   }
 
   export type TaskUncheckedCreateInput = {
@@ -26906,11 +26907,11 @@ export namespace Prisma {
     createdAt?: Date | string
     updatedAt?: Date | string
     subtasks?: TaskUncheckedCreateNestedManyWithoutParentInput
-    TaskWatcher?: TaskWatcherUncheckedCreateNestedManyWithoutTaskInput
-    Attachment?: AttachmentUncheckedCreateNestedManyWithoutTaskInput
-    TaskTag?: TaskTagUncheckedCreateNestedManyWithoutTaskInput
-    Comment?: CommentUncheckedCreateNestedManyWithoutTaskInput
-    Activity?: ActivityUncheckedCreateNestedManyWithoutTaskInput
+    taskWatchers?: TaskWatcherUncheckedCreateNestedManyWithoutTaskInput
+    attachments?: AttachmentUncheckedCreateNestedManyWithoutTaskInput
+    taskTags?: TaskTagUncheckedCreateNestedManyWithoutTaskInput
+    comments?: CommentUncheckedCreateNestedManyWithoutTaskInput
+    activities?: ActivityUncheckedCreateNestedManyWithoutTaskInput
   }
 
   export type TaskUpdateInput = {
@@ -26923,15 +26924,15 @@ export namespace Prisma {
     priority?: EnumTaskPriorityFieldUpdateOperationsInput | $Enums.TaskPriority
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    project?: ProjectUpdateOneRequiredWithoutTaskNestedInput
-    assignee?: MemberUpdateOneRequiredWithoutTaskNestedInput
+    project?: ProjectUpdateOneRequiredWithoutTasksNestedInput
+    assignee?: MemberUpdateOneRequiredWithoutTasksNestedInput
     parent?: TaskUpdateOneWithoutSubtasksNestedInput
     subtasks?: TaskUpdateManyWithoutParentNestedInput
-    TaskWatcher?: TaskWatcherUpdateManyWithoutTaskNestedInput
-    Attachment?: AttachmentUpdateManyWithoutTaskNestedInput
-    TaskTag?: TaskTagUpdateManyWithoutTaskNestedInput
-    Comment?: CommentUpdateManyWithoutTaskNestedInput
-    Activity?: ActivityUpdateManyWithoutTaskNestedInput
+    taskWatchers?: TaskWatcherUpdateManyWithoutTaskNestedInput
+    attachments?: AttachmentUpdateManyWithoutTaskNestedInput
+    taskTags?: TaskTagUpdateManyWithoutTaskNestedInput
+    comments?: CommentUpdateManyWithoutTaskNestedInput
+    activities?: ActivityUpdateManyWithoutTaskNestedInput
   }
 
   export type TaskUncheckedUpdateInput = {
@@ -26948,11 +26949,11 @@ export namespace Prisma {
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     subtasks?: TaskUncheckedUpdateManyWithoutParentNestedInput
-    TaskWatcher?: TaskWatcherUncheckedUpdateManyWithoutTaskNestedInput
-    Attachment?: AttachmentUncheckedUpdateManyWithoutTaskNestedInput
-    TaskTag?: TaskTagUncheckedUpdateManyWithoutTaskNestedInput
-    Comment?: CommentUncheckedUpdateManyWithoutTaskNestedInput
-    Activity?: ActivityUncheckedUpdateManyWithoutTaskNestedInput
+    taskWatchers?: TaskWatcherUncheckedUpdateManyWithoutTaskNestedInput
+    attachments?: AttachmentUncheckedUpdateManyWithoutTaskNestedInput
+    taskTags?: TaskTagUncheckedUpdateManyWithoutTaskNestedInput
+    comments?: CommentUncheckedUpdateManyWithoutTaskNestedInput
+    activities?: ActivityUncheckedUpdateManyWithoutTaskNestedInput
   }
 
   export type TaskCreateManyInput = {
@@ -27000,8 +27001,8 @@ export namespace Prisma {
   export type TaskWatcherCreateInput = {
     id?: string
     createdAt?: Date | string
-    task: TaskCreateNestedOneWithoutTaskWatcherInput
-    user: UserCreateNestedOneWithoutTaskWatcherInput
+    task: TaskCreateNestedOneWithoutTaskWatchersInput
+    user: UserCreateNestedOneWithoutTaskWatchersInput
   }
 
   export type TaskWatcherUncheckedCreateInput = {
@@ -27014,8 +27015,8 @@ export namespace Prisma {
   export type TaskWatcherUpdateInput = {
     id?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    task?: TaskUpdateOneRequiredWithoutTaskWatcherNestedInput
-    user?: UserUpdateOneRequiredWithoutTaskWatcherNestedInput
+    task?: TaskUpdateOneRequiredWithoutTaskWatchersNestedInput
+    user?: UserUpdateOneRequiredWithoutTaskWatchersNestedInput
   }
 
   export type TaskWatcherUncheckedUpdateInput = {
@@ -27049,8 +27050,8 @@ export namespace Prisma {
     url: string
     type?: string | null
     createdAt?: Date | string
-    task: TaskCreateNestedOneWithoutAttachmentInput
-    Activity?: ActivityCreateNestedManyWithoutAttachmentInput
+    task: TaskCreateNestedOneWithoutAttachmentsInput
+    activities?: ActivityCreateNestedManyWithoutAttachmentInput
   }
 
   export type AttachmentUncheckedCreateInput = {
@@ -27059,7 +27060,7 @@ export namespace Prisma {
     type?: string | null
     taskId: string
     createdAt?: Date | string
-    Activity?: ActivityUncheckedCreateNestedManyWithoutAttachmentInput
+    activities?: ActivityUncheckedCreateNestedManyWithoutAttachmentInput
   }
 
   export type AttachmentUpdateInput = {
@@ -27067,8 +27068,8 @@ export namespace Prisma {
     url?: StringFieldUpdateOperationsInput | string
     type?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    task?: TaskUpdateOneRequiredWithoutAttachmentNestedInput
-    Activity?: ActivityUpdateManyWithoutAttachmentNestedInput
+    task?: TaskUpdateOneRequiredWithoutAttachmentsNestedInput
+    activities?: ActivityUpdateManyWithoutAttachmentNestedInput
   }
 
   export type AttachmentUncheckedUpdateInput = {
@@ -27077,7 +27078,7 @@ export namespace Prisma {
     type?: NullableStringFieldUpdateOperationsInput | string | null
     taskId?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    Activity?: ActivityUncheckedUpdateManyWithoutAttachmentNestedInput
+    activities?: ActivityUncheckedUpdateManyWithoutAttachmentNestedInput
   }
 
   export type AttachmentCreateManyInput = {
@@ -27150,7 +27151,7 @@ export namespace Prisma {
   }
 
   export type TaskTagCreateInput = {
-    task: TaskCreateNestedOneWithoutTaskTagInput
+    task: TaskCreateNestedOneWithoutTaskTagsInput
     tag: TagCreateNestedOneWithoutTasksInput
   }
 
@@ -27160,7 +27161,7 @@ export namespace Prisma {
   }
 
   export type TaskTagUpdateInput = {
-    task?: TaskUpdateOneRequiredWithoutTaskTagNestedInput
+    task?: TaskUpdateOneRequiredWithoutTaskTagsNestedInput
     tag?: TagUpdateOneRequiredWithoutTasksNestedInput
   }
 
@@ -27188,9 +27189,9 @@ export namespace Prisma {
     content: string
     createdAt?: Date | string
     updatedAt?: Date | string
-    task: TaskCreateNestedOneWithoutCommentInput
-    author: UserCreateNestedOneWithoutCommentInput
-    Activity?: ActivityCreateNestedManyWithoutCommentInput
+    task: TaskCreateNestedOneWithoutCommentsInput
+    author: UserCreateNestedOneWithoutCommentsInput
+    activities?: ActivityCreateNestedManyWithoutCommentInput
   }
 
   export type CommentUncheckedCreateInput = {
@@ -27200,7 +27201,7 @@ export namespace Prisma {
     authorId: string
     createdAt?: Date | string
     updatedAt?: Date | string
-    Activity?: ActivityUncheckedCreateNestedManyWithoutCommentInput
+    activities?: ActivityUncheckedCreateNestedManyWithoutCommentInput
   }
 
   export type CommentUpdateInput = {
@@ -27208,9 +27209,9 @@ export namespace Prisma {
     content?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    task?: TaskUpdateOneRequiredWithoutCommentNestedInput
-    author?: UserUpdateOneRequiredWithoutCommentNestedInput
-    Activity?: ActivityUpdateManyWithoutCommentNestedInput
+    task?: TaskUpdateOneRequiredWithoutCommentsNestedInput
+    author?: UserUpdateOneRequiredWithoutCommentsNestedInput
+    activities?: ActivityUpdateManyWithoutCommentNestedInput
   }
 
   export type CommentUncheckedUpdateInput = {
@@ -27220,7 +27221,7 @@ export namespace Prisma {
     authorId?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    Activity?: ActivityUncheckedUpdateManyWithoutCommentNestedInput
+    activities?: ActivityUncheckedUpdateManyWithoutCommentNestedInput
   }
 
   export type CommentCreateManyInput = {
@@ -27252,11 +27253,11 @@ export namespace Prisma {
     id?: string
     type: $Enums.ActivityType
     createdAt?: Date | string
-    actor: UserCreateNestedOneWithoutActivityInput
-    task?: TaskCreateNestedOneWithoutActivityInput
-    comment?: CommentCreateNestedOneWithoutActivityInput
-    attachment?: AttachmentCreateNestedOneWithoutActivityInput
-    Notification?: NotificationCreateNestedManyWithoutActivityInput
+    actor: UserCreateNestedOneWithoutActivitiesInput
+    task?: TaskCreateNestedOneWithoutActivitiesInput
+    comment?: CommentCreateNestedOneWithoutActivitiesInput
+    attachment?: AttachmentCreateNestedOneWithoutActivitiesInput
+    notifications?: NotificationCreateNestedManyWithoutActivityInput
   }
 
   export type ActivityUncheckedCreateInput = {
@@ -27267,18 +27268,18 @@ export namespace Prisma {
     commentId?: string | null
     attachmentId?: string | null
     createdAt?: Date | string
-    Notification?: NotificationUncheckedCreateNestedManyWithoutActivityInput
+    notifications?: NotificationUncheckedCreateNestedManyWithoutActivityInput
   }
 
   export type ActivityUpdateInput = {
     id?: StringFieldUpdateOperationsInput | string
     type?: EnumActivityTypeFieldUpdateOperationsInput | $Enums.ActivityType
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    actor?: UserUpdateOneRequiredWithoutActivityNestedInput
-    task?: TaskUpdateOneWithoutActivityNestedInput
-    comment?: CommentUpdateOneWithoutActivityNestedInput
-    attachment?: AttachmentUpdateOneWithoutActivityNestedInput
-    Notification?: NotificationUpdateManyWithoutActivityNestedInput
+    actor?: UserUpdateOneRequiredWithoutActivitiesNestedInput
+    task?: TaskUpdateOneWithoutActivitiesNestedInput
+    comment?: CommentUpdateOneWithoutActivitiesNestedInput
+    attachment?: AttachmentUpdateOneWithoutActivitiesNestedInput
+    notifications?: NotificationUpdateManyWithoutActivityNestedInput
   }
 
   export type ActivityUncheckedUpdateInput = {
@@ -27289,7 +27290,7 @@ export namespace Prisma {
     commentId?: NullableStringFieldUpdateOperationsInput | string | null
     attachmentId?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    Notification?: NotificationUncheckedUpdateManyWithoutActivityNestedInput
+    notifications?: NotificationUncheckedUpdateManyWithoutActivityNestedInput
   }
 
   export type ActivityCreateManyInput = {
@@ -27322,8 +27323,8 @@ export namespace Prisma {
     id?: string
     read?: boolean
     createdAt?: Date | string
-    user: UserCreateNestedOneWithoutNotificationInput
-    activity: ActivityCreateNestedOneWithoutNotificationInput
+    user: UserCreateNestedOneWithoutNotificationsInput
+    activity: ActivityCreateNestedOneWithoutNotificationsInput
   }
 
   export type NotificationUncheckedCreateInput = {
@@ -27338,8 +27339,8 @@ export namespace Prisma {
     id?: StringFieldUpdateOperationsInput | string
     read?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    user?: UserUpdateOneRequiredWithoutNotificationNestedInput
-    activity?: ActivityUpdateOneRequiredWithoutNotificationNestedInput
+    user?: UserUpdateOneRequiredWithoutNotificationsNestedInput
+    activity?: ActivityUpdateOneRequiredWithoutNotificationsNestedInput
   }
 
   export type NotificationUncheckedUpdateInput = {
@@ -27806,6 +27807,11 @@ export namespace Prisma {
 
   export type SpaceMemberOrderByRelationAggregateInput = {
     _count?: SortOrder
+  }
+
+  export type MemberUserIdOrganizationIdCompoundUniqueInput = {
+    userId: string
+    organizationId: string
   }
 
   export type MemberCountOrderByAggregateInput = {
@@ -29159,37 +29165,37 @@ export namespace Prisma {
     deleteMany?: SpaceMemberScalarWhereInput | SpaceMemberScalarWhereInput[]
   }
 
-  export type SpaceCreateNestedOneWithoutSpaceMemberInput = {
-    create?: XOR<SpaceCreateWithoutSpaceMemberInput, SpaceUncheckedCreateWithoutSpaceMemberInput>
-    connectOrCreate?: SpaceCreateOrConnectWithoutSpaceMemberInput
+  export type SpaceCreateNestedOneWithoutSpaceMembersInput = {
+    create?: XOR<SpaceCreateWithoutSpaceMembersInput, SpaceUncheckedCreateWithoutSpaceMembersInput>
+    connectOrCreate?: SpaceCreateOrConnectWithoutSpaceMembersInput
     connect?: SpaceWhereUniqueInput
   }
 
-  export type MemberCreateNestedOneWithoutSpaceMemberInput = {
-    create?: XOR<MemberCreateWithoutSpaceMemberInput, MemberUncheckedCreateWithoutSpaceMemberInput>
-    connectOrCreate?: MemberCreateOrConnectWithoutSpaceMemberInput
+  export type MemberCreateNestedOneWithoutSpaceMembersInput = {
+    create?: XOR<MemberCreateWithoutSpaceMembersInput, MemberUncheckedCreateWithoutSpaceMembersInput>
+    connectOrCreate?: MemberCreateOrConnectWithoutSpaceMembersInput
     connect?: MemberWhereUniqueInput
   }
 
-  export type SpaceUpdateOneRequiredWithoutSpaceMemberNestedInput = {
-    create?: XOR<SpaceCreateWithoutSpaceMemberInput, SpaceUncheckedCreateWithoutSpaceMemberInput>
-    connectOrCreate?: SpaceCreateOrConnectWithoutSpaceMemberInput
-    upsert?: SpaceUpsertWithoutSpaceMemberInput
+  export type SpaceUpdateOneRequiredWithoutSpaceMembersNestedInput = {
+    create?: XOR<SpaceCreateWithoutSpaceMembersInput, SpaceUncheckedCreateWithoutSpaceMembersInput>
+    connectOrCreate?: SpaceCreateOrConnectWithoutSpaceMembersInput
+    upsert?: SpaceUpsertWithoutSpaceMembersInput
     connect?: SpaceWhereUniqueInput
-    update?: XOR<XOR<SpaceUpdateToOneWithWhereWithoutSpaceMemberInput, SpaceUpdateWithoutSpaceMemberInput>, SpaceUncheckedUpdateWithoutSpaceMemberInput>
+    update?: XOR<XOR<SpaceUpdateToOneWithWhereWithoutSpaceMembersInput, SpaceUpdateWithoutSpaceMembersInput>, SpaceUncheckedUpdateWithoutSpaceMembersInput>
   }
 
-  export type MemberUpdateOneRequiredWithoutSpaceMemberNestedInput = {
-    create?: XOR<MemberCreateWithoutSpaceMemberInput, MemberUncheckedCreateWithoutSpaceMemberInput>
-    connectOrCreate?: MemberCreateOrConnectWithoutSpaceMemberInput
-    upsert?: MemberUpsertWithoutSpaceMemberInput
+  export type MemberUpdateOneRequiredWithoutSpaceMembersNestedInput = {
+    create?: XOR<MemberCreateWithoutSpaceMembersInput, MemberUncheckedCreateWithoutSpaceMembersInput>
+    connectOrCreate?: MemberCreateOrConnectWithoutSpaceMembersInput
+    upsert?: MemberUpsertWithoutSpaceMembersInput
     connect?: MemberWhereUniqueInput
-    update?: XOR<XOR<MemberUpdateToOneWithWhereWithoutSpaceMemberInput, MemberUpdateWithoutSpaceMemberInput>, MemberUncheckedUpdateWithoutSpaceMemberInput>
+    update?: XOR<XOR<MemberUpdateToOneWithWhereWithoutSpaceMembersInput, MemberUpdateWithoutSpaceMembersInput>, MemberUncheckedUpdateWithoutSpaceMembersInput>
   }
 
-  export type SpaceCreateNestedOneWithoutProjectInput = {
-    create?: XOR<SpaceCreateWithoutProjectInput, SpaceUncheckedCreateWithoutProjectInput>
-    connectOrCreate?: SpaceCreateOrConnectWithoutProjectInput
+  export type SpaceCreateNestedOneWithoutProjectsInput = {
+    create?: XOR<SpaceCreateWithoutProjectsInput, SpaceUncheckedCreateWithoutProjectsInput>
+    connectOrCreate?: SpaceCreateOrConnectWithoutProjectsInput
     connect?: SpaceWhereUniqueInput
   }
 
@@ -29221,12 +29227,12 @@ export namespace Prisma {
     connect?: TaskWhereUniqueInput | TaskWhereUniqueInput[]
   }
 
-  export type SpaceUpdateOneRequiredWithoutProjectNestedInput = {
-    create?: XOR<SpaceCreateWithoutProjectInput, SpaceUncheckedCreateWithoutProjectInput>
-    connectOrCreate?: SpaceCreateOrConnectWithoutProjectInput
-    upsert?: SpaceUpsertWithoutProjectInput
+  export type SpaceUpdateOneRequiredWithoutProjectsNestedInput = {
+    create?: XOR<SpaceCreateWithoutProjectsInput, SpaceUncheckedCreateWithoutProjectsInput>
+    connectOrCreate?: SpaceCreateOrConnectWithoutProjectsInput
+    upsert?: SpaceUpsertWithoutProjectsInput
     connect?: SpaceWhereUniqueInput
-    update?: XOR<XOR<SpaceUpdateToOneWithWhereWithoutProjectInput, SpaceUpdateWithoutProjectInput>, SpaceUncheckedUpdateWithoutProjectInput>
+    update?: XOR<XOR<SpaceUpdateToOneWithWhereWithoutProjectsInput, SpaceUpdateWithoutProjectsInput>, SpaceUncheckedUpdateWithoutProjectsInput>
   }
 
   export type ProjectWatcherUpdateManyWithoutProjectNestedInput = {
@@ -29285,43 +29291,43 @@ export namespace Prisma {
     deleteMany?: TaskScalarWhereInput | TaskScalarWhereInput[]
   }
 
-  export type ProjectCreateNestedOneWithoutProjectWatcherInput = {
-    create?: XOR<ProjectCreateWithoutProjectWatcherInput, ProjectUncheckedCreateWithoutProjectWatcherInput>
-    connectOrCreate?: ProjectCreateOrConnectWithoutProjectWatcherInput
+  export type ProjectCreateNestedOneWithoutProjectWatchersInput = {
+    create?: XOR<ProjectCreateWithoutProjectWatchersInput, ProjectUncheckedCreateWithoutProjectWatchersInput>
+    connectOrCreate?: ProjectCreateOrConnectWithoutProjectWatchersInput
     connect?: ProjectWhereUniqueInput
   }
 
-  export type UserCreateNestedOneWithoutProjectWatcherInput = {
-    create?: XOR<UserCreateWithoutProjectWatcherInput, UserUncheckedCreateWithoutProjectWatcherInput>
-    connectOrCreate?: UserCreateOrConnectWithoutProjectWatcherInput
+  export type UserCreateNestedOneWithoutProjectWatchersInput = {
+    create?: XOR<UserCreateWithoutProjectWatchersInput, UserUncheckedCreateWithoutProjectWatchersInput>
+    connectOrCreate?: UserCreateOrConnectWithoutProjectWatchersInput
     connect?: UserWhereUniqueInput
   }
 
-  export type ProjectUpdateOneRequiredWithoutProjectWatcherNestedInput = {
-    create?: XOR<ProjectCreateWithoutProjectWatcherInput, ProjectUncheckedCreateWithoutProjectWatcherInput>
-    connectOrCreate?: ProjectCreateOrConnectWithoutProjectWatcherInput
-    upsert?: ProjectUpsertWithoutProjectWatcherInput
+  export type ProjectUpdateOneRequiredWithoutProjectWatchersNestedInput = {
+    create?: XOR<ProjectCreateWithoutProjectWatchersInput, ProjectUncheckedCreateWithoutProjectWatchersInput>
+    connectOrCreate?: ProjectCreateOrConnectWithoutProjectWatchersInput
+    upsert?: ProjectUpsertWithoutProjectWatchersInput
     connect?: ProjectWhereUniqueInput
-    update?: XOR<XOR<ProjectUpdateToOneWithWhereWithoutProjectWatcherInput, ProjectUpdateWithoutProjectWatcherInput>, ProjectUncheckedUpdateWithoutProjectWatcherInput>
+    update?: XOR<XOR<ProjectUpdateToOneWithWhereWithoutProjectWatchersInput, ProjectUpdateWithoutProjectWatchersInput>, ProjectUncheckedUpdateWithoutProjectWatchersInput>
   }
 
-  export type UserUpdateOneRequiredWithoutProjectWatcherNestedInput = {
-    create?: XOR<UserCreateWithoutProjectWatcherInput, UserUncheckedCreateWithoutProjectWatcherInput>
-    connectOrCreate?: UserCreateOrConnectWithoutProjectWatcherInput
-    upsert?: UserUpsertWithoutProjectWatcherInput
+  export type UserUpdateOneRequiredWithoutProjectWatchersNestedInput = {
+    create?: XOR<UserCreateWithoutProjectWatchersInput, UserUncheckedCreateWithoutProjectWatchersInput>
+    connectOrCreate?: UserCreateOrConnectWithoutProjectWatchersInput
+    upsert?: UserUpsertWithoutProjectWatchersInput
     connect?: UserWhereUniqueInput
-    update?: XOR<XOR<UserUpdateToOneWithWhereWithoutProjectWatcherInput, UserUpdateWithoutProjectWatcherInput>, UserUncheckedUpdateWithoutProjectWatcherInput>
+    update?: XOR<XOR<UserUpdateToOneWithWhereWithoutProjectWatchersInput, UserUpdateWithoutProjectWatchersInput>, UserUncheckedUpdateWithoutProjectWatchersInput>
   }
 
-  export type ProjectCreateNestedOneWithoutTaskInput = {
-    create?: XOR<ProjectCreateWithoutTaskInput, ProjectUncheckedCreateWithoutTaskInput>
-    connectOrCreate?: ProjectCreateOrConnectWithoutTaskInput
+  export type ProjectCreateNestedOneWithoutTasksInput = {
+    create?: XOR<ProjectCreateWithoutTasksInput, ProjectUncheckedCreateWithoutTasksInput>
+    connectOrCreate?: ProjectCreateOrConnectWithoutTasksInput
     connect?: ProjectWhereUniqueInput
   }
 
-  export type MemberCreateNestedOneWithoutTaskInput = {
-    create?: XOR<MemberCreateWithoutTaskInput, MemberUncheckedCreateWithoutTaskInput>
-    connectOrCreate?: MemberCreateOrConnectWithoutTaskInput
+  export type MemberCreateNestedOneWithoutTasksInput = {
+    create?: XOR<MemberCreateWithoutTasksInput, MemberUncheckedCreateWithoutTasksInput>
+    connectOrCreate?: MemberCreateOrConnectWithoutTasksInput
     connect?: MemberWhereUniqueInput
   }
 
@@ -29431,20 +29437,20 @@ export namespace Prisma {
     set?: $Enums.TaskPriority
   }
 
-  export type ProjectUpdateOneRequiredWithoutTaskNestedInput = {
-    create?: XOR<ProjectCreateWithoutTaskInput, ProjectUncheckedCreateWithoutTaskInput>
-    connectOrCreate?: ProjectCreateOrConnectWithoutTaskInput
-    upsert?: ProjectUpsertWithoutTaskInput
+  export type ProjectUpdateOneRequiredWithoutTasksNestedInput = {
+    create?: XOR<ProjectCreateWithoutTasksInput, ProjectUncheckedCreateWithoutTasksInput>
+    connectOrCreate?: ProjectCreateOrConnectWithoutTasksInput
+    upsert?: ProjectUpsertWithoutTasksInput
     connect?: ProjectWhereUniqueInput
-    update?: XOR<XOR<ProjectUpdateToOneWithWhereWithoutTaskInput, ProjectUpdateWithoutTaskInput>, ProjectUncheckedUpdateWithoutTaskInput>
+    update?: XOR<XOR<ProjectUpdateToOneWithWhereWithoutTasksInput, ProjectUpdateWithoutTasksInput>, ProjectUncheckedUpdateWithoutTasksInput>
   }
 
-  export type MemberUpdateOneRequiredWithoutTaskNestedInput = {
-    create?: XOR<MemberCreateWithoutTaskInput, MemberUncheckedCreateWithoutTaskInput>
-    connectOrCreate?: MemberCreateOrConnectWithoutTaskInput
-    upsert?: MemberUpsertWithoutTaskInput
+  export type MemberUpdateOneRequiredWithoutTasksNestedInput = {
+    create?: XOR<MemberCreateWithoutTasksInput, MemberUncheckedCreateWithoutTasksInput>
+    connectOrCreate?: MemberCreateOrConnectWithoutTasksInput
+    upsert?: MemberUpsertWithoutTasksInput
     connect?: MemberWhereUniqueInput
-    update?: XOR<XOR<MemberUpdateToOneWithWhereWithoutTaskInput, MemberUpdateWithoutTaskInput>, MemberUncheckedUpdateWithoutTaskInput>
+    update?: XOR<XOR<MemberUpdateToOneWithWhereWithoutTasksInput, MemberUpdateWithoutTasksInput>, MemberUncheckedUpdateWithoutTasksInput>
   }
 
   export type TaskUpdateOneWithoutSubtasksNestedInput = {
@@ -29625,37 +29631,37 @@ export namespace Prisma {
     deleteMany?: ActivityScalarWhereInput | ActivityScalarWhereInput[]
   }
 
-  export type TaskCreateNestedOneWithoutTaskWatcherInput = {
-    create?: XOR<TaskCreateWithoutTaskWatcherInput, TaskUncheckedCreateWithoutTaskWatcherInput>
-    connectOrCreate?: TaskCreateOrConnectWithoutTaskWatcherInput
+  export type TaskCreateNestedOneWithoutTaskWatchersInput = {
+    create?: XOR<TaskCreateWithoutTaskWatchersInput, TaskUncheckedCreateWithoutTaskWatchersInput>
+    connectOrCreate?: TaskCreateOrConnectWithoutTaskWatchersInput
     connect?: TaskWhereUniqueInput
   }
 
-  export type UserCreateNestedOneWithoutTaskWatcherInput = {
-    create?: XOR<UserCreateWithoutTaskWatcherInput, UserUncheckedCreateWithoutTaskWatcherInput>
-    connectOrCreate?: UserCreateOrConnectWithoutTaskWatcherInput
+  export type UserCreateNestedOneWithoutTaskWatchersInput = {
+    create?: XOR<UserCreateWithoutTaskWatchersInput, UserUncheckedCreateWithoutTaskWatchersInput>
+    connectOrCreate?: UserCreateOrConnectWithoutTaskWatchersInput
     connect?: UserWhereUniqueInput
   }
 
-  export type TaskUpdateOneRequiredWithoutTaskWatcherNestedInput = {
-    create?: XOR<TaskCreateWithoutTaskWatcherInput, TaskUncheckedCreateWithoutTaskWatcherInput>
-    connectOrCreate?: TaskCreateOrConnectWithoutTaskWatcherInput
-    upsert?: TaskUpsertWithoutTaskWatcherInput
+  export type TaskUpdateOneRequiredWithoutTaskWatchersNestedInput = {
+    create?: XOR<TaskCreateWithoutTaskWatchersInput, TaskUncheckedCreateWithoutTaskWatchersInput>
+    connectOrCreate?: TaskCreateOrConnectWithoutTaskWatchersInput
+    upsert?: TaskUpsertWithoutTaskWatchersInput
     connect?: TaskWhereUniqueInput
-    update?: XOR<XOR<TaskUpdateToOneWithWhereWithoutTaskWatcherInput, TaskUpdateWithoutTaskWatcherInput>, TaskUncheckedUpdateWithoutTaskWatcherInput>
+    update?: XOR<XOR<TaskUpdateToOneWithWhereWithoutTaskWatchersInput, TaskUpdateWithoutTaskWatchersInput>, TaskUncheckedUpdateWithoutTaskWatchersInput>
   }
 
-  export type UserUpdateOneRequiredWithoutTaskWatcherNestedInput = {
-    create?: XOR<UserCreateWithoutTaskWatcherInput, UserUncheckedCreateWithoutTaskWatcherInput>
-    connectOrCreate?: UserCreateOrConnectWithoutTaskWatcherInput
-    upsert?: UserUpsertWithoutTaskWatcherInput
+  export type UserUpdateOneRequiredWithoutTaskWatchersNestedInput = {
+    create?: XOR<UserCreateWithoutTaskWatchersInput, UserUncheckedCreateWithoutTaskWatchersInput>
+    connectOrCreate?: UserCreateOrConnectWithoutTaskWatchersInput
+    upsert?: UserUpsertWithoutTaskWatchersInput
     connect?: UserWhereUniqueInput
-    update?: XOR<XOR<UserUpdateToOneWithWhereWithoutTaskWatcherInput, UserUpdateWithoutTaskWatcherInput>, UserUncheckedUpdateWithoutTaskWatcherInput>
+    update?: XOR<XOR<UserUpdateToOneWithWhereWithoutTaskWatchersInput, UserUpdateWithoutTaskWatchersInput>, UserUncheckedUpdateWithoutTaskWatchersInput>
   }
 
-  export type TaskCreateNestedOneWithoutAttachmentInput = {
-    create?: XOR<TaskCreateWithoutAttachmentInput, TaskUncheckedCreateWithoutAttachmentInput>
-    connectOrCreate?: TaskCreateOrConnectWithoutAttachmentInput
+  export type TaskCreateNestedOneWithoutAttachmentsInput = {
+    create?: XOR<TaskCreateWithoutAttachmentsInput, TaskUncheckedCreateWithoutAttachmentsInput>
+    connectOrCreate?: TaskCreateOrConnectWithoutAttachmentsInput
     connect?: TaskWhereUniqueInput
   }
 
@@ -29673,12 +29679,12 @@ export namespace Prisma {
     connect?: ActivityWhereUniqueInput | ActivityWhereUniqueInput[]
   }
 
-  export type TaskUpdateOneRequiredWithoutAttachmentNestedInput = {
-    create?: XOR<TaskCreateWithoutAttachmentInput, TaskUncheckedCreateWithoutAttachmentInput>
-    connectOrCreate?: TaskCreateOrConnectWithoutAttachmentInput
-    upsert?: TaskUpsertWithoutAttachmentInput
+  export type TaskUpdateOneRequiredWithoutAttachmentsNestedInput = {
+    create?: XOR<TaskCreateWithoutAttachmentsInput, TaskUncheckedCreateWithoutAttachmentsInput>
+    connectOrCreate?: TaskCreateOrConnectWithoutAttachmentsInput
+    upsert?: TaskUpsertWithoutAttachmentsInput
     connect?: TaskWhereUniqueInput
-    update?: XOR<XOR<TaskUpdateToOneWithWhereWithoutAttachmentInput, TaskUpdateWithoutAttachmentInput>, TaskUncheckedUpdateWithoutAttachmentInput>
+    update?: XOR<XOR<TaskUpdateToOneWithWhereWithoutAttachmentsInput, TaskUpdateWithoutAttachmentsInput>, TaskUncheckedUpdateWithoutAttachmentsInput>
   }
 
   export type ActivityUpdateManyWithoutAttachmentNestedInput = {
@@ -29751,9 +29757,9 @@ export namespace Prisma {
     deleteMany?: TaskTagScalarWhereInput | TaskTagScalarWhereInput[]
   }
 
-  export type TaskCreateNestedOneWithoutTaskTagInput = {
-    create?: XOR<TaskCreateWithoutTaskTagInput, TaskUncheckedCreateWithoutTaskTagInput>
-    connectOrCreate?: TaskCreateOrConnectWithoutTaskTagInput
+  export type TaskCreateNestedOneWithoutTaskTagsInput = {
+    create?: XOR<TaskCreateWithoutTaskTagsInput, TaskUncheckedCreateWithoutTaskTagsInput>
+    connectOrCreate?: TaskCreateOrConnectWithoutTaskTagsInput
     connect?: TaskWhereUniqueInput
   }
 
@@ -29763,12 +29769,12 @@ export namespace Prisma {
     connect?: TagWhereUniqueInput
   }
 
-  export type TaskUpdateOneRequiredWithoutTaskTagNestedInput = {
-    create?: XOR<TaskCreateWithoutTaskTagInput, TaskUncheckedCreateWithoutTaskTagInput>
-    connectOrCreate?: TaskCreateOrConnectWithoutTaskTagInput
-    upsert?: TaskUpsertWithoutTaskTagInput
+  export type TaskUpdateOneRequiredWithoutTaskTagsNestedInput = {
+    create?: XOR<TaskCreateWithoutTaskTagsInput, TaskUncheckedCreateWithoutTaskTagsInput>
+    connectOrCreate?: TaskCreateOrConnectWithoutTaskTagsInput
+    upsert?: TaskUpsertWithoutTaskTagsInput
     connect?: TaskWhereUniqueInput
-    update?: XOR<XOR<TaskUpdateToOneWithWhereWithoutTaskTagInput, TaskUpdateWithoutTaskTagInput>, TaskUncheckedUpdateWithoutTaskTagInput>
+    update?: XOR<XOR<TaskUpdateToOneWithWhereWithoutTaskTagsInput, TaskUpdateWithoutTaskTagsInput>, TaskUncheckedUpdateWithoutTaskTagsInput>
   }
 
   export type TagUpdateOneRequiredWithoutTasksNestedInput = {
@@ -29779,15 +29785,15 @@ export namespace Prisma {
     update?: XOR<XOR<TagUpdateToOneWithWhereWithoutTasksInput, TagUpdateWithoutTasksInput>, TagUncheckedUpdateWithoutTasksInput>
   }
 
-  export type TaskCreateNestedOneWithoutCommentInput = {
-    create?: XOR<TaskCreateWithoutCommentInput, TaskUncheckedCreateWithoutCommentInput>
-    connectOrCreate?: TaskCreateOrConnectWithoutCommentInput
+  export type TaskCreateNestedOneWithoutCommentsInput = {
+    create?: XOR<TaskCreateWithoutCommentsInput, TaskUncheckedCreateWithoutCommentsInput>
+    connectOrCreate?: TaskCreateOrConnectWithoutCommentsInput
     connect?: TaskWhereUniqueInput
   }
 
-  export type UserCreateNestedOneWithoutCommentInput = {
-    create?: XOR<UserCreateWithoutCommentInput, UserUncheckedCreateWithoutCommentInput>
-    connectOrCreate?: UserCreateOrConnectWithoutCommentInput
+  export type UserCreateNestedOneWithoutCommentsInput = {
+    create?: XOR<UserCreateWithoutCommentsInput, UserUncheckedCreateWithoutCommentsInput>
+    connectOrCreate?: UserCreateOrConnectWithoutCommentsInput
     connect?: UserWhereUniqueInput
   }
 
@@ -29805,20 +29811,20 @@ export namespace Prisma {
     connect?: ActivityWhereUniqueInput | ActivityWhereUniqueInput[]
   }
 
-  export type TaskUpdateOneRequiredWithoutCommentNestedInput = {
-    create?: XOR<TaskCreateWithoutCommentInput, TaskUncheckedCreateWithoutCommentInput>
-    connectOrCreate?: TaskCreateOrConnectWithoutCommentInput
-    upsert?: TaskUpsertWithoutCommentInput
+  export type TaskUpdateOneRequiredWithoutCommentsNestedInput = {
+    create?: XOR<TaskCreateWithoutCommentsInput, TaskUncheckedCreateWithoutCommentsInput>
+    connectOrCreate?: TaskCreateOrConnectWithoutCommentsInput
+    upsert?: TaskUpsertWithoutCommentsInput
     connect?: TaskWhereUniqueInput
-    update?: XOR<XOR<TaskUpdateToOneWithWhereWithoutCommentInput, TaskUpdateWithoutCommentInput>, TaskUncheckedUpdateWithoutCommentInput>
+    update?: XOR<XOR<TaskUpdateToOneWithWhereWithoutCommentsInput, TaskUpdateWithoutCommentsInput>, TaskUncheckedUpdateWithoutCommentsInput>
   }
 
-  export type UserUpdateOneRequiredWithoutCommentNestedInput = {
-    create?: XOR<UserCreateWithoutCommentInput, UserUncheckedCreateWithoutCommentInput>
-    connectOrCreate?: UserCreateOrConnectWithoutCommentInput
-    upsert?: UserUpsertWithoutCommentInput
+  export type UserUpdateOneRequiredWithoutCommentsNestedInput = {
+    create?: XOR<UserCreateWithoutCommentsInput, UserUncheckedCreateWithoutCommentsInput>
+    connectOrCreate?: UserCreateOrConnectWithoutCommentsInput
+    upsert?: UserUpsertWithoutCommentsInput
     connect?: UserWhereUniqueInput
-    update?: XOR<XOR<UserUpdateToOneWithWhereWithoutCommentInput, UserUpdateWithoutCommentInput>, UserUncheckedUpdateWithoutCommentInput>
+    update?: XOR<XOR<UserUpdateToOneWithWhereWithoutCommentsInput, UserUpdateWithoutCommentsInput>, UserUncheckedUpdateWithoutCommentsInput>
   }
 
   export type ActivityUpdateManyWithoutCommentNestedInput = {
@@ -29849,27 +29855,27 @@ export namespace Prisma {
     deleteMany?: ActivityScalarWhereInput | ActivityScalarWhereInput[]
   }
 
-  export type UserCreateNestedOneWithoutActivityInput = {
-    create?: XOR<UserCreateWithoutActivityInput, UserUncheckedCreateWithoutActivityInput>
-    connectOrCreate?: UserCreateOrConnectWithoutActivityInput
+  export type UserCreateNestedOneWithoutActivitiesInput = {
+    create?: XOR<UserCreateWithoutActivitiesInput, UserUncheckedCreateWithoutActivitiesInput>
+    connectOrCreate?: UserCreateOrConnectWithoutActivitiesInput
     connect?: UserWhereUniqueInput
   }
 
-  export type TaskCreateNestedOneWithoutActivityInput = {
-    create?: XOR<TaskCreateWithoutActivityInput, TaskUncheckedCreateWithoutActivityInput>
-    connectOrCreate?: TaskCreateOrConnectWithoutActivityInput
+  export type TaskCreateNestedOneWithoutActivitiesInput = {
+    create?: XOR<TaskCreateWithoutActivitiesInput, TaskUncheckedCreateWithoutActivitiesInput>
+    connectOrCreate?: TaskCreateOrConnectWithoutActivitiesInput
     connect?: TaskWhereUniqueInput
   }
 
-  export type CommentCreateNestedOneWithoutActivityInput = {
-    create?: XOR<CommentCreateWithoutActivityInput, CommentUncheckedCreateWithoutActivityInput>
-    connectOrCreate?: CommentCreateOrConnectWithoutActivityInput
+  export type CommentCreateNestedOneWithoutActivitiesInput = {
+    create?: XOR<CommentCreateWithoutActivitiesInput, CommentUncheckedCreateWithoutActivitiesInput>
+    connectOrCreate?: CommentCreateOrConnectWithoutActivitiesInput
     connect?: CommentWhereUniqueInput
   }
 
-  export type AttachmentCreateNestedOneWithoutActivityInput = {
-    create?: XOR<AttachmentCreateWithoutActivityInput, AttachmentUncheckedCreateWithoutActivityInput>
-    connectOrCreate?: AttachmentCreateOrConnectWithoutActivityInput
+  export type AttachmentCreateNestedOneWithoutActivitiesInput = {
+    create?: XOR<AttachmentCreateWithoutActivitiesInput, AttachmentUncheckedCreateWithoutActivitiesInput>
+    connectOrCreate?: AttachmentCreateOrConnectWithoutActivitiesInput
     connect?: AttachmentWhereUniqueInput
   }
 
@@ -29891,42 +29897,42 @@ export namespace Prisma {
     set?: $Enums.ActivityType
   }
 
-  export type UserUpdateOneRequiredWithoutActivityNestedInput = {
-    create?: XOR<UserCreateWithoutActivityInput, UserUncheckedCreateWithoutActivityInput>
-    connectOrCreate?: UserCreateOrConnectWithoutActivityInput
-    upsert?: UserUpsertWithoutActivityInput
+  export type UserUpdateOneRequiredWithoutActivitiesNestedInput = {
+    create?: XOR<UserCreateWithoutActivitiesInput, UserUncheckedCreateWithoutActivitiesInput>
+    connectOrCreate?: UserCreateOrConnectWithoutActivitiesInput
+    upsert?: UserUpsertWithoutActivitiesInput
     connect?: UserWhereUniqueInput
-    update?: XOR<XOR<UserUpdateToOneWithWhereWithoutActivityInput, UserUpdateWithoutActivityInput>, UserUncheckedUpdateWithoutActivityInput>
+    update?: XOR<XOR<UserUpdateToOneWithWhereWithoutActivitiesInput, UserUpdateWithoutActivitiesInput>, UserUncheckedUpdateWithoutActivitiesInput>
   }
 
-  export type TaskUpdateOneWithoutActivityNestedInput = {
-    create?: XOR<TaskCreateWithoutActivityInput, TaskUncheckedCreateWithoutActivityInput>
-    connectOrCreate?: TaskCreateOrConnectWithoutActivityInput
-    upsert?: TaskUpsertWithoutActivityInput
+  export type TaskUpdateOneWithoutActivitiesNestedInput = {
+    create?: XOR<TaskCreateWithoutActivitiesInput, TaskUncheckedCreateWithoutActivitiesInput>
+    connectOrCreate?: TaskCreateOrConnectWithoutActivitiesInput
+    upsert?: TaskUpsertWithoutActivitiesInput
     disconnect?: TaskWhereInput | boolean
     delete?: TaskWhereInput | boolean
     connect?: TaskWhereUniqueInput
-    update?: XOR<XOR<TaskUpdateToOneWithWhereWithoutActivityInput, TaskUpdateWithoutActivityInput>, TaskUncheckedUpdateWithoutActivityInput>
+    update?: XOR<XOR<TaskUpdateToOneWithWhereWithoutActivitiesInput, TaskUpdateWithoutActivitiesInput>, TaskUncheckedUpdateWithoutActivitiesInput>
   }
 
-  export type CommentUpdateOneWithoutActivityNestedInput = {
-    create?: XOR<CommentCreateWithoutActivityInput, CommentUncheckedCreateWithoutActivityInput>
-    connectOrCreate?: CommentCreateOrConnectWithoutActivityInput
-    upsert?: CommentUpsertWithoutActivityInput
+  export type CommentUpdateOneWithoutActivitiesNestedInput = {
+    create?: XOR<CommentCreateWithoutActivitiesInput, CommentUncheckedCreateWithoutActivitiesInput>
+    connectOrCreate?: CommentCreateOrConnectWithoutActivitiesInput
+    upsert?: CommentUpsertWithoutActivitiesInput
     disconnect?: CommentWhereInput | boolean
     delete?: CommentWhereInput | boolean
     connect?: CommentWhereUniqueInput
-    update?: XOR<XOR<CommentUpdateToOneWithWhereWithoutActivityInput, CommentUpdateWithoutActivityInput>, CommentUncheckedUpdateWithoutActivityInput>
+    update?: XOR<XOR<CommentUpdateToOneWithWhereWithoutActivitiesInput, CommentUpdateWithoutActivitiesInput>, CommentUncheckedUpdateWithoutActivitiesInput>
   }
 
-  export type AttachmentUpdateOneWithoutActivityNestedInput = {
-    create?: XOR<AttachmentCreateWithoutActivityInput, AttachmentUncheckedCreateWithoutActivityInput>
-    connectOrCreate?: AttachmentCreateOrConnectWithoutActivityInput
-    upsert?: AttachmentUpsertWithoutActivityInput
+  export type AttachmentUpdateOneWithoutActivitiesNestedInput = {
+    create?: XOR<AttachmentCreateWithoutActivitiesInput, AttachmentUncheckedCreateWithoutActivitiesInput>
+    connectOrCreate?: AttachmentCreateOrConnectWithoutActivitiesInput
+    upsert?: AttachmentUpsertWithoutActivitiesInput
     disconnect?: AttachmentWhereInput | boolean
     delete?: AttachmentWhereInput | boolean
     connect?: AttachmentWhereUniqueInput
-    update?: XOR<XOR<AttachmentUpdateToOneWithWhereWithoutActivityInput, AttachmentUpdateWithoutActivityInput>, AttachmentUncheckedUpdateWithoutActivityInput>
+    update?: XOR<XOR<AttachmentUpdateToOneWithWhereWithoutActivitiesInput, AttachmentUpdateWithoutActivitiesInput>, AttachmentUncheckedUpdateWithoutActivitiesInput>
   }
 
   export type NotificationUpdateManyWithoutActivityNestedInput = {
@@ -29957,32 +29963,32 @@ export namespace Prisma {
     deleteMany?: NotificationScalarWhereInput | NotificationScalarWhereInput[]
   }
 
-  export type UserCreateNestedOneWithoutNotificationInput = {
-    create?: XOR<UserCreateWithoutNotificationInput, UserUncheckedCreateWithoutNotificationInput>
-    connectOrCreate?: UserCreateOrConnectWithoutNotificationInput
+  export type UserCreateNestedOneWithoutNotificationsInput = {
+    create?: XOR<UserCreateWithoutNotificationsInput, UserUncheckedCreateWithoutNotificationsInput>
+    connectOrCreate?: UserCreateOrConnectWithoutNotificationsInput
     connect?: UserWhereUniqueInput
   }
 
-  export type ActivityCreateNestedOneWithoutNotificationInput = {
-    create?: XOR<ActivityCreateWithoutNotificationInput, ActivityUncheckedCreateWithoutNotificationInput>
-    connectOrCreate?: ActivityCreateOrConnectWithoutNotificationInput
+  export type ActivityCreateNestedOneWithoutNotificationsInput = {
+    create?: XOR<ActivityCreateWithoutNotificationsInput, ActivityUncheckedCreateWithoutNotificationsInput>
+    connectOrCreate?: ActivityCreateOrConnectWithoutNotificationsInput
     connect?: ActivityWhereUniqueInput
   }
 
-  export type UserUpdateOneRequiredWithoutNotificationNestedInput = {
-    create?: XOR<UserCreateWithoutNotificationInput, UserUncheckedCreateWithoutNotificationInput>
-    connectOrCreate?: UserCreateOrConnectWithoutNotificationInput
-    upsert?: UserUpsertWithoutNotificationInput
+  export type UserUpdateOneRequiredWithoutNotificationsNestedInput = {
+    create?: XOR<UserCreateWithoutNotificationsInput, UserUncheckedCreateWithoutNotificationsInput>
+    connectOrCreate?: UserCreateOrConnectWithoutNotificationsInput
+    upsert?: UserUpsertWithoutNotificationsInput
     connect?: UserWhereUniqueInput
-    update?: XOR<XOR<UserUpdateToOneWithWhereWithoutNotificationInput, UserUpdateWithoutNotificationInput>, UserUncheckedUpdateWithoutNotificationInput>
+    update?: XOR<XOR<UserUpdateToOneWithWhereWithoutNotificationsInput, UserUpdateWithoutNotificationsInput>, UserUncheckedUpdateWithoutNotificationsInput>
   }
 
-  export type ActivityUpdateOneRequiredWithoutNotificationNestedInput = {
-    create?: XOR<ActivityCreateWithoutNotificationInput, ActivityUncheckedCreateWithoutNotificationInput>
-    connectOrCreate?: ActivityCreateOrConnectWithoutNotificationInput
-    upsert?: ActivityUpsertWithoutNotificationInput
+  export type ActivityUpdateOneRequiredWithoutNotificationsNestedInput = {
+    create?: XOR<ActivityCreateWithoutNotificationsInput, ActivityUncheckedCreateWithoutNotificationsInput>
+    connectOrCreate?: ActivityCreateOrConnectWithoutNotificationsInput
+    upsert?: ActivityUpsertWithoutNotificationsInput
     connect?: ActivityWhereUniqueInput
-    update?: XOR<XOR<ActivityUpdateToOneWithWhereWithoutNotificationInput, ActivityUpdateWithoutNotificationInput>, ActivityUncheckedUpdateWithoutNotificationInput>
+    update?: XOR<XOR<ActivityUpdateToOneWithWhereWithoutNotificationsInput, ActivityUpdateWithoutNotificationsInput>, ActivityUncheckedUpdateWithoutNotificationsInput>
   }
 
   export type NestedStringFilter<$PrismaModel = never> = {
@@ -30305,8 +30311,8 @@ export namespace Prisma {
     createdAt?: Date | string
     updatedAt?: Date | string
     organization: OrganizationCreateNestedOneWithoutMembersInput
-    Task?: TaskCreateNestedManyWithoutAssigneeInput
-    SpaceMember?: SpaceMemberCreateNestedManyWithoutMemberInput
+    tasks?: TaskCreateNestedManyWithoutAssigneeInput
+    spaceMembers?: SpaceMemberCreateNestedManyWithoutMemberInput
   }
 
   export type MemberUncheckedCreateWithoutUserInput = {
@@ -30315,8 +30321,8 @@ export namespace Prisma {
     role?: $Enums.MemberRole
     createdAt?: Date | string
     updatedAt?: Date | string
-    Task?: TaskUncheckedCreateNestedManyWithoutAssigneeInput
-    SpaceMember?: SpaceMemberUncheckedCreateNestedManyWithoutMemberInput
+    tasks?: TaskUncheckedCreateNestedManyWithoutAssigneeInput
+    spaceMembers?: SpaceMemberUncheckedCreateNestedManyWithoutMemberInput
   }
 
   export type MemberCreateOrConnectWithoutUserInput = {
@@ -30360,7 +30366,7 @@ export namespace Prisma {
   export type ProjectWatcherCreateWithoutUserInput = {
     id?: string
     createdAt?: Date | string
-    project: ProjectCreateNestedOneWithoutProjectWatcherInput
+    project: ProjectCreateNestedOneWithoutProjectWatchersInput
   }
 
   export type ProjectWatcherUncheckedCreateWithoutUserInput = {
@@ -30382,7 +30388,7 @@ export namespace Prisma {
   export type TaskWatcherCreateWithoutUserInput = {
     id?: string
     createdAt?: Date | string
-    task: TaskCreateNestedOneWithoutTaskWatcherInput
+    task: TaskCreateNestedOneWithoutTaskWatchersInput
   }
 
   export type TaskWatcherUncheckedCreateWithoutUserInput = {
@@ -30406,8 +30412,8 @@ export namespace Prisma {
     content: string
     createdAt?: Date | string
     updatedAt?: Date | string
-    task: TaskCreateNestedOneWithoutCommentInput
-    Activity?: ActivityCreateNestedManyWithoutCommentInput
+    task: TaskCreateNestedOneWithoutCommentsInput
+    activities?: ActivityCreateNestedManyWithoutCommentInput
   }
 
   export type CommentUncheckedCreateWithoutAuthorInput = {
@@ -30416,7 +30422,7 @@ export namespace Prisma {
     taskId: string
     createdAt?: Date | string
     updatedAt?: Date | string
-    Activity?: ActivityUncheckedCreateNestedManyWithoutCommentInput
+    activities?: ActivityUncheckedCreateNestedManyWithoutCommentInput
   }
 
   export type CommentCreateOrConnectWithoutAuthorInput = {
@@ -30433,10 +30439,10 @@ export namespace Prisma {
     id?: string
     type: $Enums.ActivityType
     createdAt?: Date | string
-    task?: TaskCreateNestedOneWithoutActivityInput
-    comment?: CommentCreateNestedOneWithoutActivityInput
-    attachment?: AttachmentCreateNestedOneWithoutActivityInput
-    Notification?: NotificationCreateNestedManyWithoutActivityInput
+    task?: TaskCreateNestedOneWithoutActivitiesInput
+    comment?: CommentCreateNestedOneWithoutActivitiesInput
+    attachment?: AttachmentCreateNestedOneWithoutActivitiesInput
+    notifications?: NotificationCreateNestedManyWithoutActivityInput
   }
 
   export type ActivityUncheckedCreateWithoutActorInput = {
@@ -30446,7 +30452,7 @@ export namespace Prisma {
     commentId?: string | null
     attachmentId?: string | null
     createdAt?: Date | string
-    Notification?: NotificationUncheckedCreateNestedManyWithoutActivityInput
+    notifications?: NotificationUncheckedCreateNestedManyWithoutActivityInput
   }
 
   export type ActivityCreateOrConnectWithoutActorInput = {
@@ -30463,7 +30469,7 @@ export namespace Prisma {
     id?: string
     read?: boolean
     createdAt?: Date | string
-    activity: ActivityCreateNestedOneWithoutNotificationInput
+    activity: ActivityCreateNestedOneWithoutNotificationsInput
   }
 
   export type NotificationUncheckedCreateWithoutUserInput = {
@@ -30753,11 +30759,11 @@ export namespace Prisma {
     accounts?: AccountCreateNestedManyWithoutUserInput
     members?: MemberCreateNestedManyWithoutUserInput
     invitations?: InvitationCreateNestedManyWithoutUserInput
-    ProjectWatcher?: ProjectWatcherCreateNestedManyWithoutUserInput
-    TaskWatcher?: TaskWatcherCreateNestedManyWithoutUserInput
-    Comment?: CommentCreateNestedManyWithoutAuthorInput
-    Activity?: ActivityCreateNestedManyWithoutActorInput
-    Notification?: NotificationCreateNestedManyWithoutUserInput
+    projectWatchers?: ProjectWatcherCreateNestedManyWithoutUserInput
+    taskWatchers?: TaskWatcherCreateNestedManyWithoutUserInput
+    comments?: CommentCreateNestedManyWithoutAuthorInput
+    activities?: ActivityCreateNestedManyWithoutActorInput
+    notifications?: NotificationCreateNestedManyWithoutUserInput
   }
 
   export type UserUncheckedCreateWithoutSessionsInput = {
@@ -30771,11 +30777,11 @@ export namespace Prisma {
     accounts?: AccountUncheckedCreateNestedManyWithoutUserInput
     members?: MemberUncheckedCreateNestedManyWithoutUserInput
     invitations?: InvitationUncheckedCreateNestedManyWithoutUserInput
-    ProjectWatcher?: ProjectWatcherUncheckedCreateNestedManyWithoutUserInput
-    TaskWatcher?: TaskWatcherUncheckedCreateNestedManyWithoutUserInput
-    Comment?: CommentUncheckedCreateNestedManyWithoutAuthorInput
-    Activity?: ActivityUncheckedCreateNestedManyWithoutActorInput
-    Notification?: NotificationUncheckedCreateNestedManyWithoutUserInput
+    projectWatchers?: ProjectWatcherUncheckedCreateNestedManyWithoutUserInput
+    taskWatchers?: TaskWatcherUncheckedCreateNestedManyWithoutUserInput
+    comments?: CommentUncheckedCreateNestedManyWithoutAuthorInput
+    activities?: ActivityUncheckedCreateNestedManyWithoutActorInput
+    notifications?: NotificationUncheckedCreateNestedManyWithoutUserInput
   }
 
   export type UserCreateOrConnectWithoutSessionsInput = {
@@ -30805,11 +30811,11 @@ export namespace Prisma {
     accounts?: AccountUpdateManyWithoutUserNestedInput
     members?: MemberUpdateManyWithoutUserNestedInput
     invitations?: InvitationUpdateManyWithoutUserNestedInput
-    ProjectWatcher?: ProjectWatcherUpdateManyWithoutUserNestedInput
-    TaskWatcher?: TaskWatcherUpdateManyWithoutUserNestedInput
-    Comment?: CommentUpdateManyWithoutAuthorNestedInput
-    Activity?: ActivityUpdateManyWithoutActorNestedInput
-    Notification?: NotificationUpdateManyWithoutUserNestedInput
+    projectWatchers?: ProjectWatcherUpdateManyWithoutUserNestedInput
+    taskWatchers?: TaskWatcherUpdateManyWithoutUserNestedInput
+    comments?: CommentUpdateManyWithoutAuthorNestedInput
+    activities?: ActivityUpdateManyWithoutActorNestedInput
+    notifications?: NotificationUpdateManyWithoutUserNestedInput
   }
 
   export type UserUncheckedUpdateWithoutSessionsInput = {
@@ -30823,11 +30829,11 @@ export namespace Prisma {
     accounts?: AccountUncheckedUpdateManyWithoutUserNestedInput
     members?: MemberUncheckedUpdateManyWithoutUserNestedInput
     invitations?: InvitationUncheckedUpdateManyWithoutUserNestedInput
-    ProjectWatcher?: ProjectWatcherUncheckedUpdateManyWithoutUserNestedInput
-    TaskWatcher?: TaskWatcherUncheckedUpdateManyWithoutUserNestedInput
-    Comment?: CommentUncheckedUpdateManyWithoutAuthorNestedInput
-    Activity?: ActivityUncheckedUpdateManyWithoutActorNestedInput
-    Notification?: NotificationUncheckedUpdateManyWithoutUserNestedInput
+    projectWatchers?: ProjectWatcherUncheckedUpdateManyWithoutUserNestedInput
+    taskWatchers?: TaskWatcherUncheckedUpdateManyWithoutUserNestedInput
+    comments?: CommentUncheckedUpdateManyWithoutAuthorNestedInput
+    activities?: ActivityUncheckedUpdateManyWithoutActorNestedInput
+    notifications?: NotificationUncheckedUpdateManyWithoutUserNestedInput
   }
 
   export type UserCreateWithoutAccountsInput = {
@@ -30841,11 +30847,11 @@ export namespace Prisma {
     sessions?: SessionCreateNestedManyWithoutUserInput
     members?: MemberCreateNestedManyWithoutUserInput
     invitations?: InvitationCreateNestedManyWithoutUserInput
-    ProjectWatcher?: ProjectWatcherCreateNestedManyWithoutUserInput
-    TaskWatcher?: TaskWatcherCreateNestedManyWithoutUserInput
-    Comment?: CommentCreateNestedManyWithoutAuthorInput
-    Activity?: ActivityCreateNestedManyWithoutActorInput
-    Notification?: NotificationCreateNestedManyWithoutUserInput
+    projectWatchers?: ProjectWatcherCreateNestedManyWithoutUserInput
+    taskWatchers?: TaskWatcherCreateNestedManyWithoutUserInput
+    comments?: CommentCreateNestedManyWithoutAuthorInput
+    activities?: ActivityCreateNestedManyWithoutActorInput
+    notifications?: NotificationCreateNestedManyWithoutUserInput
   }
 
   export type UserUncheckedCreateWithoutAccountsInput = {
@@ -30859,11 +30865,11 @@ export namespace Prisma {
     sessions?: SessionUncheckedCreateNestedManyWithoutUserInput
     members?: MemberUncheckedCreateNestedManyWithoutUserInput
     invitations?: InvitationUncheckedCreateNestedManyWithoutUserInput
-    ProjectWatcher?: ProjectWatcherUncheckedCreateNestedManyWithoutUserInput
-    TaskWatcher?: TaskWatcherUncheckedCreateNestedManyWithoutUserInput
-    Comment?: CommentUncheckedCreateNestedManyWithoutAuthorInput
-    Activity?: ActivityUncheckedCreateNestedManyWithoutActorInput
-    Notification?: NotificationUncheckedCreateNestedManyWithoutUserInput
+    projectWatchers?: ProjectWatcherUncheckedCreateNestedManyWithoutUserInput
+    taskWatchers?: TaskWatcherUncheckedCreateNestedManyWithoutUserInput
+    comments?: CommentUncheckedCreateNestedManyWithoutAuthorInput
+    activities?: ActivityUncheckedCreateNestedManyWithoutActorInput
+    notifications?: NotificationUncheckedCreateNestedManyWithoutUserInput
   }
 
   export type UserCreateOrConnectWithoutAccountsInput = {
@@ -30893,11 +30899,11 @@ export namespace Prisma {
     sessions?: SessionUpdateManyWithoutUserNestedInput
     members?: MemberUpdateManyWithoutUserNestedInput
     invitations?: InvitationUpdateManyWithoutUserNestedInput
-    ProjectWatcher?: ProjectWatcherUpdateManyWithoutUserNestedInput
-    TaskWatcher?: TaskWatcherUpdateManyWithoutUserNestedInput
-    Comment?: CommentUpdateManyWithoutAuthorNestedInput
-    Activity?: ActivityUpdateManyWithoutActorNestedInput
-    Notification?: NotificationUpdateManyWithoutUserNestedInput
+    projectWatchers?: ProjectWatcherUpdateManyWithoutUserNestedInput
+    taskWatchers?: TaskWatcherUpdateManyWithoutUserNestedInput
+    comments?: CommentUpdateManyWithoutAuthorNestedInput
+    activities?: ActivityUpdateManyWithoutActorNestedInput
+    notifications?: NotificationUpdateManyWithoutUserNestedInput
   }
 
   export type UserUncheckedUpdateWithoutAccountsInput = {
@@ -30911,11 +30917,11 @@ export namespace Prisma {
     sessions?: SessionUncheckedUpdateManyWithoutUserNestedInput
     members?: MemberUncheckedUpdateManyWithoutUserNestedInput
     invitations?: InvitationUncheckedUpdateManyWithoutUserNestedInput
-    ProjectWatcher?: ProjectWatcherUncheckedUpdateManyWithoutUserNestedInput
-    TaskWatcher?: TaskWatcherUncheckedUpdateManyWithoutUserNestedInput
-    Comment?: CommentUncheckedUpdateManyWithoutAuthorNestedInput
-    Activity?: ActivityUncheckedUpdateManyWithoutActorNestedInput
-    Notification?: NotificationUncheckedUpdateManyWithoutUserNestedInput
+    projectWatchers?: ProjectWatcherUncheckedUpdateManyWithoutUserNestedInput
+    taskWatchers?: TaskWatcherUncheckedUpdateManyWithoutUserNestedInput
+    comments?: CommentUncheckedUpdateManyWithoutAuthorNestedInput
+    activities?: ActivityUncheckedUpdateManyWithoutActorNestedInput
+    notifications?: NotificationUncheckedUpdateManyWithoutUserNestedInput
   }
 
   export type MemberCreateWithoutOrganizationInput = {
@@ -30924,8 +30930,8 @@ export namespace Prisma {
     createdAt?: Date | string
     updatedAt?: Date | string
     user: UserCreateNestedOneWithoutMembersInput
-    Task?: TaskCreateNestedManyWithoutAssigneeInput
-    SpaceMember?: SpaceMemberCreateNestedManyWithoutMemberInput
+    tasks?: TaskCreateNestedManyWithoutAssigneeInput
+    spaceMembers?: SpaceMemberCreateNestedManyWithoutMemberInput
   }
 
   export type MemberUncheckedCreateWithoutOrganizationInput = {
@@ -30934,8 +30940,8 @@ export namespace Prisma {
     role?: $Enums.MemberRole
     createdAt?: Date | string
     updatedAt?: Date | string
-    Task?: TaskUncheckedCreateNestedManyWithoutAssigneeInput
-    SpaceMember?: SpaceMemberUncheckedCreateNestedManyWithoutMemberInput
+    tasks?: TaskUncheckedCreateNestedManyWithoutAssigneeInput
+    spaceMembers?: SpaceMemberUncheckedCreateNestedManyWithoutMemberInput
   }
 
   export type MemberCreateOrConnectWithoutOrganizationInput = {
@@ -30983,8 +30989,8 @@ export namespace Prisma {
     color?: string | null
     createdAt?: Date | string
     updatedAt?: Date | string
-    Project?: ProjectCreateNestedManyWithoutSpaceInput
-    SpaceMember?: SpaceMemberCreateNestedManyWithoutSpaceInput
+    projects?: ProjectCreateNestedManyWithoutSpaceInput
+    spaceMembers?: SpaceMemberCreateNestedManyWithoutSpaceInput
   }
 
   export type SpaceUncheckedCreateWithoutOrganizationInput = {
@@ -30994,8 +31000,8 @@ export namespace Prisma {
     color?: string | null
     createdAt?: Date | string
     updatedAt?: Date | string
-    Project?: ProjectUncheckedCreateNestedManyWithoutSpaceInput
-    SpaceMember?: SpaceMemberUncheckedCreateNestedManyWithoutSpaceInput
+    projects?: ProjectUncheckedCreateNestedManyWithoutSpaceInput
+    spaceMembers?: SpaceMemberUncheckedCreateNestedManyWithoutSpaceInput
   }
 
   export type SpaceCreateOrConnectWithoutOrganizationInput = {
@@ -31080,11 +31086,11 @@ export namespace Prisma {
     sessions?: SessionCreateNestedManyWithoutUserInput
     accounts?: AccountCreateNestedManyWithoutUserInput
     invitations?: InvitationCreateNestedManyWithoutUserInput
-    ProjectWatcher?: ProjectWatcherCreateNestedManyWithoutUserInput
-    TaskWatcher?: TaskWatcherCreateNestedManyWithoutUserInput
-    Comment?: CommentCreateNestedManyWithoutAuthorInput
-    Activity?: ActivityCreateNestedManyWithoutActorInput
-    Notification?: NotificationCreateNestedManyWithoutUserInput
+    projectWatchers?: ProjectWatcherCreateNestedManyWithoutUserInput
+    taskWatchers?: TaskWatcherCreateNestedManyWithoutUserInput
+    comments?: CommentCreateNestedManyWithoutAuthorInput
+    activities?: ActivityCreateNestedManyWithoutActorInput
+    notifications?: NotificationCreateNestedManyWithoutUserInput
   }
 
   export type UserUncheckedCreateWithoutMembersInput = {
@@ -31098,11 +31104,11 @@ export namespace Prisma {
     sessions?: SessionUncheckedCreateNestedManyWithoutUserInput
     accounts?: AccountUncheckedCreateNestedManyWithoutUserInput
     invitations?: InvitationUncheckedCreateNestedManyWithoutUserInput
-    ProjectWatcher?: ProjectWatcherUncheckedCreateNestedManyWithoutUserInput
-    TaskWatcher?: TaskWatcherUncheckedCreateNestedManyWithoutUserInput
-    Comment?: CommentUncheckedCreateNestedManyWithoutAuthorInput
-    Activity?: ActivityUncheckedCreateNestedManyWithoutActorInput
-    Notification?: NotificationUncheckedCreateNestedManyWithoutUserInput
+    projectWatchers?: ProjectWatcherUncheckedCreateNestedManyWithoutUserInput
+    taskWatchers?: TaskWatcherUncheckedCreateNestedManyWithoutUserInput
+    comments?: CommentUncheckedCreateNestedManyWithoutAuthorInput
+    activities?: ActivityUncheckedCreateNestedManyWithoutActorInput
+    notifications?: NotificationUncheckedCreateNestedManyWithoutUserInput
   }
 
   export type UserCreateOrConnectWithoutMembersInput = {
@@ -31145,14 +31151,14 @@ export namespace Prisma {
     priority?: $Enums.TaskPriority
     createdAt?: Date | string
     updatedAt?: Date | string
-    project: ProjectCreateNestedOneWithoutTaskInput
+    project: ProjectCreateNestedOneWithoutTasksInput
     parent?: TaskCreateNestedOneWithoutSubtasksInput
     subtasks?: TaskCreateNestedManyWithoutParentInput
-    TaskWatcher?: TaskWatcherCreateNestedManyWithoutTaskInput
-    Attachment?: AttachmentCreateNestedManyWithoutTaskInput
-    TaskTag?: TaskTagCreateNestedManyWithoutTaskInput
-    Comment?: CommentCreateNestedManyWithoutTaskInput
-    Activity?: ActivityCreateNestedManyWithoutTaskInput
+    taskWatchers?: TaskWatcherCreateNestedManyWithoutTaskInput
+    attachments?: AttachmentCreateNestedManyWithoutTaskInput
+    taskTags?: TaskTagCreateNestedManyWithoutTaskInput
+    comments?: CommentCreateNestedManyWithoutTaskInput
+    activities?: ActivityCreateNestedManyWithoutTaskInput
   }
 
   export type TaskUncheckedCreateWithoutAssigneeInput = {
@@ -31168,11 +31174,11 @@ export namespace Prisma {
     createdAt?: Date | string
     updatedAt?: Date | string
     subtasks?: TaskUncheckedCreateNestedManyWithoutParentInput
-    TaskWatcher?: TaskWatcherUncheckedCreateNestedManyWithoutTaskInput
-    Attachment?: AttachmentUncheckedCreateNestedManyWithoutTaskInput
-    TaskTag?: TaskTagUncheckedCreateNestedManyWithoutTaskInput
-    Comment?: CommentUncheckedCreateNestedManyWithoutTaskInput
-    Activity?: ActivityUncheckedCreateNestedManyWithoutTaskInput
+    taskWatchers?: TaskWatcherUncheckedCreateNestedManyWithoutTaskInput
+    attachments?: AttachmentUncheckedCreateNestedManyWithoutTaskInput
+    taskTags?: TaskTagUncheckedCreateNestedManyWithoutTaskInput
+    comments?: CommentUncheckedCreateNestedManyWithoutTaskInput
+    activities?: ActivityUncheckedCreateNestedManyWithoutTaskInput
   }
 
   export type TaskCreateOrConnectWithoutAssigneeInput = {
@@ -31190,7 +31196,7 @@ export namespace Prisma {
     role?: $Enums.MemberRole
     createdAt?: Date | string
     updatedAt?: Date | string
-    space: SpaceCreateNestedOneWithoutSpaceMemberInput
+    space: SpaceCreateNestedOneWithoutSpaceMembersInput
   }
 
   export type SpaceMemberUncheckedCreateWithoutMemberInput = {
@@ -31233,11 +31239,11 @@ export namespace Prisma {
     sessions?: SessionUpdateManyWithoutUserNestedInput
     accounts?: AccountUpdateManyWithoutUserNestedInput
     invitations?: InvitationUpdateManyWithoutUserNestedInput
-    ProjectWatcher?: ProjectWatcherUpdateManyWithoutUserNestedInput
-    TaskWatcher?: TaskWatcherUpdateManyWithoutUserNestedInput
-    Comment?: CommentUpdateManyWithoutAuthorNestedInput
-    Activity?: ActivityUpdateManyWithoutActorNestedInput
-    Notification?: NotificationUpdateManyWithoutUserNestedInput
+    projectWatchers?: ProjectWatcherUpdateManyWithoutUserNestedInput
+    taskWatchers?: TaskWatcherUpdateManyWithoutUserNestedInput
+    comments?: CommentUpdateManyWithoutAuthorNestedInput
+    activities?: ActivityUpdateManyWithoutActorNestedInput
+    notifications?: NotificationUpdateManyWithoutUserNestedInput
   }
 
   export type UserUncheckedUpdateWithoutMembersInput = {
@@ -31251,11 +31257,11 @@ export namespace Prisma {
     sessions?: SessionUncheckedUpdateManyWithoutUserNestedInput
     accounts?: AccountUncheckedUpdateManyWithoutUserNestedInput
     invitations?: InvitationUncheckedUpdateManyWithoutUserNestedInput
-    ProjectWatcher?: ProjectWatcherUncheckedUpdateManyWithoutUserNestedInput
-    TaskWatcher?: TaskWatcherUncheckedUpdateManyWithoutUserNestedInput
-    Comment?: CommentUncheckedUpdateManyWithoutAuthorNestedInput
-    Activity?: ActivityUncheckedUpdateManyWithoutActorNestedInput
-    Notification?: NotificationUncheckedUpdateManyWithoutUserNestedInput
+    projectWatchers?: ProjectWatcherUncheckedUpdateManyWithoutUserNestedInput
+    taskWatchers?: TaskWatcherUncheckedUpdateManyWithoutUserNestedInput
+    comments?: CommentUncheckedUpdateManyWithoutAuthorNestedInput
+    activities?: ActivityUncheckedUpdateManyWithoutActorNestedInput
+    notifications?: NotificationUncheckedUpdateManyWithoutUserNestedInput
   }
 
   export type OrganizationUpsertWithoutMembersInput = {
@@ -31387,11 +31393,11 @@ export namespace Prisma {
     sessions?: SessionCreateNestedManyWithoutUserInput
     accounts?: AccountCreateNestedManyWithoutUserInput
     members?: MemberCreateNestedManyWithoutUserInput
-    ProjectWatcher?: ProjectWatcherCreateNestedManyWithoutUserInput
-    TaskWatcher?: TaskWatcherCreateNestedManyWithoutUserInput
-    Comment?: CommentCreateNestedManyWithoutAuthorInput
-    Activity?: ActivityCreateNestedManyWithoutActorInput
-    Notification?: NotificationCreateNestedManyWithoutUserInput
+    projectWatchers?: ProjectWatcherCreateNestedManyWithoutUserInput
+    taskWatchers?: TaskWatcherCreateNestedManyWithoutUserInput
+    comments?: CommentCreateNestedManyWithoutAuthorInput
+    activities?: ActivityCreateNestedManyWithoutActorInput
+    notifications?: NotificationCreateNestedManyWithoutUserInput
   }
 
   export type UserUncheckedCreateWithoutInvitationsInput = {
@@ -31405,11 +31411,11 @@ export namespace Prisma {
     sessions?: SessionUncheckedCreateNestedManyWithoutUserInput
     accounts?: AccountUncheckedCreateNestedManyWithoutUserInput
     members?: MemberUncheckedCreateNestedManyWithoutUserInput
-    ProjectWatcher?: ProjectWatcherUncheckedCreateNestedManyWithoutUserInput
-    TaskWatcher?: TaskWatcherUncheckedCreateNestedManyWithoutUserInput
-    Comment?: CommentUncheckedCreateNestedManyWithoutAuthorInput
-    Activity?: ActivityUncheckedCreateNestedManyWithoutActorInput
-    Notification?: NotificationUncheckedCreateNestedManyWithoutUserInput
+    projectWatchers?: ProjectWatcherUncheckedCreateNestedManyWithoutUserInput
+    taskWatchers?: TaskWatcherUncheckedCreateNestedManyWithoutUserInput
+    comments?: CommentUncheckedCreateNestedManyWithoutAuthorInput
+    activities?: ActivityUncheckedCreateNestedManyWithoutActorInput
+    notifications?: NotificationUncheckedCreateNestedManyWithoutUserInput
   }
 
   export type UserCreateOrConnectWithoutInvitationsInput = {
@@ -31470,11 +31476,11 @@ export namespace Prisma {
     sessions?: SessionUpdateManyWithoutUserNestedInput
     accounts?: AccountUpdateManyWithoutUserNestedInput
     members?: MemberUpdateManyWithoutUserNestedInput
-    ProjectWatcher?: ProjectWatcherUpdateManyWithoutUserNestedInput
-    TaskWatcher?: TaskWatcherUpdateManyWithoutUserNestedInput
-    Comment?: CommentUpdateManyWithoutAuthorNestedInput
-    Activity?: ActivityUpdateManyWithoutActorNestedInput
-    Notification?: NotificationUpdateManyWithoutUserNestedInput
+    projectWatchers?: ProjectWatcherUpdateManyWithoutUserNestedInput
+    taskWatchers?: TaskWatcherUpdateManyWithoutUserNestedInput
+    comments?: CommentUpdateManyWithoutAuthorNestedInput
+    activities?: ActivityUpdateManyWithoutActorNestedInput
+    notifications?: NotificationUpdateManyWithoutUserNestedInput
   }
 
   export type UserUncheckedUpdateWithoutInvitationsInput = {
@@ -31488,11 +31494,11 @@ export namespace Prisma {
     sessions?: SessionUncheckedUpdateManyWithoutUserNestedInput
     accounts?: AccountUncheckedUpdateManyWithoutUserNestedInput
     members?: MemberUncheckedUpdateManyWithoutUserNestedInput
-    ProjectWatcher?: ProjectWatcherUncheckedUpdateManyWithoutUserNestedInput
-    TaskWatcher?: TaskWatcherUncheckedUpdateManyWithoutUserNestedInput
-    Comment?: CommentUncheckedUpdateManyWithoutAuthorNestedInput
-    Activity?: ActivityUncheckedUpdateManyWithoutActorNestedInput
-    Notification?: NotificationUncheckedUpdateManyWithoutUserNestedInput
+    projectWatchers?: ProjectWatcherUncheckedUpdateManyWithoutUserNestedInput
+    taskWatchers?: TaskWatcherUncheckedUpdateManyWithoutUserNestedInput
+    comments?: CommentUncheckedUpdateManyWithoutAuthorNestedInput
+    activities?: ActivityUncheckedUpdateManyWithoutActorNestedInput
+    notifications?: NotificationUncheckedUpdateManyWithoutUserNestedInput
   }
 
   export type OrganizationCreateWithoutSpacesInput = {
@@ -31526,8 +31532,8 @@ export namespace Prisma {
     icon?: string | null
     image?: string | null
     color?: string | null
-    ProjectWatcher?: ProjectWatcherCreateNestedManyWithoutProjectInput
-    Task?: TaskCreateNestedManyWithoutProjectInput
+    projectWatchers?: ProjectWatcherCreateNestedManyWithoutProjectInput
+    tasks?: TaskCreateNestedManyWithoutProjectInput
   }
 
   export type ProjectUncheckedCreateWithoutSpaceInput = {
@@ -31536,8 +31542,8 @@ export namespace Prisma {
     icon?: string | null
     image?: string | null
     color?: string | null
-    ProjectWatcher?: ProjectWatcherUncheckedCreateNestedManyWithoutProjectInput
-    Task?: TaskUncheckedCreateNestedManyWithoutProjectInput
+    projectWatchers?: ProjectWatcherUncheckedCreateNestedManyWithoutProjectInput
+    tasks?: TaskUncheckedCreateNestedManyWithoutProjectInput
   }
 
   export type ProjectCreateOrConnectWithoutSpaceInput = {
@@ -31555,7 +31561,7 @@ export namespace Prisma {
     role?: $Enums.MemberRole
     createdAt?: Date | string
     updatedAt?: Date | string
-    member: MemberCreateNestedOneWithoutSpaceMemberInput
+    member: MemberCreateNestedOneWithoutSpaceMembersInput
   }
 
   export type SpaceMemberUncheckedCreateWithoutSpaceInput = {
@@ -31651,7 +31657,7 @@ export namespace Prisma {
     data: XOR<SpaceMemberUpdateManyMutationInput, SpaceMemberUncheckedUpdateManyWithoutSpaceInput>
   }
 
-  export type SpaceCreateWithoutSpaceMemberInput = {
+  export type SpaceCreateWithoutSpaceMembersInput = {
     id?: string
     name: string
     icon?: string | null
@@ -31659,10 +31665,10 @@ export namespace Prisma {
     createdAt?: Date | string
     updatedAt?: Date | string
     organization: OrganizationCreateNestedOneWithoutSpacesInput
-    Project?: ProjectCreateNestedManyWithoutSpaceInput
+    projects?: ProjectCreateNestedManyWithoutSpaceInput
   }
 
-  export type SpaceUncheckedCreateWithoutSpaceMemberInput = {
+  export type SpaceUncheckedCreateWithoutSpaceMembersInput = {
     id?: string
     name: string
     organizationId: string
@@ -31670,51 +31676,51 @@ export namespace Prisma {
     color?: string | null
     createdAt?: Date | string
     updatedAt?: Date | string
-    Project?: ProjectUncheckedCreateNestedManyWithoutSpaceInput
+    projects?: ProjectUncheckedCreateNestedManyWithoutSpaceInput
   }
 
-  export type SpaceCreateOrConnectWithoutSpaceMemberInput = {
+  export type SpaceCreateOrConnectWithoutSpaceMembersInput = {
     where: SpaceWhereUniqueInput
-    create: XOR<SpaceCreateWithoutSpaceMemberInput, SpaceUncheckedCreateWithoutSpaceMemberInput>
+    create: XOR<SpaceCreateWithoutSpaceMembersInput, SpaceUncheckedCreateWithoutSpaceMembersInput>
   }
 
-  export type MemberCreateWithoutSpaceMemberInput = {
+  export type MemberCreateWithoutSpaceMembersInput = {
     id?: string
     role?: $Enums.MemberRole
     createdAt?: Date | string
     updatedAt?: Date | string
     user: UserCreateNestedOneWithoutMembersInput
     organization: OrganizationCreateNestedOneWithoutMembersInput
-    Task?: TaskCreateNestedManyWithoutAssigneeInput
+    tasks?: TaskCreateNestedManyWithoutAssigneeInput
   }
 
-  export type MemberUncheckedCreateWithoutSpaceMemberInput = {
+  export type MemberUncheckedCreateWithoutSpaceMembersInput = {
     id?: string
     userId: string
     organizationId: string
     role?: $Enums.MemberRole
     createdAt?: Date | string
     updatedAt?: Date | string
-    Task?: TaskUncheckedCreateNestedManyWithoutAssigneeInput
+    tasks?: TaskUncheckedCreateNestedManyWithoutAssigneeInput
   }
 
-  export type MemberCreateOrConnectWithoutSpaceMemberInput = {
+  export type MemberCreateOrConnectWithoutSpaceMembersInput = {
     where: MemberWhereUniqueInput
-    create: XOR<MemberCreateWithoutSpaceMemberInput, MemberUncheckedCreateWithoutSpaceMemberInput>
+    create: XOR<MemberCreateWithoutSpaceMembersInput, MemberUncheckedCreateWithoutSpaceMembersInput>
   }
 
-  export type SpaceUpsertWithoutSpaceMemberInput = {
-    update: XOR<SpaceUpdateWithoutSpaceMemberInput, SpaceUncheckedUpdateWithoutSpaceMemberInput>
-    create: XOR<SpaceCreateWithoutSpaceMemberInput, SpaceUncheckedCreateWithoutSpaceMemberInput>
+  export type SpaceUpsertWithoutSpaceMembersInput = {
+    update: XOR<SpaceUpdateWithoutSpaceMembersInput, SpaceUncheckedUpdateWithoutSpaceMembersInput>
+    create: XOR<SpaceCreateWithoutSpaceMembersInput, SpaceUncheckedCreateWithoutSpaceMembersInput>
     where?: SpaceWhereInput
   }
 
-  export type SpaceUpdateToOneWithWhereWithoutSpaceMemberInput = {
+  export type SpaceUpdateToOneWithWhereWithoutSpaceMembersInput = {
     where?: SpaceWhereInput
-    data: XOR<SpaceUpdateWithoutSpaceMemberInput, SpaceUncheckedUpdateWithoutSpaceMemberInput>
+    data: XOR<SpaceUpdateWithoutSpaceMembersInput, SpaceUncheckedUpdateWithoutSpaceMembersInput>
   }
 
-  export type SpaceUpdateWithoutSpaceMemberInput = {
+  export type SpaceUpdateWithoutSpaceMembersInput = {
     id?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     icon?: NullableStringFieldUpdateOperationsInput | string | null
@@ -31722,10 +31728,10 @@ export namespace Prisma {
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     organization?: OrganizationUpdateOneRequiredWithoutSpacesNestedInput
-    Project?: ProjectUpdateManyWithoutSpaceNestedInput
+    projects?: ProjectUpdateManyWithoutSpaceNestedInput
   }
 
-  export type SpaceUncheckedUpdateWithoutSpaceMemberInput = {
+  export type SpaceUncheckedUpdateWithoutSpaceMembersInput = {
     id?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     organizationId?: StringFieldUpdateOperationsInput | string
@@ -31733,41 +31739,41 @@ export namespace Prisma {
     color?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    Project?: ProjectUncheckedUpdateManyWithoutSpaceNestedInput
+    projects?: ProjectUncheckedUpdateManyWithoutSpaceNestedInput
   }
 
-  export type MemberUpsertWithoutSpaceMemberInput = {
-    update: XOR<MemberUpdateWithoutSpaceMemberInput, MemberUncheckedUpdateWithoutSpaceMemberInput>
-    create: XOR<MemberCreateWithoutSpaceMemberInput, MemberUncheckedCreateWithoutSpaceMemberInput>
+  export type MemberUpsertWithoutSpaceMembersInput = {
+    update: XOR<MemberUpdateWithoutSpaceMembersInput, MemberUncheckedUpdateWithoutSpaceMembersInput>
+    create: XOR<MemberCreateWithoutSpaceMembersInput, MemberUncheckedCreateWithoutSpaceMembersInput>
     where?: MemberWhereInput
   }
 
-  export type MemberUpdateToOneWithWhereWithoutSpaceMemberInput = {
+  export type MemberUpdateToOneWithWhereWithoutSpaceMembersInput = {
     where?: MemberWhereInput
-    data: XOR<MemberUpdateWithoutSpaceMemberInput, MemberUncheckedUpdateWithoutSpaceMemberInput>
+    data: XOR<MemberUpdateWithoutSpaceMembersInput, MemberUncheckedUpdateWithoutSpaceMembersInput>
   }
 
-  export type MemberUpdateWithoutSpaceMemberInput = {
+  export type MemberUpdateWithoutSpaceMembersInput = {
     id?: StringFieldUpdateOperationsInput | string
     role?: EnumMemberRoleFieldUpdateOperationsInput | $Enums.MemberRole
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     user?: UserUpdateOneRequiredWithoutMembersNestedInput
     organization?: OrganizationUpdateOneRequiredWithoutMembersNestedInput
-    Task?: TaskUpdateManyWithoutAssigneeNestedInput
+    tasks?: TaskUpdateManyWithoutAssigneeNestedInput
   }
 
-  export type MemberUncheckedUpdateWithoutSpaceMemberInput = {
+  export type MemberUncheckedUpdateWithoutSpaceMembersInput = {
     id?: StringFieldUpdateOperationsInput | string
     userId?: StringFieldUpdateOperationsInput | string
     organizationId?: StringFieldUpdateOperationsInput | string
     role?: EnumMemberRoleFieldUpdateOperationsInput | $Enums.MemberRole
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    Task?: TaskUncheckedUpdateManyWithoutAssigneeNestedInput
+    tasks?: TaskUncheckedUpdateManyWithoutAssigneeNestedInput
   }
 
-  export type SpaceCreateWithoutProjectInput = {
+  export type SpaceCreateWithoutProjectsInput = {
     id?: string
     name: string
     icon?: string | null
@@ -31775,10 +31781,10 @@ export namespace Prisma {
     createdAt?: Date | string
     updatedAt?: Date | string
     organization: OrganizationCreateNestedOneWithoutSpacesInput
-    SpaceMember?: SpaceMemberCreateNestedManyWithoutSpaceInput
+    spaceMembers?: SpaceMemberCreateNestedManyWithoutSpaceInput
   }
 
-  export type SpaceUncheckedCreateWithoutProjectInput = {
+  export type SpaceUncheckedCreateWithoutProjectsInput = {
     id?: string
     name: string
     organizationId: string
@@ -31786,18 +31792,18 @@ export namespace Prisma {
     color?: string | null
     createdAt?: Date | string
     updatedAt?: Date | string
-    SpaceMember?: SpaceMemberUncheckedCreateNestedManyWithoutSpaceInput
+    spaceMembers?: SpaceMemberUncheckedCreateNestedManyWithoutSpaceInput
   }
 
-  export type SpaceCreateOrConnectWithoutProjectInput = {
+  export type SpaceCreateOrConnectWithoutProjectsInput = {
     where: SpaceWhereUniqueInput
-    create: XOR<SpaceCreateWithoutProjectInput, SpaceUncheckedCreateWithoutProjectInput>
+    create: XOR<SpaceCreateWithoutProjectsInput, SpaceUncheckedCreateWithoutProjectsInput>
   }
 
   export type ProjectWatcherCreateWithoutProjectInput = {
     id?: string
     createdAt?: Date | string
-    user: UserCreateNestedOneWithoutProjectWatcherInput
+    user: UserCreateNestedOneWithoutProjectWatchersInput
   }
 
   export type ProjectWatcherUncheckedCreateWithoutProjectInput = {
@@ -31826,14 +31832,14 @@ export namespace Prisma {
     priority?: $Enums.TaskPriority
     createdAt?: Date | string
     updatedAt?: Date | string
-    assignee: MemberCreateNestedOneWithoutTaskInput
+    assignee: MemberCreateNestedOneWithoutTasksInput
     parent?: TaskCreateNestedOneWithoutSubtasksInput
     subtasks?: TaskCreateNestedManyWithoutParentInput
-    TaskWatcher?: TaskWatcherCreateNestedManyWithoutTaskInput
-    Attachment?: AttachmentCreateNestedManyWithoutTaskInput
-    TaskTag?: TaskTagCreateNestedManyWithoutTaskInput
-    Comment?: CommentCreateNestedManyWithoutTaskInput
-    Activity?: ActivityCreateNestedManyWithoutTaskInput
+    taskWatchers?: TaskWatcherCreateNestedManyWithoutTaskInput
+    attachments?: AttachmentCreateNestedManyWithoutTaskInput
+    taskTags?: TaskTagCreateNestedManyWithoutTaskInput
+    comments?: CommentCreateNestedManyWithoutTaskInput
+    activities?: ActivityCreateNestedManyWithoutTaskInput
   }
 
   export type TaskUncheckedCreateWithoutProjectInput = {
@@ -31849,11 +31855,11 @@ export namespace Prisma {
     createdAt?: Date | string
     updatedAt?: Date | string
     subtasks?: TaskUncheckedCreateNestedManyWithoutParentInput
-    TaskWatcher?: TaskWatcherUncheckedCreateNestedManyWithoutTaskInput
-    Attachment?: AttachmentUncheckedCreateNestedManyWithoutTaskInput
-    TaskTag?: TaskTagUncheckedCreateNestedManyWithoutTaskInput
-    Comment?: CommentUncheckedCreateNestedManyWithoutTaskInput
-    Activity?: ActivityUncheckedCreateNestedManyWithoutTaskInput
+    taskWatchers?: TaskWatcherUncheckedCreateNestedManyWithoutTaskInput
+    attachments?: AttachmentUncheckedCreateNestedManyWithoutTaskInput
+    taskTags?: TaskTagUncheckedCreateNestedManyWithoutTaskInput
+    comments?: CommentUncheckedCreateNestedManyWithoutTaskInput
+    activities?: ActivityUncheckedCreateNestedManyWithoutTaskInput
   }
 
   export type TaskCreateOrConnectWithoutProjectInput = {
@@ -31866,18 +31872,18 @@ export namespace Prisma {
     skipDuplicates?: boolean
   }
 
-  export type SpaceUpsertWithoutProjectInput = {
-    update: XOR<SpaceUpdateWithoutProjectInput, SpaceUncheckedUpdateWithoutProjectInput>
-    create: XOR<SpaceCreateWithoutProjectInput, SpaceUncheckedCreateWithoutProjectInput>
+  export type SpaceUpsertWithoutProjectsInput = {
+    update: XOR<SpaceUpdateWithoutProjectsInput, SpaceUncheckedUpdateWithoutProjectsInput>
+    create: XOR<SpaceCreateWithoutProjectsInput, SpaceUncheckedCreateWithoutProjectsInput>
     where?: SpaceWhereInput
   }
 
-  export type SpaceUpdateToOneWithWhereWithoutProjectInput = {
+  export type SpaceUpdateToOneWithWhereWithoutProjectsInput = {
     where?: SpaceWhereInput
-    data: XOR<SpaceUpdateWithoutProjectInput, SpaceUncheckedUpdateWithoutProjectInput>
+    data: XOR<SpaceUpdateWithoutProjectsInput, SpaceUncheckedUpdateWithoutProjectsInput>
   }
 
-  export type SpaceUpdateWithoutProjectInput = {
+  export type SpaceUpdateWithoutProjectsInput = {
     id?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     icon?: NullableStringFieldUpdateOperationsInput | string | null
@@ -31885,10 +31891,10 @@ export namespace Prisma {
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     organization?: OrganizationUpdateOneRequiredWithoutSpacesNestedInput
-    SpaceMember?: SpaceMemberUpdateManyWithoutSpaceNestedInput
+    spaceMembers?: SpaceMemberUpdateManyWithoutSpaceNestedInput
   }
 
-  export type SpaceUncheckedUpdateWithoutProjectInput = {
+  export type SpaceUncheckedUpdateWithoutProjectsInput = {
     id?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     organizationId?: StringFieldUpdateOperationsInput | string
@@ -31896,7 +31902,7 @@ export namespace Prisma {
     color?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    SpaceMember?: SpaceMemberUncheckedUpdateManyWithoutSpaceNestedInput
+    spaceMembers?: SpaceMemberUncheckedUpdateManyWithoutSpaceNestedInput
   }
 
   export type ProjectWatcherUpsertWithWhereUniqueWithoutProjectInput = {
@@ -31931,32 +31937,32 @@ export namespace Prisma {
     data: XOR<TaskUpdateManyMutationInput, TaskUncheckedUpdateManyWithoutProjectInput>
   }
 
-  export type ProjectCreateWithoutProjectWatcherInput = {
+  export type ProjectCreateWithoutProjectWatchersInput = {
     id?: string
     name: string
     icon?: string | null
     image?: string | null
     color?: string | null
-    space: SpaceCreateNestedOneWithoutProjectInput
-    Task?: TaskCreateNestedManyWithoutProjectInput
+    space: SpaceCreateNestedOneWithoutProjectsInput
+    tasks?: TaskCreateNestedManyWithoutProjectInput
   }
 
-  export type ProjectUncheckedCreateWithoutProjectWatcherInput = {
+  export type ProjectUncheckedCreateWithoutProjectWatchersInput = {
     id?: string
     name: string
     icon?: string | null
     image?: string | null
     color?: string | null
     spaceId: string
-    Task?: TaskUncheckedCreateNestedManyWithoutProjectInput
+    tasks?: TaskUncheckedCreateNestedManyWithoutProjectInput
   }
 
-  export type ProjectCreateOrConnectWithoutProjectWatcherInput = {
+  export type ProjectCreateOrConnectWithoutProjectWatchersInput = {
     where: ProjectWhereUniqueInput
-    create: XOR<ProjectCreateWithoutProjectWatcherInput, ProjectUncheckedCreateWithoutProjectWatcherInput>
+    create: XOR<ProjectCreateWithoutProjectWatchersInput, ProjectUncheckedCreateWithoutProjectWatchersInput>
   }
 
-  export type UserCreateWithoutProjectWatcherInput = {
+  export type UserCreateWithoutProjectWatchersInput = {
     id?: string
     name: string
     email: string
@@ -31968,13 +31974,13 @@ export namespace Prisma {
     accounts?: AccountCreateNestedManyWithoutUserInput
     members?: MemberCreateNestedManyWithoutUserInput
     invitations?: InvitationCreateNestedManyWithoutUserInput
-    TaskWatcher?: TaskWatcherCreateNestedManyWithoutUserInput
-    Comment?: CommentCreateNestedManyWithoutAuthorInput
-    Activity?: ActivityCreateNestedManyWithoutActorInput
-    Notification?: NotificationCreateNestedManyWithoutUserInput
+    taskWatchers?: TaskWatcherCreateNestedManyWithoutUserInput
+    comments?: CommentCreateNestedManyWithoutAuthorInput
+    activities?: ActivityCreateNestedManyWithoutActorInput
+    notifications?: NotificationCreateNestedManyWithoutUserInput
   }
 
-  export type UserUncheckedCreateWithoutProjectWatcherInput = {
+  export type UserUncheckedCreateWithoutProjectWatchersInput = {
     id?: string
     name: string
     email: string
@@ -31986,60 +31992,60 @@ export namespace Prisma {
     accounts?: AccountUncheckedCreateNestedManyWithoutUserInput
     members?: MemberUncheckedCreateNestedManyWithoutUserInput
     invitations?: InvitationUncheckedCreateNestedManyWithoutUserInput
-    TaskWatcher?: TaskWatcherUncheckedCreateNestedManyWithoutUserInput
-    Comment?: CommentUncheckedCreateNestedManyWithoutAuthorInput
-    Activity?: ActivityUncheckedCreateNestedManyWithoutActorInput
-    Notification?: NotificationUncheckedCreateNestedManyWithoutUserInput
+    taskWatchers?: TaskWatcherUncheckedCreateNestedManyWithoutUserInput
+    comments?: CommentUncheckedCreateNestedManyWithoutAuthorInput
+    activities?: ActivityUncheckedCreateNestedManyWithoutActorInput
+    notifications?: NotificationUncheckedCreateNestedManyWithoutUserInput
   }
 
-  export type UserCreateOrConnectWithoutProjectWatcherInput = {
+  export type UserCreateOrConnectWithoutProjectWatchersInput = {
     where: UserWhereUniqueInput
-    create: XOR<UserCreateWithoutProjectWatcherInput, UserUncheckedCreateWithoutProjectWatcherInput>
+    create: XOR<UserCreateWithoutProjectWatchersInput, UserUncheckedCreateWithoutProjectWatchersInput>
   }
 
-  export type ProjectUpsertWithoutProjectWatcherInput = {
-    update: XOR<ProjectUpdateWithoutProjectWatcherInput, ProjectUncheckedUpdateWithoutProjectWatcherInput>
-    create: XOR<ProjectCreateWithoutProjectWatcherInput, ProjectUncheckedCreateWithoutProjectWatcherInput>
+  export type ProjectUpsertWithoutProjectWatchersInput = {
+    update: XOR<ProjectUpdateWithoutProjectWatchersInput, ProjectUncheckedUpdateWithoutProjectWatchersInput>
+    create: XOR<ProjectCreateWithoutProjectWatchersInput, ProjectUncheckedCreateWithoutProjectWatchersInput>
     where?: ProjectWhereInput
   }
 
-  export type ProjectUpdateToOneWithWhereWithoutProjectWatcherInput = {
+  export type ProjectUpdateToOneWithWhereWithoutProjectWatchersInput = {
     where?: ProjectWhereInput
-    data: XOR<ProjectUpdateWithoutProjectWatcherInput, ProjectUncheckedUpdateWithoutProjectWatcherInput>
+    data: XOR<ProjectUpdateWithoutProjectWatchersInput, ProjectUncheckedUpdateWithoutProjectWatchersInput>
   }
 
-  export type ProjectUpdateWithoutProjectWatcherInput = {
+  export type ProjectUpdateWithoutProjectWatchersInput = {
     id?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     icon?: NullableStringFieldUpdateOperationsInput | string | null
     image?: NullableStringFieldUpdateOperationsInput | string | null
     color?: NullableStringFieldUpdateOperationsInput | string | null
-    space?: SpaceUpdateOneRequiredWithoutProjectNestedInput
-    Task?: TaskUpdateManyWithoutProjectNestedInput
+    space?: SpaceUpdateOneRequiredWithoutProjectsNestedInput
+    tasks?: TaskUpdateManyWithoutProjectNestedInput
   }
 
-  export type ProjectUncheckedUpdateWithoutProjectWatcherInput = {
+  export type ProjectUncheckedUpdateWithoutProjectWatchersInput = {
     id?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     icon?: NullableStringFieldUpdateOperationsInput | string | null
     image?: NullableStringFieldUpdateOperationsInput | string | null
     color?: NullableStringFieldUpdateOperationsInput | string | null
     spaceId?: StringFieldUpdateOperationsInput | string
-    Task?: TaskUncheckedUpdateManyWithoutProjectNestedInput
+    tasks?: TaskUncheckedUpdateManyWithoutProjectNestedInput
   }
 
-  export type UserUpsertWithoutProjectWatcherInput = {
-    update: XOR<UserUpdateWithoutProjectWatcherInput, UserUncheckedUpdateWithoutProjectWatcherInput>
-    create: XOR<UserCreateWithoutProjectWatcherInput, UserUncheckedCreateWithoutProjectWatcherInput>
+  export type UserUpsertWithoutProjectWatchersInput = {
+    update: XOR<UserUpdateWithoutProjectWatchersInput, UserUncheckedUpdateWithoutProjectWatchersInput>
+    create: XOR<UserCreateWithoutProjectWatchersInput, UserUncheckedCreateWithoutProjectWatchersInput>
     where?: UserWhereInput
   }
 
-  export type UserUpdateToOneWithWhereWithoutProjectWatcherInput = {
+  export type UserUpdateToOneWithWhereWithoutProjectWatchersInput = {
     where?: UserWhereInput
-    data: XOR<UserUpdateWithoutProjectWatcherInput, UserUncheckedUpdateWithoutProjectWatcherInput>
+    data: XOR<UserUpdateWithoutProjectWatchersInput, UserUncheckedUpdateWithoutProjectWatchersInput>
   }
 
-  export type UserUpdateWithoutProjectWatcherInput = {
+  export type UserUpdateWithoutProjectWatchersInput = {
     id?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     email?: StringFieldUpdateOperationsInput | string
@@ -32051,13 +32057,13 @@ export namespace Prisma {
     accounts?: AccountUpdateManyWithoutUserNestedInput
     members?: MemberUpdateManyWithoutUserNestedInput
     invitations?: InvitationUpdateManyWithoutUserNestedInput
-    TaskWatcher?: TaskWatcherUpdateManyWithoutUserNestedInput
-    Comment?: CommentUpdateManyWithoutAuthorNestedInput
-    Activity?: ActivityUpdateManyWithoutActorNestedInput
-    Notification?: NotificationUpdateManyWithoutUserNestedInput
+    taskWatchers?: TaskWatcherUpdateManyWithoutUserNestedInput
+    comments?: CommentUpdateManyWithoutAuthorNestedInput
+    activities?: ActivityUpdateManyWithoutActorNestedInput
+    notifications?: NotificationUpdateManyWithoutUserNestedInput
   }
 
-  export type UserUncheckedUpdateWithoutProjectWatcherInput = {
+  export type UserUncheckedUpdateWithoutProjectWatchersInput = {
     id?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     email?: StringFieldUpdateOperationsInput | string
@@ -32069,60 +32075,60 @@ export namespace Prisma {
     accounts?: AccountUncheckedUpdateManyWithoutUserNestedInput
     members?: MemberUncheckedUpdateManyWithoutUserNestedInput
     invitations?: InvitationUncheckedUpdateManyWithoutUserNestedInput
-    TaskWatcher?: TaskWatcherUncheckedUpdateManyWithoutUserNestedInput
-    Comment?: CommentUncheckedUpdateManyWithoutAuthorNestedInput
-    Activity?: ActivityUncheckedUpdateManyWithoutActorNestedInput
-    Notification?: NotificationUncheckedUpdateManyWithoutUserNestedInput
+    taskWatchers?: TaskWatcherUncheckedUpdateManyWithoutUserNestedInput
+    comments?: CommentUncheckedUpdateManyWithoutAuthorNestedInput
+    activities?: ActivityUncheckedUpdateManyWithoutActorNestedInput
+    notifications?: NotificationUncheckedUpdateManyWithoutUserNestedInput
   }
 
-  export type ProjectCreateWithoutTaskInput = {
+  export type ProjectCreateWithoutTasksInput = {
     id?: string
     name: string
     icon?: string | null
     image?: string | null
     color?: string | null
-    space: SpaceCreateNestedOneWithoutProjectInput
-    ProjectWatcher?: ProjectWatcherCreateNestedManyWithoutProjectInput
+    space: SpaceCreateNestedOneWithoutProjectsInput
+    projectWatchers?: ProjectWatcherCreateNestedManyWithoutProjectInput
   }
 
-  export type ProjectUncheckedCreateWithoutTaskInput = {
+  export type ProjectUncheckedCreateWithoutTasksInput = {
     id?: string
     name: string
     icon?: string | null
     image?: string | null
     color?: string | null
     spaceId: string
-    ProjectWatcher?: ProjectWatcherUncheckedCreateNestedManyWithoutProjectInput
+    projectWatchers?: ProjectWatcherUncheckedCreateNestedManyWithoutProjectInput
   }
 
-  export type ProjectCreateOrConnectWithoutTaskInput = {
+  export type ProjectCreateOrConnectWithoutTasksInput = {
     where: ProjectWhereUniqueInput
-    create: XOR<ProjectCreateWithoutTaskInput, ProjectUncheckedCreateWithoutTaskInput>
+    create: XOR<ProjectCreateWithoutTasksInput, ProjectUncheckedCreateWithoutTasksInput>
   }
 
-  export type MemberCreateWithoutTaskInput = {
+  export type MemberCreateWithoutTasksInput = {
     id?: string
     role?: $Enums.MemberRole
     createdAt?: Date | string
     updatedAt?: Date | string
     user: UserCreateNestedOneWithoutMembersInput
     organization: OrganizationCreateNestedOneWithoutMembersInput
-    SpaceMember?: SpaceMemberCreateNestedManyWithoutMemberInput
+    spaceMembers?: SpaceMemberCreateNestedManyWithoutMemberInput
   }
 
-  export type MemberUncheckedCreateWithoutTaskInput = {
+  export type MemberUncheckedCreateWithoutTasksInput = {
     id?: string
     userId: string
     organizationId: string
     role?: $Enums.MemberRole
     createdAt?: Date | string
     updatedAt?: Date | string
-    SpaceMember?: SpaceMemberUncheckedCreateNestedManyWithoutMemberInput
+    spaceMembers?: SpaceMemberUncheckedCreateNestedManyWithoutMemberInput
   }
 
-  export type MemberCreateOrConnectWithoutTaskInput = {
+  export type MemberCreateOrConnectWithoutTasksInput = {
     where: MemberWhereUniqueInput
-    create: XOR<MemberCreateWithoutTaskInput, MemberUncheckedCreateWithoutTaskInput>
+    create: XOR<MemberCreateWithoutTasksInput, MemberUncheckedCreateWithoutTasksInput>
   }
 
   export type TaskCreateWithoutSubtasksInput = {
@@ -32135,14 +32141,14 @@ export namespace Prisma {
     priority?: $Enums.TaskPriority
     createdAt?: Date | string
     updatedAt?: Date | string
-    project: ProjectCreateNestedOneWithoutTaskInput
-    assignee: MemberCreateNestedOneWithoutTaskInput
+    project: ProjectCreateNestedOneWithoutTasksInput
+    assignee: MemberCreateNestedOneWithoutTasksInput
     parent?: TaskCreateNestedOneWithoutSubtasksInput
-    TaskWatcher?: TaskWatcherCreateNestedManyWithoutTaskInput
-    Attachment?: AttachmentCreateNestedManyWithoutTaskInput
-    TaskTag?: TaskTagCreateNestedManyWithoutTaskInput
-    Comment?: CommentCreateNestedManyWithoutTaskInput
-    Activity?: ActivityCreateNestedManyWithoutTaskInput
+    taskWatchers?: TaskWatcherCreateNestedManyWithoutTaskInput
+    attachments?: AttachmentCreateNestedManyWithoutTaskInput
+    taskTags?: TaskTagCreateNestedManyWithoutTaskInput
+    comments?: CommentCreateNestedManyWithoutTaskInput
+    activities?: ActivityCreateNestedManyWithoutTaskInput
   }
 
   export type TaskUncheckedCreateWithoutSubtasksInput = {
@@ -32158,11 +32164,11 @@ export namespace Prisma {
     parentId?: string | null
     createdAt?: Date | string
     updatedAt?: Date | string
-    TaskWatcher?: TaskWatcherUncheckedCreateNestedManyWithoutTaskInput
-    Attachment?: AttachmentUncheckedCreateNestedManyWithoutTaskInput
-    TaskTag?: TaskTagUncheckedCreateNestedManyWithoutTaskInput
-    Comment?: CommentUncheckedCreateNestedManyWithoutTaskInput
-    Activity?: ActivityUncheckedCreateNestedManyWithoutTaskInput
+    taskWatchers?: TaskWatcherUncheckedCreateNestedManyWithoutTaskInput
+    attachments?: AttachmentUncheckedCreateNestedManyWithoutTaskInput
+    taskTags?: TaskTagUncheckedCreateNestedManyWithoutTaskInput
+    comments?: CommentUncheckedCreateNestedManyWithoutTaskInput
+    activities?: ActivityUncheckedCreateNestedManyWithoutTaskInput
   }
 
   export type TaskCreateOrConnectWithoutSubtasksInput = {
@@ -32180,14 +32186,14 @@ export namespace Prisma {
     priority?: $Enums.TaskPriority
     createdAt?: Date | string
     updatedAt?: Date | string
-    project: ProjectCreateNestedOneWithoutTaskInput
-    assignee: MemberCreateNestedOneWithoutTaskInput
+    project: ProjectCreateNestedOneWithoutTasksInput
+    assignee: MemberCreateNestedOneWithoutTasksInput
     subtasks?: TaskCreateNestedManyWithoutParentInput
-    TaskWatcher?: TaskWatcherCreateNestedManyWithoutTaskInput
-    Attachment?: AttachmentCreateNestedManyWithoutTaskInput
-    TaskTag?: TaskTagCreateNestedManyWithoutTaskInput
-    Comment?: CommentCreateNestedManyWithoutTaskInput
-    Activity?: ActivityCreateNestedManyWithoutTaskInput
+    taskWatchers?: TaskWatcherCreateNestedManyWithoutTaskInput
+    attachments?: AttachmentCreateNestedManyWithoutTaskInput
+    taskTags?: TaskTagCreateNestedManyWithoutTaskInput
+    comments?: CommentCreateNestedManyWithoutTaskInput
+    activities?: ActivityCreateNestedManyWithoutTaskInput
   }
 
   export type TaskUncheckedCreateWithoutParentInput = {
@@ -32203,11 +32209,11 @@ export namespace Prisma {
     createdAt?: Date | string
     updatedAt?: Date | string
     subtasks?: TaskUncheckedCreateNestedManyWithoutParentInput
-    TaskWatcher?: TaskWatcherUncheckedCreateNestedManyWithoutTaskInput
-    Attachment?: AttachmentUncheckedCreateNestedManyWithoutTaskInput
-    TaskTag?: TaskTagUncheckedCreateNestedManyWithoutTaskInput
-    Comment?: CommentUncheckedCreateNestedManyWithoutTaskInput
-    Activity?: ActivityUncheckedCreateNestedManyWithoutTaskInput
+    taskWatchers?: TaskWatcherUncheckedCreateNestedManyWithoutTaskInput
+    attachments?: AttachmentUncheckedCreateNestedManyWithoutTaskInput
+    taskTags?: TaskTagUncheckedCreateNestedManyWithoutTaskInput
+    comments?: CommentUncheckedCreateNestedManyWithoutTaskInput
+    activities?: ActivityUncheckedCreateNestedManyWithoutTaskInput
   }
 
   export type TaskCreateOrConnectWithoutParentInput = {
@@ -32223,7 +32229,7 @@ export namespace Prisma {
   export type TaskWatcherCreateWithoutTaskInput = {
     id?: string
     createdAt?: Date | string
-    user: UserCreateNestedOneWithoutTaskWatcherInput
+    user: UserCreateNestedOneWithoutTaskWatchersInput
   }
 
   export type TaskWatcherUncheckedCreateWithoutTaskInput = {
@@ -32247,7 +32253,7 @@ export namespace Prisma {
     url: string
     type?: string | null
     createdAt?: Date | string
-    Activity?: ActivityCreateNestedManyWithoutAttachmentInput
+    activities?: ActivityCreateNestedManyWithoutAttachmentInput
   }
 
   export type AttachmentUncheckedCreateWithoutTaskInput = {
@@ -32255,7 +32261,7 @@ export namespace Prisma {
     url: string
     type?: string | null
     createdAt?: Date | string
-    Activity?: ActivityUncheckedCreateNestedManyWithoutAttachmentInput
+    activities?: ActivityUncheckedCreateNestedManyWithoutAttachmentInput
   }
 
   export type AttachmentCreateOrConnectWithoutTaskInput = {
@@ -32291,8 +32297,8 @@ export namespace Prisma {
     content: string
     createdAt?: Date | string
     updatedAt?: Date | string
-    author: UserCreateNestedOneWithoutCommentInput
-    Activity?: ActivityCreateNestedManyWithoutCommentInput
+    author: UserCreateNestedOneWithoutCommentsInput
+    activities?: ActivityCreateNestedManyWithoutCommentInput
   }
 
   export type CommentUncheckedCreateWithoutTaskInput = {
@@ -32301,7 +32307,7 @@ export namespace Prisma {
     authorId: string
     createdAt?: Date | string
     updatedAt?: Date | string
-    Activity?: ActivityUncheckedCreateNestedManyWithoutCommentInput
+    activities?: ActivityUncheckedCreateNestedManyWithoutCommentInput
   }
 
   export type CommentCreateOrConnectWithoutTaskInput = {
@@ -32318,10 +32324,10 @@ export namespace Prisma {
     id?: string
     type: $Enums.ActivityType
     createdAt?: Date | string
-    actor: UserCreateNestedOneWithoutActivityInput
-    comment?: CommentCreateNestedOneWithoutActivityInput
-    attachment?: AttachmentCreateNestedOneWithoutActivityInput
-    Notification?: NotificationCreateNestedManyWithoutActivityInput
+    actor: UserCreateNestedOneWithoutActivitiesInput
+    comment?: CommentCreateNestedOneWithoutActivitiesInput
+    attachment?: AttachmentCreateNestedOneWithoutActivitiesInput
+    notifications?: NotificationCreateNestedManyWithoutActivityInput
   }
 
   export type ActivityUncheckedCreateWithoutTaskInput = {
@@ -32331,7 +32337,7 @@ export namespace Prisma {
     commentId?: string | null
     attachmentId?: string | null
     createdAt?: Date | string
-    Notification?: NotificationUncheckedCreateNestedManyWithoutActivityInput
+    notifications?: NotificationUncheckedCreateNestedManyWithoutActivityInput
   }
 
   export type ActivityCreateOrConnectWithoutTaskInput = {
@@ -32344,66 +32350,66 @@ export namespace Prisma {
     skipDuplicates?: boolean
   }
 
-  export type ProjectUpsertWithoutTaskInput = {
-    update: XOR<ProjectUpdateWithoutTaskInput, ProjectUncheckedUpdateWithoutTaskInput>
-    create: XOR<ProjectCreateWithoutTaskInput, ProjectUncheckedCreateWithoutTaskInput>
+  export type ProjectUpsertWithoutTasksInput = {
+    update: XOR<ProjectUpdateWithoutTasksInput, ProjectUncheckedUpdateWithoutTasksInput>
+    create: XOR<ProjectCreateWithoutTasksInput, ProjectUncheckedCreateWithoutTasksInput>
     where?: ProjectWhereInput
   }
 
-  export type ProjectUpdateToOneWithWhereWithoutTaskInput = {
+  export type ProjectUpdateToOneWithWhereWithoutTasksInput = {
     where?: ProjectWhereInput
-    data: XOR<ProjectUpdateWithoutTaskInput, ProjectUncheckedUpdateWithoutTaskInput>
+    data: XOR<ProjectUpdateWithoutTasksInput, ProjectUncheckedUpdateWithoutTasksInput>
   }
 
-  export type ProjectUpdateWithoutTaskInput = {
+  export type ProjectUpdateWithoutTasksInput = {
     id?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     icon?: NullableStringFieldUpdateOperationsInput | string | null
     image?: NullableStringFieldUpdateOperationsInput | string | null
     color?: NullableStringFieldUpdateOperationsInput | string | null
-    space?: SpaceUpdateOneRequiredWithoutProjectNestedInput
-    ProjectWatcher?: ProjectWatcherUpdateManyWithoutProjectNestedInput
+    space?: SpaceUpdateOneRequiredWithoutProjectsNestedInput
+    projectWatchers?: ProjectWatcherUpdateManyWithoutProjectNestedInput
   }
 
-  export type ProjectUncheckedUpdateWithoutTaskInput = {
+  export type ProjectUncheckedUpdateWithoutTasksInput = {
     id?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     icon?: NullableStringFieldUpdateOperationsInput | string | null
     image?: NullableStringFieldUpdateOperationsInput | string | null
     color?: NullableStringFieldUpdateOperationsInput | string | null
     spaceId?: StringFieldUpdateOperationsInput | string
-    ProjectWatcher?: ProjectWatcherUncheckedUpdateManyWithoutProjectNestedInput
+    projectWatchers?: ProjectWatcherUncheckedUpdateManyWithoutProjectNestedInput
   }
 
-  export type MemberUpsertWithoutTaskInput = {
-    update: XOR<MemberUpdateWithoutTaskInput, MemberUncheckedUpdateWithoutTaskInput>
-    create: XOR<MemberCreateWithoutTaskInput, MemberUncheckedCreateWithoutTaskInput>
+  export type MemberUpsertWithoutTasksInput = {
+    update: XOR<MemberUpdateWithoutTasksInput, MemberUncheckedUpdateWithoutTasksInput>
+    create: XOR<MemberCreateWithoutTasksInput, MemberUncheckedCreateWithoutTasksInput>
     where?: MemberWhereInput
   }
 
-  export type MemberUpdateToOneWithWhereWithoutTaskInput = {
+  export type MemberUpdateToOneWithWhereWithoutTasksInput = {
     where?: MemberWhereInput
-    data: XOR<MemberUpdateWithoutTaskInput, MemberUncheckedUpdateWithoutTaskInput>
+    data: XOR<MemberUpdateWithoutTasksInput, MemberUncheckedUpdateWithoutTasksInput>
   }
 
-  export type MemberUpdateWithoutTaskInput = {
+  export type MemberUpdateWithoutTasksInput = {
     id?: StringFieldUpdateOperationsInput | string
     role?: EnumMemberRoleFieldUpdateOperationsInput | $Enums.MemberRole
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     user?: UserUpdateOneRequiredWithoutMembersNestedInput
     organization?: OrganizationUpdateOneRequiredWithoutMembersNestedInput
-    SpaceMember?: SpaceMemberUpdateManyWithoutMemberNestedInput
+    spaceMembers?: SpaceMemberUpdateManyWithoutMemberNestedInput
   }
 
-  export type MemberUncheckedUpdateWithoutTaskInput = {
+  export type MemberUncheckedUpdateWithoutTasksInput = {
     id?: StringFieldUpdateOperationsInput | string
     userId?: StringFieldUpdateOperationsInput | string
     organizationId?: StringFieldUpdateOperationsInput | string
     role?: EnumMemberRoleFieldUpdateOperationsInput | $Enums.MemberRole
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    SpaceMember?: SpaceMemberUncheckedUpdateManyWithoutMemberNestedInput
+    spaceMembers?: SpaceMemberUncheckedUpdateManyWithoutMemberNestedInput
   }
 
   export type TaskUpsertWithoutSubtasksInput = {
@@ -32427,14 +32433,14 @@ export namespace Prisma {
     priority?: EnumTaskPriorityFieldUpdateOperationsInput | $Enums.TaskPriority
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    project?: ProjectUpdateOneRequiredWithoutTaskNestedInput
-    assignee?: MemberUpdateOneRequiredWithoutTaskNestedInput
+    project?: ProjectUpdateOneRequiredWithoutTasksNestedInput
+    assignee?: MemberUpdateOneRequiredWithoutTasksNestedInput
     parent?: TaskUpdateOneWithoutSubtasksNestedInput
-    TaskWatcher?: TaskWatcherUpdateManyWithoutTaskNestedInput
-    Attachment?: AttachmentUpdateManyWithoutTaskNestedInput
-    TaskTag?: TaskTagUpdateManyWithoutTaskNestedInput
-    Comment?: CommentUpdateManyWithoutTaskNestedInput
-    Activity?: ActivityUpdateManyWithoutTaskNestedInput
+    taskWatchers?: TaskWatcherUpdateManyWithoutTaskNestedInput
+    attachments?: AttachmentUpdateManyWithoutTaskNestedInput
+    taskTags?: TaskTagUpdateManyWithoutTaskNestedInput
+    comments?: CommentUpdateManyWithoutTaskNestedInput
+    activities?: ActivityUpdateManyWithoutTaskNestedInput
   }
 
   export type TaskUncheckedUpdateWithoutSubtasksInput = {
@@ -32450,11 +32456,11 @@ export namespace Prisma {
     parentId?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    TaskWatcher?: TaskWatcherUncheckedUpdateManyWithoutTaskNestedInput
-    Attachment?: AttachmentUncheckedUpdateManyWithoutTaskNestedInput
-    TaskTag?: TaskTagUncheckedUpdateManyWithoutTaskNestedInput
-    Comment?: CommentUncheckedUpdateManyWithoutTaskNestedInput
-    Activity?: ActivityUncheckedUpdateManyWithoutTaskNestedInput
+    taskWatchers?: TaskWatcherUncheckedUpdateManyWithoutTaskNestedInput
+    attachments?: AttachmentUncheckedUpdateManyWithoutTaskNestedInput
+    taskTags?: TaskTagUncheckedUpdateManyWithoutTaskNestedInput
+    comments?: CommentUncheckedUpdateManyWithoutTaskNestedInput
+    activities?: ActivityUncheckedUpdateManyWithoutTaskNestedInput
   }
 
   export type TaskUpsertWithWhereUniqueWithoutParentInput = {
@@ -32572,7 +32578,7 @@ export namespace Prisma {
     data: XOR<ActivityUpdateManyMutationInput, ActivityUncheckedUpdateManyWithoutTaskInput>
   }
 
-  export type TaskCreateWithoutTaskWatcherInput = {
+  export type TaskCreateWithoutTaskWatchersInput = {
     id?: string
     title: string
     description?: string | null
@@ -32582,17 +32588,17 @@ export namespace Prisma {
     priority?: $Enums.TaskPriority
     createdAt?: Date | string
     updatedAt?: Date | string
-    project: ProjectCreateNestedOneWithoutTaskInput
-    assignee: MemberCreateNestedOneWithoutTaskInput
+    project: ProjectCreateNestedOneWithoutTasksInput
+    assignee: MemberCreateNestedOneWithoutTasksInput
     parent?: TaskCreateNestedOneWithoutSubtasksInput
     subtasks?: TaskCreateNestedManyWithoutParentInput
-    Attachment?: AttachmentCreateNestedManyWithoutTaskInput
-    TaskTag?: TaskTagCreateNestedManyWithoutTaskInput
-    Comment?: CommentCreateNestedManyWithoutTaskInput
-    Activity?: ActivityCreateNestedManyWithoutTaskInput
+    attachments?: AttachmentCreateNestedManyWithoutTaskInput
+    taskTags?: TaskTagCreateNestedManyWithoutTaskInput
+    comments?: CommentCreateNestedManyWithoutTaskInput
+    activities?: ActivityCreateNestedManyWithoutTaskInput
   }
 
-  export type TaskUncheckedCreateWithoutTaskWatcherInput = {
+  export type TaskUncheckedCreateWithoutTaskWatchersInput = {
     id?: string
     title: string
     description?: string | null
@@ -32606,18 +32612,18 @@ export namespace Prisma {
     createdAt?: Date | string
     updatedAt?: Date | string
     subtasks?: TaskUncheckedCreateNestedManyWithoutParentInput
-    Attachment?: AttachmentUncheckedCreateNestedManyWithoutTaskInput
-    TaskTag?: TaskTagUncheckedCreateNestedManyWithoutTaskInput
-    Comment?: CommentUncheckedCreateNestedManyWithoutTaskInput
-    Activity?: ActivityUncheckedCreateNestedManyWithoutTaskInput
+    attachments?: AttachmentUncheckedCreateNestedManyWithoutTaskInput
+    taskTags?: TaskTagUncheckedCreateNestedManyWithoutTaskInput
+    comments?: CommentUncheckedCreateNestedManyWithoutTaskInput
+    activities?: ActivityUncheckedCreateNestedManyWithoutTaskInput
   }
 
-  export type TaskCreateOrConnectWithoutTaskWatcherInput = {
+  export type TaskCreateOrConnectWithoutTaskWatchersInput = {
     where: TaskWhereUniqueInput
-    create: XOR<TaskCreateWithoutTaskWatcherInput, TaskUncheckedCreateWithoutTaskWatcherInput>
+    create: XOR<TaskCreateWithoutTaskWatchersInput, TaskUncheckedCreateWithoutTaskWatchersInput>
   }
 
-  export type UserCreateWithoutTaskWatcherInput = {
+  export type UserCreateWithoutTaskWatchersInput = {
     id?: string
     name: string
     email: string
@@ -32629,13 +32635,13 @@ export namespace Prisma {
     accounts?: AccountCreateNestedManyWithoutUserInput
     members?: MemberCreateNestedManyWithoutUserInput
     invitations?: InvitationCreateNestedManyWithoutUserInput
-    ProjectWatcher?: ProjectWatcherCreateNestedManyWithoutUserInput
-    Comment?: CommentCreateNestedManyWithoutAuthorInput
-    Activity?: ActivityCreateNestedManyWithoutActorInput
-    Notification?: NotificationCreateNestedManyWithoutUserInput
+    projectWatchers?: ProjectWatcherCreateNestedManyWithoutUserInput
+    comments?: CommentCreateNestedManyWithoutAuthorInput
+    activities?: ActivityCreateNestedManyWithoutActorInput
+    notifications?: NotificationCreateNestedManyWithoutUserInput
   }
 
-  export type UserUncheckedCreateWithoutTaskWatcherInput = {
+  export type UserUncheckedCreateWithoutTaskWatchersInput = {
     id?: string
     name: string
     email: string
@@ -32647,29 +32653,29 @@ export namespace Prisma {
     accounts?: AccountUncheckedCreateNestedManyWithoutUserInput
     members?: MemberUncheckedCreateNestedManyWithoutUserInput
     invitations?: InvitationUncheckedCreateNestedManyWithoutUserInput
-    ProjectWatcher?: ProjectWatcherUncheckedCreateNestedManyWithoutUserInput
-    Comment?: CommentUncheckedCreateNestedManyWithoutAuthorInput
-    Activity?: ActivityUncheckedCreateNestedManyWithoutActorInput
-    Notification?: NotificationUncheckedCreateNestedManyWithoutUserInput
+    projectWatchers?: ProjectWatcherUncheckedCreateNestedManyWithoutUserInput
+    comments?: CommentUncheckedCreateNestedManyWithoutAuthorInput
+    activities?: ActivityUncheckedCreateNestedManyWithoutActorInput
+    notifications?: NotificationUncheckedCreateNestedManyWithoutUserInput
   }
 
-  export type UserCreateOrConnectWithoutTaskWatcherInput = {
+  export type UserCreateOrConnectWithoutTaskWatchersInput = {
     where: UserWhereUniqueInput
-    create: XOR<UserCreateWithoutTaskWatcherInput, UserUncheckedCreateWithoutTaskWatcherInput>
+    create: XOR<UserCreateWithoutTaskWatchersInput, UserUncheckedCreateWithoutTaskWatchersInput>
   }
 
-  export type TaskUpsertWithoutTaskWatcherInput = {
-    update: XOR<TaskUpdateWithoutTaskWatcherInput, TaskUncheckedUpdateWithoutTaskWatcherInput>
-    create: XOR<TaskCreateWithoutTaskWatcherInput, TaskUncheckedCreateWithoutTaskWatcherInput>
+  export type TaskUpsertWithoutTaskWatchersInput = {
+    update: XOR<TaskUpdateWithoutTaskWatchersInput, TaskUncheckedUpdateWithoutTaskWatchersInput>
+    create: XOR<TaskCreateWithoutTaskWatchersInput, TaskUncheckedCreateWithoutTaskWatchersInput>
     where?: TaskWhereInput
   }
 
-  export type TaskUpdateToOneWithWhereWithoutTaskWatcherInput = {
+  export type TaskUpdateToOneWithWhereWithoutTaskWatchersInput = {
     where?: TaskWhereInput
-    data: XOR<TaskUpdateWithoutTaskWatcherInput, TaskUncheckedUpdateWithoutTaskWatcherInput>
+    data: XOR<TaskUpdateWithoutTaskWatchersInput, TaskUncheckedUpdateWithoutTaskWatchersInput>
   }
 
-  export type TaskUpdateWithoutTaskWatcherInput = {
+  export type TaskUpdateWithoutTaskWatchersInput = {
     id?: StringFieldUpdateOperationsInput | string
     title?: StringFieldUpdateOperationsInput | string
     description?: NullableStringFieldUpdateOperationsInput | string | null
@@ -32679,17 +32685,17 @@ export namespace Prisma {
     priority?: EnumTaskPriorityFieldUpdateOperationsInput | $Enums.TaskPriority
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    project?: ProjectUpdateOneRequiredWithoutTaskNestedInput
-    assignee?: MemberUpdateOneRequiredWithoutTaskNestedInput
+    project?: ProjectUpdateOneRequiredWithoutTasksNestedInput
+    assignee?: MemberUpdateOneRequiredWithoutTasksNestedInput
     parent?: TaskUpdateOneWithoutSubtasksNestedInput
     subtasks?: TaskUpdateManyWithoutParentNestedInput
-    Attachment?: AttachmentUpdateManyWithoutTaskNestedInput
-    TaskTag?: TaskTagUpdateManyWithoutTaskNestedInput
-    Comment?: CommentUpdateManyWithoutTaskNestedInput
-    Activity?: ActivityUpdateManyWithoutTaskNestedInput
+    attachments?: AttachmentUpdateManyWithoutTaskNestedInput
+    taskTags?: TaskTagUpdateManyWithoutTaskNestedInput
+    comments?: CommentUpdateManyWithoutTaskNestedInput
+    activities?: ActivityUpdateManyWithoutTaskNestedInput
   }
 
-  export type TaskUncheckedUpdateWithoutTaskWatcherInput = {
+  export type TaskUncheckedUpdateWithoutTaskWatchersInput = {
     id?: StringFieldUpdateOperationsInput | string
     title?: StringFieldUpdateOperationsInput | string
     description?: NullableStringFieldUpdateOperationsInput | string | null
@@ -32703,24 +32709,24 @@ export namespace Prisma {
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     subtasks?: TaskUncheckedUpdateManyWithoutParentNestedInput
-    Attachment?: AttachmentUncheckedUpdateManyWithoutTaskNestedInput
-    TaskTag?: TaskTagUncheckedUpdateManyWithoutTaskNestedInput
-    Comment?: CommentUncheckedUpdateManyWithoutTaskNestedInput
-    Activity?: ActivityUncheckedUpdateManyWithoutTaskNestedInput
+    attachments?: AttachmentUncheckedUpdateManyWithoutTaskNestedInput
+    taskTags?: TaskTagUncheckedUpdateManyWithoutTaskNestedInput
+    comments?: CommentUncheckedUpdateManyWithoutTaskNestedInput
+    activities?: ActivityUncheckedUpdateManyWithoutTaskNestedInput
   }
 
-  export type UserUpsertWithoutTaskWatcherInput = {
-    update: XOR<UserUpdateWithoutTaskWatcherInput, UserUncheckedUpdateWithoutTaskWatcherInput>
-    create: XOR<UserCreateWithoutTaskWatcherInput, UserUncheckedCreateWithoutTaskWatcherInput>
+  export type UserUpsertWithoutTaskWatchersInput = {
+    update: XOR<UserUpdateWithoutTaskWatchersInput, UserUncheckedUpdateWithoutTaskWatchersInput>
+    create: XOR<UserCreateWithoutTaskWatchersInput, UserUncheckedCreateWithoutTaskWatchersInput>
     where?: UserWhereInput
   }
 
-  export type UserUpdateToOneWithWhereWithoutTaskWatcherInput = {
+  export type UserUpdateToOneWithWhereWithoutTaskWatchersInput = {
     where?: UserWhereInput
-    data: XOR<UserUpdateWithoutTaskWatcherInput, UserUncheckedUpdateWithoutTaskWatcherInput>
+    data: XOR<UserUpdateWithoutTaskWatchersInput, UserUncheckedUpdateWithoutTaskWatchersInput>
   }
 
-  export type UserUpdateWithoutTaskWatcherInput = {
+  export type UserUpdateWithoutTaskWatchersInput = {
     id?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     email?: StringFieldUpdateOperationsInput | string
@@ -32732,13 +32738,13 @@ export namespace Prisma {
     accounts?: AccountUpdateManyWithoutUserNestedInput
     members?: MemberUpdateManyWithoutUserNestedInput
     invitations?: InvitationUpdateManyWithoutUserNestedInput
-    ProjectWatcher?: ProjectWatcherUpdateManyWithoutUserNestedInput
-    Comment?: CommentUpdateManyWithoutAuthorNestedInput
-    Activity?: ActivityUpdateManyWithoutActorNestedInput
-    Notification?: NotificationUpdateManyWithoutUserNestedInput
+    projectWatchers?: ProjectWatcherUpdateManyWithoutUserNestedInput
+    comments?: CommentUpdateManyWithoutAuthorNestedInput
+    activities?: ActivityUpdateManyWithoutActorNestedInput
+    notifications?: NotificationUpdateManyWithoutUserNestedInput
   }
 
-  export type UserUncheckedUpdateWithoutTaskWatcherInput = {
+  export type UserUncheckedUpdateWithoutTaskWatchersInput = {
     id?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     email?: StringFieldUpdateOperationsInput | string
@@ -32750,13 +32756,13 @@ export namespace Prisma {
     accounts?: AccountUncheckedUpdateManyWithoutUserNestedInput
     members?: MemberUncheckedUpdateManyWithoutUserNestedInput
     invitations?: InvitationUncheckedUpdateManyWithoutUserNestedInput
-    ProjectWatcher?: ProjectWatcherUncheckedUpdateManyWithoutUserNestedInput
-    Comment?: CommentUncheckedUpdateManyWithoutAuthorNestedInput
-    Activity?: ActivityUncheckedUpdateManyWithoutActorNestedInput
-    Notification?: NotificationUncheckedUpdateManyWithoutUserNestedInput
+    projectWatchers?: ProjectWatcherUncheckedUpdateManyWithoutUserNestedInput
+    comments?: CommentUncheckedUpdateManyWithoutAuthorNestedInput
+    activities?: ActivityUncheckedUpdateManyWithoutActorNestedInput
+    notifications?: NotificationUncheckedUpdateManyWithoutUserNestedInput
   }
 
-  export type TaskCreateWithoutAttachmentInput = {
+  export type TaskCreateWithoutAttachmentsInput = {
     id?: string
     title: string
     description?: string | null
@@ -32766,17 +32772,17 @@ export namespace Prisma {
     priority?: $Enums.TaskPriority
     createdAt?: Date | string
     updatedAt?: Date | string
-    project: ProjectCreateNestedOneWithoutTaskInput
-    assignee: MemberCreateNestedOneWithoutTaskInput
+    project: ProjectCreateNestedOneWithoutTasksInput
+    assignee: MemberCreateNestedOneWithoutTasksInput
     parent?: TaskCreateNestedOneWithoutSubtasksInput
     subtasks?: TaskCreateNestedManyWithoutParentInput
-    TaskWatcher?: TaskWatcherCreateNestedManyWithoutTaskInput
-    TaskTag?: TaskTagCreateNestedManyWithoutTaskInput
-    Comment?: CommentCreateNestedManyWithoutTaskInput
-    Activity?: ActivityCreateNestedManyWithoutTaskInput
+    taskWatchers?: TaskWatcherCreateNestedManyWithoutTaskInput
+    taskTags?: TaskTagCreateNestedManyWithoutTaskInput
+    comments?: CommentCreateNestedManyWithoutTaskInput
+    activities?: ActivityCreateNestedManyWithoutTaskInput
   }
 
-  export type TaskUncheckedCreateWithoutAttachmentInput = {
+  export type TaskUncheckedCreateWithoutAttachmentsInput = {
     id?: string
     title: string
     description?: string | null
@@ -32790,25 +32796,25 @@ export namespace Prisma {
     createdAt?: Date | string
     updatedAt?: Date | string
     subtasks?: TaskUncheckedCreateNestedManyWithoutParentInput
-    TaskWatcher?: TaskWatcherUncheckedCreateNestedManyWithoutTaskInput
-    TaskTag?: TaskTagUncheckedCreateNestedManyWithoutTaskInput
-    Comment?: CommentUncheckedCreateNestedManyWithoutTaskInput
-    Activity?: ActivityUncheckedCreateNestedManyWithoutTaskInput
+    taskWatchers?: TaskWatcherUncheckedCreateNestedManyWithoutTaskInput
+    taskTags?: TaskTagUncheckedCreateNestedManyWithoutTaskInput
+    comments?: CommentUncheckedCreateNestedManyWithoutTaskInput
+    activities?: ActivityUncheckedCreateNestedManyWithoutTaskInput
   }
 
-  export type TaskCreateOrConnectWithoutAttachmentInput = {
+  export type TaskCreateOrConnectWithoutAttachmentsInput = {
     where: TaskWhereUniqueInput
-    create: XOR<TaskCreateWithoutAttachmentInput, TaskUncheckedCreateWithoutAttachmentInput>
+    create: XOR<TaskCreateWithoutAttachmentsInput, TaskUncheckedCreateWithoutAttachmentsInput>
   }
 
   export type ActivityCreateWithoutAttachmentInput = {
     id?: string
     type: $Enums.ActivityType
     createdAt?: Date | string
-    actor: UserCreateNestedOneWithoutActivityInput
-    task?: TaskCreateNestedOneWithoutActivityInput
-    comment?: CommentCreateNestedOneWithoutActivityInput
-    Notification?: NotificationCreateNestedManyWithoutActivityInput
+    actor: UserCreateNestedOneWithoutActivitiesInput
+    task?: TaskCreateNestedOneWithoutActivitiesInput
+    comment?: CommentCreateNestedOneWithoutActivitiesInput
+    notifications?: NotificationCreateNestedManyWithoutActivityInput
   }
 
   export type ActivityUncheckedCreateWithoutAttachmentInput = {
@@ -32818,7 +32824,7 @@ export namespace Prisma {
     taskId?: string | null
     commentId?: string | null
     createdAt?: Date | string
-    Notification?: NotificationUncheckedCreateNestedManyWithoutActivityInput
+    notifications?: NotificationUncheckedCreateNestedManyWithoutActivityInput
   }
 
   export type ActivityCreateOrConnectWithoutAttachmentInput = {
@@ -32831,18 +32837,18 @@ export namespace Prisma {
     skipDuplicates?: boolean
   }
 
-  export type TaskUpsertWithoutAttachmentInput = {
-    update: XOR<TaskUpdateWithoutAttachmentInput, TaskUncheckedUpdateWithoutAttachmentInput>
-    create: XOR<TaskCreateWithoutAttachmentInput, TaskUncheckedCreateWithoutAttachmentInput>
+  export type TaskUpsertWithoutAttachmentsInput = {
+    update: XOR<TaskUpdateWithoutAttachmentsInput, TaskUncheckedUpdateWithoutAttachmentsInput>
+    create: XOR<TaskCreateWithoutAttachmentsInput, TaskUncheckedCreateWithoutAttachmentsInput>
     where?: TaskWhereInput
   }
 
-  export type TaskUpdateToOneWithWhereWithoutAttachmentInput = {
+  export type TaskUpdateToOneWithWhereWithoutAttachmentsInput = {
     where?: TaskWhereInput
-    data: XOR<TaskUpdateWithoutAttachmentInput, TaskUncheckedUpdateWithoutAttachmentInput>
+    data: XOR<TaskUpdateWithoutAttachmentsInput, TaskUncheckedUpdateWithoutAttachmentsInput>
   }
 
-  export type TaskUpdateWithoutAttachmentInput = {
+  export type TaskUpdateWithoutAttachmentsInput = {
     id?: StringFieldUpdateOperationsInput | string
     title?: StringFieldUpdateOperationsInput | string
     description?: NullableStringFieldUpdateOperationsInput | string | null
@@ -32852,17 +32858,17 @@ export namespace Prisma {
     priority?: EnumTaskPriorityFieldUpdateOperationsInput | $Enums.TaskPriority
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    project?: ProjectUpdateOneRequiredWithoutTaskNestedInput
-    assignee?: MemberUpdateOneRequiredWithoutTaskNestedInput
+    project?: ProjectUpdateOneRequiredWithoutTasksNestedInput
+    assignee?: MemberUpdateOneRequiredWithoutTasksNestedInput
     parent?: TaskUpdateOneWithoutSubtasksNestedInput
     subtasks?: TaskUpdateManyWithoutParentNestedInput
-    TaskWatcher?: TaskWatcherUpdateManyWithoutTaskNestedInput
-    TaskTag?: TaskTagUpdateManyWithoutTaskNestedInput
-    Comment?: CommentUpdateManyWithoutTaskNestedInput
-    Activity?: ActivityUpdateManyWithoutTaskNestedInput
+    taskWatchers?: TaskWatcherUpdateManyWithoutTaskNestedInput
+    taskTags?: TaskTagUpdateManyWithoutTaskNestedInput
+    comments?: CommentUpdateManyWithoutTaskNestedInput
+    activities?: ActivityUpdateManyWithoutTaskNestedInput
   }
 
-  export type TaskUncheckedUpdateWithoutAttachmentInput = {
+  export type TaskUncheckedUpdateWithoutAttachmentsInput = {
     id?: StringFieldUpdateOperationsInput | string
     title?: StringFieldUpdateOperationsInput | string
     description?: NullableStringFieldUpdateOperationsInput | string | null
@@ -32876,10 +32882,10 @@ export namespace Prisma {
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     subtasks?: TaskUncheckedUpdateManyWithoutParentNestedInput
-    TaskWatcher?: TaskWatcherUncheckedUpdateManyWithoutTaskNestedInput
-    TaskTag?: TaskTagUncheckedUpdateManyWithoutTaskNestedInput
-    Comment?: CommentUncheckedUpdateManyWithoutTaskNestedInput
-    Activity?: ActivityUncheckedUpdateManyWithoutTaskNestedInput
+    taskWatchers?: TaskWatcherUncheckedUpdateManyWithoutTaskNestedInput
+    taskTags?: TaskTagUncheckedUpdateManyWithoutTaskNestedInput
+    comments?: CommentUncheckedUpdateManyWithoutTaskNestedInput
+    activities?: ActivityUncheckedUpdateManyWithoutTaskNestedInput
   }
 
   export type ActivityUpsertWithWhereUniqueWithoutAttachmentInput = {
@@ -32899,7 +32905,7 @@ export namespace Prisma {
   }
 
   export type TaskTagCreateWithoutTagInput = {
-    task: TaskCreateNestedOneWithoutTaskTagInput
+    task: TaskCreateNestedOneWithoutTaskTagsInput
   }
 
   export type TaskTagUncheckedCreateWithoutTagInput = {
@@ -32932,7 +32938,7 @@ export namespace Prisma {
     data: XOR<TaskTagUpdateManyMutationInput, TaskTagUncheckedUpdateManyWithoutTagInput>
   }
 
-  export type TaskCreateWithoutTaskTagInput = {
+  export type TaskCreateWithoutTaskTagsInput = {
     id?: string
     title: string
     description?: string | null
@@ -32942,17 +32948,17 @@ export namespace Prisma {
     priority?: $Enums.TaskPriority
     createdAt?: Date | string
     updatedAt?: Date | string
-    project: ProjectCreateNestedOneWithoutTaskInput
-    assignee: MemberCreateNestedOneWithoutTaskInput
+    project: ProjectCreateNestedOneWithoutTasksInput
+    assignee: MemberCreateNestedOneWithoutTasksInput
     parent?: TaskCreateNestedOneWithoutSubtasksInput
     subtasks?: TaskCreateNestedManyWithoutParentInput
-    TaskWatcher?: TaskWatcherCreateNestedManyWithoutTaskInput
-    Attachment?: AttachmentCreateNestedManyWithoutTaskInput
-    Comment?: CommentCreateNestedManyWithoutTaskInput
-    Activity?: ActivityCreateNestedManyWithoutTaskInput
+    taskWatchers?: TaskWatcherCreateNestedManyWithoutTaskInput
+    attachments?: AttachmentCreateNestedManyWithoutTaskInput
+    comments?: CommentCreateNestedManyWithoutTaskInput
+    activities?: ActivityCreateNestedManyWithoutTaskInput
   }
 
-  export type TaskUncheckedCreateWithoutTaskTagInput = {
+  export type TaskUncheckedCreateWithoutTaskTagsInput = {
     id?: string
     title: string
     description?: string | null
@@ -32966,15 +32972,15 @@ export namespace Prisma {
     createdAt?: Date | string
     updatedAt?: Date | string
     subtasks?: TaskUncheckedCreateNestedManyWithoutParentInput
-    TaskWatcher?: TaskWatcherUncheckedCreateNestedManyWithoutTaskInput
-    Attachment?: AttachmentUncheckedCreateNestedManyWithoutTaskInput
-    Comment?: CommentUncheckedCreateNestedManyWithoutTaskInput
-    Activity?: ActivityUncheckedCreateNestedManyWithoutTaskInput
+    taskWatchers?: TaskWatcherUncheckedCreateNestedManyWithoutTaskInput
+    attachments?: AttachmentUncheckedCreateNestedManyWithoutTaskInput
+    comments?: CommentUncheckedCreateNestedManyWithoutTaskInput
+    activities?: ActivityUncheckedCreateNestedManyWithoutTaskInput
   }
 
-  export type TaskCreateOrConnectWithoutTaskTagInput = {
+  export type TaskCreateOrConnectWithoutTaskTagsInput = {
     where: TaskWhereUniqueInput
-    create: XOR<TaskCreateWithoutTaskTagInput, TaskUncheckedCreateWithoutTaskTagInput>
+    create: XOR<TaskCreateWithoutTaskTagsInput, TaskUncheckedCreateWithoutTaskTagsInput>
   }
 
   export type TagCreateWithoutTasksInput = {
@@ -32994,18 +33000,18 @@ export namespace Prisma {
     create: XOR<TagCreateWithoutTasksInput, TagUncheckedCreateWithoutTasksInput>
   }
 
-  export type TaskUpsertWithoutTaskTagInput = {
-    update: XOR<TaskUpdateWithoutTaskTagInput, TaskUncheckedUpdateWithoutTaskTagInput>
-    create: XOR<TaskCreateWithoutTaskTagInput, TaskUncheckedCreateWithoutTaskTagInput>
+  export type TaskUpsertWithoutTaskTagsInput = {
+    update: XOR<TaskUpdateWithoutTaskTagsInput, TaskUncheckedUpdateWithoutTaskTagsInput>
+    create: XOR<TaskCreateWithoutTaskTagsInput, TaskUncheckedCreateWithoutTaskTagsInput>
     where?: TaskWhereInput
   }
 
-  export type TaskUpdateToOneWithWhereWithoutTaskTagInput = {
+  export type TaskUpdateToOneWithWhereWithoutTaskTagsInput = {
     where?: TaskWhereInput
-    data: XOR<TaskUpdateWithoutTaskTagInput, TaskUncheckedUpdateWithoutTaskTagInput>
+    data: XOR<TaskUpdateWithoutTaskTagsInput, TaskUncheckedUpdateWithoutTaskTagsInput>
   }
 
-  export type TaskUpdateWithoutTaskTagInput = {
+  export type TaskUpdateWithoutTaskTagsInput = {
     id?: StringFieldUpdateOperationsInput | string
     title?: StringFieldUpdateOperationsInput | string
     description?: NullableStringFieldUpdateOperationsInput | string | null
@@ -33015,17 +33021,17 @@ export namespace Prisma {
     priority?: EnumTaskPriorityFieldUpdateOperationsInput | $Enums.TaskPriority
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    project?: ProjectUpdateOneRequiredWithoutTaskNestedInput
-    assignee?: MemberUpdateOneRequiredWithoutTaskNestedInput
+    project?: ProjectUpdateOneRequiredWithoutTasksNestedInput
+    assignee?: MemberUpdateOneRequiredWithoutTasksNestedInput
     parent?: TaskUpdateOneWithoutSubtasksNestedInput
     subtasks?: TaskUpdateManyWithoutParentNestedInput
-    TaskWatcher?: TaskWatcherUpdateManyWithoutTaskNestedInput
-    Attachment?: AttachmentUpdateManyWithoutTaskNestedInput
-    Comment?: CommentUpdateManyWithoutTaskNestedInput
-    Activity?: ActivityUpdateManyWithoutTaskNestedInput
+    taskWatchers?: TaskWatcherUpdateManyWithoutTaskNestedInput
+    attachments?: AttachmentUpdateManyWithoutTaskNestedInput
+    comments?: CommentUpdateManyWithoutTaskNestedInput
+    activities?: ActivityUpdateManyWithoutTaskNestedInput
   }
 
-  export type TaskUncheckedUpdateWithoutTaskTagInput = {
+  export type TaskUncheckedUpdateWithoutTaskTagsInput = {
     id?: StringFieldUpdateOperationsInput | string
     title?: StringFieldUpdateOperationsInput | string
     description?: NullableStringFieldUpdateOperationsInput | string | null
@@ -33039,10 +33045,10 @@ export namespace Prisma {
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     subtasks?: TaskUncheckedUpdateManyWithoutParentNestedInput
-    TaskWatcher?: TaskWatcherUncheckedUpdateManyWithoutTaskNestedInput
-    Attachment?: AttachmentUncheckedUpdateManyWithoutTaskNestedInput
-    Comment?: CommentUncheckedUpdateManyWithoutTaskNestedInput
-    Activity?: ActivityUncheckedUpdateManyWithoutTaskNestedInput
+    taskWatchers?: TaskWatcherUncheckedUpdateManyWithoutTaskNestedInput
+    attachments?: AttachmentUncheckedUpdateManyWithoutTaskNestedInput
+    comments?: CommentUncheckedUpdateManyWithoutTaskNestedInput
+    activities?: ActivityUncheckedUpdateManyWithoutTaskNestedInput
   }
 
   export type TagUpsertWithoutTasksInput = {
@@ -33068,7 +33074,7 @@ export namespace Prisma {
     color?: NullableStringFieldUpdateOperationsInput | string | null
   }
 
-  export type TaskCreateWithoutCommentInput = {
+  export type TaskCreateWithoutCommentsInput = {
     id?: string
     title: string
     description?: string | null
@@ -33078,17 +33084,17 @@ export namespace Prisma {
     priority?: $Enums.TaskPriority
     createdAt?: Date | string
     updatedAt?: Date | string
-    project: ProjectCreateNestedOneWithoutTaskInput
-    assignee: MemberCreateNestedOneWithoutTaskInput
+    project: ProjectCreateNestedOneWithoutTasksInput
+    assignee: MemberCreateNestedOneWithoutTasksInput
     parent?: TaskCreateNestedOneWithoutSubtasksInput
     subtasks?: TaskCreateNestedManyWithoutParentInput
-    TaskWatcher?: TaskWatcherCreateNestedManyWithoutTaskInput
-    Attachment?: AttachmentCreateNestedManyWithoutTaskInput
-    TaskTag?: TaskTagCreateNestedManyWithoutTaskInput
-    Activity?: ActivityCreateNestedManyWithoutTaskInput
+    taskWatchers?: TaskWatcherCreateNestedManyWithoutTaskInput
+    attachments?: AttachmentCreateNestedManyWithoutTaskInput
+    taskTags?: TaskTagCreateNestedManyWithoutTaskInput
+    activities?: ActivityCreateNestedManyWithoutTaskInput
   }
 
-  export type TaskUncheckedCreateWithoutCommentInput = {
+  export type TaskUncheckedCreateWithoutCommentsInput = {
     id?: string
     title: string
     description?: string | null
@@ -33102,18 +33108,18 @@ export namespace Prisma {
     createdAt?: Date | string
     updatedAt?: Date | string
     subtasks?: TaskUncheckedCreateNestedManyWithoutParentInput
-    TaskWatcher?: TaskWatcherUncheckedCreateNestedManyWithoutTaskInput
-    Attachment?: AttachmentUncheckedCreateNestedManyWithoutTaskInput
-    TaskTag?: TaskTagUncheckedCreateNestedManyWithoutTaskInput
-    Activity?: ActivityUncheckedCreateNestedManyWithoutTaskInput
+    taskWatchers?: TaskWatcherUncheckedCreateNestedManyWithoutTaskInput
+    attachments?: AttachmentUncheckedCreateNestedManyWithoutTaskInput
+    taskTags?: TaskTagUncheckedCreateNestedManyWithoutTaskInput
+    activities?: ActivityUncheckedCreateNestedManyWithoutTaskInput
   }
 
-  export type TaskCreateOrConnectWithoutCommentInput = {
+  export type TaskCreateOrConnectWithoutCommentsInput = {
     where: TaskWhereUniqueInput
-    create: XOR<TaskCreateWithoutCommentInput, TaskUncheckedCreateWithoutCommentInput>
+    create: XOR<TaskCreateWithoutCommentsInput, TaskUncheckedCreateWithoutCommentsInput>
   }
 
-  export type UserCreateWithoutCommentInput = {
+  export type UserCreateWithoutCommentsInput = {
     id?: string
     name: string
     email: string
@@ -33125,13 +33131,13 @@ export namespace Prisma {
     accounts?: AccountCreateNestedManyWithoutUserInput
     members?: MemberCreateNestedManyWithoutUserInput
     invitations?: InvitationCreateNestedManyWithoutUserInput
-    ProjectWatcher?: ProjectWatcherCreateNestedManyWithoutUserInput
-    TaskWatcher?: TaskWatcherCreateNestedManyWithoutUserInput
-    Activity?: ActivityCreateNestedManyWithoutActorInput
-    Notification?: NotificationCreateNestedManyWithoutUserInput
+    projectWatchers?: ProjectWatcherCreateNestedManyWithoutUserInput
+    taskWatchers?: TaskWatcherCreateNestedManyWithoutUserInput
+    activities?: ActivityCreateNestedManyWithoutActorInput
+    notifications?: NotificationCreateNestedManyWithoutUserInput
   }
 
-  export type UserUncheckedCreateWithoutCommentInput = {
+  export type UserUncheckedCreateWithoutCommentsInput = {
     id?: string
     name: string
     email: string
@@ -33143,25 +33149,25 @@ export namespace Prisma {
     accounts?: AccountUncheckedCreateNestedManyWithoutUserInput
     members?: MemberUncheckedCreateNestedManyWithoutUserInput
     invitations?: InvitationUncheckedCreateNestedManyWithoutUserInput
-    ProjectWatcher?: ProjectWatcherUncheckedCreateNestedManyWithoutUserInput
-    TaskWatcher?: TaskWatcherUncheckedCreateNestedManyWithoutUserInput
-    Activity?: ActivityUncheckedCreateNestedManyWithoutActorInput
-    Notification?: NotificationUncheckedCreateNestedManyWithoutUserInput
+    projectWatchers?: ProjectWatcherUncheckedCreateNestedManyWithoutUserInput
+    taskWatchers?: TaskWatcherUncheckedCreateNestedManyWithoutUserInput
+    activities?: ActivityUncheckedCreateNestedManyWithoutActorInput
+    notifications?: NotificationUncheckedCreateNestedManyWithoutUserInput
   }
 
-  export type UserCreateOrConnectWithoutCommentInput = {
+  export type UserCreateOrConnectWithoutCommentsInput = {
     where: UserWhereUniqueInput
-    create: XOR<UserCreateWithoutCommentInput, UserUncheckedCreateWithoutCommentInput>
+    create: XOR<UserCreateWithoutCommentsInput, UserUncheckedCreateWithoutCommentsInput>
   }
 
   export type ActivityCreateWithoutCommentInput = {
     id?: string
     type: $Enums.ActivityType
     createdAt?: Date | string
-    actor: UserCreateNestedOneWithoutActivityInput
-    task?: TaskCreateNestedOneWithoutActivityInput
-    attachment?: AttachmentCreateNestedOneWithoutActivityInput
-    Notification?: NotificationCreateNestedManyWithoutActivityInput
+    actor: UserCreateNestedOneWithoutActivitiesInput
+    task?: TaskCreateNestedOneWithoutActivitiesInput
+    attachment?: AttachmentCreateNestedOneWithoutActivitiesInput
+    notifications?: NotificationCreateNestedManyWithoutActivityInput
   }
 
   export type ActivityUncheckedCreateWithoutCommentInput = {
@@ -33171,7 +33177,7 @@ export namespace Prisma {
     taskId?: string | null
     attachmentId?: string | null
     createdAt?: Date | string
-    Notification?: NotificationUncheckedCreateNestedManyWithoutActivityInput
+    notifications?: NotificationUncheckedCreateNestedManyWithoutActivityInput
   }
 
   export type ActivityCreateOrConnectWithoutCommentInput = {
@@ -33184,18 +33190,18 @@ export namespace Prisma {
     skipDuplicates?: boolean
   }
 
-  export type TaskUpsertWithoutCommentInput = {
-    update: XOR<TaskUpdateWithoutCommentInput, TaskUncheckedUpdateWithoutCommentInput>
-    create: XOR<TaskCreateWithoutCommentInput, TaskUncheckedCreateWithoutCommentInput>
+  export type TaskUpsertWithoutCommentsInput = {
+    update: XOR<TaskUpdateWithoutCommentsInput, TaskUncheckedUpdateWithoutCommentsInput>
+    create: XOR<TaskCreateWithoutCommentsInput, TaskUncheckedCreateWithoutCommentsInput>
     where?: TaskWhereInput
   }
 
-  export type TaskUpdateToOneWithWhereWithoutCommentInput = {
+  export type TaskUpdateToOneWithWhereWithoutCommentsInput = {
     where?: TaskWhereInput
-    data: XOR<TaskUpdateWithoutCommentInput, TaskUncheckedUpdateWithoutCommentInput>
+    data: XOR<TaskUpdateWithoutCommentsInput, TaskUncheckedUpdateWithoutCommentsInput>
   }
 
-  export type TaskUpdateWithoutCommentInput = {
+  export type TaskUpdateWithoutCommentsInput = {
     id?: StringFieldUpdateOperationsInput | string
     title?: StringFieldUpdateOperationsInput | string
     description?: NullableStringFieldUpdateOperationsInput | string | null
@@ -33205,17 +33211,17 @@ export namespace Prisma {
     priority?: EnumTaskPriorityFieldUpdateOperationsInput | $Enums.TaskPriority
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    project?: ProjectUpdateOneRequiredWithoutTaskNestedInput
-    assignee?: MemberUpdateOneRequiredWithoutTaskNestedInput
+    project?: ProjectUpdateOneRequiredWithoutTasksNestedInput
+    assignee?: MemberUpdateOneRequiredWithoutTasksNestedInput
     parent?: TaskUpdateOneWithoutSubtasksNestedInput
     subtasks?: TaskUpdateManyWithoutParentNestedInput
-    TaskWatcher?: TaskWatcherUpdateManyWithoutTaskNestedInput
-    Attachment?: AttachmentUpdateManyWithoutTaskNestedInput
-    TaskTag?: TaskTagUpdateManyWithoutTaskNestedInput
-    Activity?: ActivityUpdateManyWithoutTaskNestedInput
+    taskWatchers?: TaskWatcherUpdateManyWithoutTaskNestedInput
+    attachments?: AttachmentUpdateManyWithoutTaskNestedInput
+    taskTags?: TaskTagUpdateManyWithoutTaskNestedInput
+    activities?: ActivityUpdateManyWithoutTaskNestedInput
   }
 
-  export type TaskUncheckedUpdateWithoutCommentInput = {
+  export type TaskUncheckedUpdateWithoutCommentsInput = {
     id?: StringFieldUpdateOperationsInput | string
     title?: StringFieldUpdateOperationsInput | string
     description?: NullableStringFieldUpdateOperationsInput | string | null
@@ -33229,24 +33235,24 @@ export namespace Prisma {
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     subtasks?: TaskUncheckedUpdateManyWithoutParentNestedInput
-    TaskWatcher?: TaskWatcherUncheckedUpdateManyWithoutTaskNestedInput
-    Attachment?: AttachmentUncheckedUpdateManyWithoutTaskNestedInput
-    TaskTag?: TaskTagUncheckedUpdateManyWithoutTaskNestedInput
-    Activity?: ActivityUncheckedUpdateManyWithoutTaskNestedInput
+    taskWatchers?: TaskWatcherUncheckedUpdateManyWithoutTaskNestedInput
+    attachments?: AttachmentUncheckedUpdateManyWithoutTaskNestedInput
+    taskTags?: TaskTagUncheckedUpdateManyWithoutTaskNestedInput
+    activities?: ActivityUncheckedUpdateManyWithoutTaskNestedInput
   }
 
-  export type UserUpsertWithoutCommentInput = {
-    update: XOR<UserUpdateWithoutCommentInput, UserUncheckedUpdateWithoutCommentInput>
-    create: XOR<UserCreateWithoutCommentInput, UserUncheckedCreateWithoutCommentInput>
+  export type UserUpsertWithoutCommentsInput = {
+    update: XOR<UserUpdateWithoutCommentsInput, UserUncheckedUpdateWithoutCommentsInput>
+    create: XOR<UserCreateWithoutCommentsInput, UserUncheckedCreateWithoutCommentsInput>
     where?: UserWhereInput
   }
 
-  export type UserUpdateToOneWithWhereWithoutCommentInput = {
+  export type UserUpdateToOneWithWhereWithoutCommentsInput = {
     where?: UserWhereInput
-    data: XOR<UserUpdateWithoutCommentInput, UserUncheckedUpdateWithoutCommentInput>
+    data: XOR<UserUpdateWithoutCommentsInput, UserUncheckedUpdateWithoutCommentsInput>
   }
 
-  export type UserUpdateWithoutCommentInput = {
+  export type UserUpdateWithoutCommentsInput = {
     id?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     email?: StringFieldUpdateOperationsInput | string
@@ -33258,13 +33264,13 @@ export namespace Prisma {
     accounts?: AccountUpdateManyWithoutUserNestedInput
     members?: MemberUpdateManyWithoutUserNestedInput
     invitations?: InvitationUpdateManyWithoutUserNestedInput
-    ProjectWatcher?: ProjectWatcherUpdateManyWithoutUserNestedInput
-    TaskWatcher?: TaskWatcherUpdateManyWithoutUserNestedInput
-    Activity?: ActivityUpdateManyWithoutActorNestedInput
-    Notification?: NotificationUpdateManyWithoutUserNestedInput
+    projectWatchers?: ProjectWatcherUpdateManyWithoutUserNestedInput
+    taskWatchers?: TaskWatcherUpdateManyWithoutUserNestedInput
+    activities?: ActivityUpdateManyWithoutActorNestedInput
+    notifications?: NotificationUpdateManyWithoutUserNestedInput
   }
 
-  export type UserUncheckedUpdateWithoutCommentInput = {
+  export type UserUncheckedUpdateWithoutCommentsInput = {
     id?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     email?: StringFieldUpdateOperationsInput | string
@@ -33276,10 +33282,10 @@ export namespace Prisma {
     accounts?: AccountUncheckedUpdateManyWithoutUserNestedInput
     members?: MemberUncheckedUpdateManyWithoutUserNestedInput
     invitations?: InvitationUncheckedUpdateManyWithoutUserNestedInput
-    ProjectWatcher?: ProjectWatcherUncheckedUpdateManyWithoutUserNestedInput
-    TaskWatcher?: TaskWatcherUncheckedUpdateManyWithoutUserNestedInput
-    Activity?: ActivityUncheckedUpdateManyWithoutActorNestedInput
-    Notification?: NotificationUncheckedUpdateManyWithoutUserNestedInput
+    projectWatchers?: ProjectWatcherUncheckedUpdateManyWithoutUserNestedInput
+    taskWatchers?: TaskWatcherUncheckedUpdateManyWithoutUserNestedInput
+    activities?: ActivityUncheckedUpdateManyWithoutActorNestedInput
+    notifications?: NotificationUncheckedUpdateManyWithoutUserNestedInput
   }
 
   export type ActivityUpsertWithWhereUniqueWithoutCommentInput = {
@@ -33298,7 +33304,7 @@ export namespace Prisma {
     data: XOR<ActivityUpdateManyMutationInput, ActivityUncheckedUpdateManyWithoutCommentInput>
   }
 
-  export type UserCreateWithoutActivityInput = {
+  export type UserCreateWithoutActivitiesInput = {
     id?: string
     name: string
     email: string
@@ -33310,13 +33316,13 @@ export namespace Prisma {
     accounts?: AccountCreateNestedManyWithoutUserInput
     members?: MemberCreateNestedManyWithoutUserInput
     invitations?: InvitationCreateNestedManyWithoutUserInput
-    ProjectWatcher?: ProjectWatcherCreateNestedManyWithoutUserInput
-    TaskWatcher?: TaskWatcherCreateNestedManyWithoutUserInput
-    Comment?: CommentCreateNestedManyWithoutAuthorInput
-    Notification?: NotificationCreateNestedManyWithoutUserInput
+    projectWatchers?: ProjectWatcherCreateNestedManyWithoutUserInput
+    taskWatchers?: TaskWatcherCreateNestedManyWithoutUserInput
+    comments?: CommentCreateNestedManyWithoutAuthorInput
+    notifications?: NotificationCreateNestedManyWithoutUserInput
   }
 
-  export type UserUncheckedCreateWithoutActivityInput = {
+  export type UserUncheckedCreateWithoutActivitiesInput = {
     id?: string
     name: string
     email: string
@@ -33328,18 +33334,18 @@ export namespace Prisma {
     accounts?: AccountUncheckedCreateNestedManyWithoutUserInput
     members?: MemberUncheckedCreateNestedManyWithoutUserInput
     invitations?: InvitationUncheckedCreateNestedManyWithoutUserInput
-    ProjectWatcher?: ProjectWatcherUncheckedCreateNestedManyWithoutUserInput
-    TaskWatcher?: TaskWatcherUncheckedCreateNestedManyWithoutUserInput
-    Comment?: CommentUncheckedCreateNestedManyWithoutAuthorInput
-    Notification?: NotificationUncheckedCreateNestedManyWithoutUserInput
+    projectWatchers?: ProjectWatcherUncheckedCreateNestedManyWithoutUserInput
+    taskWatchers?: TaskWatcherUncheckedCreateNestedManyWithoutUserInput
+    comments?: CommentUncheckedCreateNestedManyWithoutAuthorInput
+    notifications?: NotificationUncheckedCreateNestedManyWithoutUserInput
   }
 
-  export type UserCreateOrConnectWithoutActivityInput = {
+  export type UserCreateOrConnectWithoutActivitiesInput = {
     where: UserWhereUniqueInput
-    create: XOR<UserCreateWithoutActivityInput, UserUncheckedCreateWithoutActivityInput>
+    create: XOR<UserCreateWithoutActivitiesInput, UserUncheckedCreateWithoutActivitiesInput>
   }
 
-  export type TaskCreateWithoutActivityInput = {
+  export type TaskCreateWithoutActivitiesInput = {
     id?: string
     title: string
     description?: string | null
@@ -33349,17 +33355,17 @@ export namespace Prisma {
     priority?: $Enums.TaskPriority
     createdAt?: Date | string
     updatedAt?: Date | string
-    project: ProjectCreateNestedOneWithoutTaskInput
-    assignee: MemberCreateNestedOneWithoutTaskInput
+    project: ProjectCreateNestedOneWithoutTasksInput
+    assignee: MemberCreateNestedOneWithoutTasksInput
     parent?: TaskCreateNestedOneWithoutSubtasksInput
     subtasks?: TaskCreateNestedManyWithoutParentInput
-    TaskWatcher?: TaskWatcherCreateNestedManyWithoutTaskInput
-    Attachment?: AttachmentCreateNestedManyWithoutTaskInput
-    TaskTag?: TaskTagCreateNestedManyWithoutTaskInput
-    Comment?: CommentCreateNestedManyWithoutTaskInput
+    taskWatchers?: TaskWatcherCreateNestedManyWithoutTaskInput
+    attachments?: AttachmentCreateNestedManyWithoutTaskInput
+    taskTags?: TaskTagCreateNestedManyWithoutTaskInput
+    comments?: CommentCreateNestedManyWithoutTaskInput
   }
 
-  export type TaskUncheckedCreateWithoutActivityInput = {
+  export type TaskUncheckedCreateWithoutActivitiesInput = {
     id?: string
     title: string
     description?: string | null
@@ -33373,27 +33379,27 @@ export namespace Prisma {
     createdAt?: Date | string
     updatedAt?: Date | string
     subtasks?: TaskUncheckedCreateNestedManyWithoutParentInput
-    TaskWatcher?: TaskWatcherUncheckedCreateNestedManyWithoutTaskInput
-    Attachment?: AttachmentUncheckedCreateNestedManyWithoutTaskInput
-    TaskTag?: TaskTagUncheckedCreateNestedManyWithoutTaskInput
-    Comment?: CommentUncheckedCreateNestedManyWithoutTaskInput
+    taskWatchers?: TaskWatcherUncheckedCreateNestedManyWithoutTaskInput
+    attachments?: AttachmentUncheckedCreateNestedManyWithoutTaskInput
+    taskTags?: TaskTagUncheckedCreateNestedManyWithoutTaskInput
+    comments?: CommentUncheckedCreateNestedManyWithoutTaskInput
   }
 
-  export type TaskCreateOrConnectWithoutActivityInput = {
+  export type TaskCreateOrConnectWithoutActivitiesInput = {
     where: TaskWhereUniqueInput
-    create: XOR<TaskCreateWithoutActivityInput, TaskUncheckedCreateWithoutActivityInput>
+    create: XOR<TaskCreateWithoutActivitiesInput, TaskUncheckedCreateWithoutActivitiesInput>
   }
 
-  export type CommentCreateWithoutActivityInput = {
+  export type CommentCreateWithoutActivitiesInput = {
     id?: string
     content: string
     createdAt?: Date | string
     updatedAt?: Date | string
-    task: TaskCreateNestedOneWithoutCommentInput
-    author: UserCreateNestedOneWithoutCommentInput
+    task: TaskCreateNestedOneWithoutCommentsInput
+    author: UserCreateNestedOneWithoutCommentsInput
   }
 
-  export type CommentUncheckedCreateWithoutActivityInput = {
+  export type CommentUncheckedCreateWithoutActivitiesInput = {
     id?: string
     content: string
     taskId: string
@@ -33402,20 +33408,20 @@ export namespace Prisma {
     updatedAt?: Date | string
   }
 
-  export type CommentCreateOrConnectWithoutActivityInput = {
+  export type CommentCreateOrConnectWithoutActivitiesInput = {
     where: CommentWhereUniqueInput
-    create: XOR<CommentCreateWithoutActivityInput, CommentUncheckedCreateWithoutActivityInput>
+    create: XOR<CommentCreateWithoutActivitiesInput, CommentUncheckedCreateWithoutActivitiesInput>
   }
 
-  export type AttachmentCreateWithoutActivityInput = {
+  export type AttachmentCreateWithoutActivitiesInput = {
     id?: string
     url: string
     type?: string | null
     createdAt?: Date | string
-    task: TaskCreateNestedOneWithoutAttachmentInput
+    task: TaskCreateNestedOneWithoutAttachmentsInput
   }
 
-  export type AttachmentUncheckedCreateWithoutActivityInput = {
+  export type AttachmentUncheckedCreateWithoutActivitiesInput = {
     id?: string
     url: string
     type?: string | null
@@ -33423,16 +33429,16 @@ export namespace Prisma {
     createdAt?: Date | string
   }
 
-  export type AttachmentCreateOrConnectWithoutActivityInput = {
+  export type AttachmentCreateOrConnectWithoutActivitiesInput = {
     where: AttachmentWhereUniqueInput
-    create: XOR<AttachmentCreateWithoutActivityInput, AttachmentUncheckedCreateWithoutActivityInput>
+    create: XOR<AttachmentCreateWithoutActivitiesInput, AttachmentUncheckedCreateWithoutActivitiesInput>
   }
 
   export type NotificationCreateWithoutActivityInput = {
     id?: string
     read?: boolean
     createdAt?: Date | string
-    user: UserCreateNestedOneWithoutNotificationInput
+    user: UserCreateNestedOneWithoutNotificationsInput
   }
 
   export type NotificationUncheckedCreateWithoutActivityInput = {
@@ -33452,18 +33458,18 @@ export namespace Prisma {
     skipDuplicates?: boolean
   }
 
-  export type UserUpsertWithoutActivityInput = {
-    update: XOR<UserUpdateWithoutActivityInput, UserUncheckedUpdateWithoutActivityInput>
-    create: XOR<UserCreateWithoutActivityInput, UserUncheckedCreateWithoutActivityInput>
+  export type UserUpsertWithoutActivitiesInput = {
+    update: XOR<UserUpdateWithoutActivitiesInput, UserUncheckedUpdateWithoutActivitiesInput>
+    create: XOR<UserCreateWithoutActivitiesInput, UserUncheckedCreateWithoutActivitiesInput>
     where?: UserWhereInput
   }
 
-  export type UserUpdateToOneWithWhereWithoutActivityInput = {
+  export type UserUpdateToOneWithWhereWithoutActivitiesInput = {
     where?: UserWhereInput
-    data: XOR<UserUpdateWithoutActivityInput, UserUncheckedUpdateWithoutActivityInput>
+    data: XOR<UserUpdateWithoutActivitiesInput, UserUncheckedUpdateWithoutActivitiesInput>
   }
 
-  export type UserUpdateWithoutActivityInput = {
+  export type UserUpdateWithoutActivitiesInput = {
     id?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     email?: StringFieldUpdateOperationsInput | string
@@ -33475,13 +33481,13 @@ export namespace Prisma {
     accounts?: AccountUpdateManyWithoutUserNestedInput
     members?: MemberUpdateManyWithoutUserNestedInput
     invitations?: InvitationUpdateManyWithoutUserNestedInput
-    ProjectWatcher?: ProjectWatcherUpdateManyWithoutUserNestedInput
-    TaskWatcher?: TaskWatcherUpdateManyWithoutUserNestedInput
-    Comment?: CommentUpdateManyWithoutAuthorNestedInput
-    Notification?: NotificationUpdateManyWithoutUserNestedInput
+    projectWatchers?: ProjectWatcherUpdateManyWithoutUserNestedInput
+    taskWatchers?: TaskWatcherUpdateManyWithoutUserNestedInput
+    comments?: CommentUpdateManyWithoutAuthorNestedInput
+    notifications?: NotificationUpdateManyWithoutUserNestedInput
   }
 
-  export type UserUncheckedUpdateWithoutActivityInput = {
+  export type UserUncheckedUpdateWithoutActivitiesInput = {
     id?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     email?: StringFieldUpdateOperationsInput | string
@@ -33493,24 +33499,24 @@ export namespace Prisma {
     accounts?: AccountUncheckedUpdateManyWithoutUserNestedInput
     members?: MemberUncheckedUpdateManyWithoutUserNestedInput
     invitations?: InvitationUncheckedUpdateManyWithoutUserNestedInput
-    ProjectWatcher?: ProjectWatcherUncheckedUpdateManyWithoutUserNestedInput
-    TaskWatcher?: TaskWatcherUncheckedUpdateManyWithoutUserNestedInput
-    Comment?: CommentUncheckedUpdateManyWithoutAuthorNestedInput
-    Notification?: NotificationUncheckedUpdateManyWithoutUserNestedInput
+    projectWatchers?: ProjectWatcherUncheckedUpdateManyWithoutUserNestedInput
+    taskWatchers?: TaskWatcherUncheckedUpdateManyWithoutUserNestedInput
+    comments?: CommentUncheckedUpdateManyWithoutAuthorNestedInput
+    notifications?: NotificationUncheckedUpdateManyWithoutUserNestedInput
   }
 
-  export type TaskUpsertWithoutActivityInput = {
-    update: XOR<TaskUpdateWithoutActivityInput, TaskUncheckedUpdateWithoutActivityInput>
-    create: XOR<TaskCreateWithoutActivityInput, TaskUncheckedCreateWithoutActivityInput>
+  export type TaskUpsertWithoutActivitiesInput = {
+    update: XOR<TaskUpdateWithoutActivitiesInput, TaskUncheckedUpdateWithoutActivitiesInput>
+    create: XOR<TaskCreateWithoutActivitiesInput, TaskUncheckedCreateWithoutActivitiesInput>
     where?: TaskWhereInput
   }
 
-  export type TaskUpdateToOneWithWhereWithoutActivityInput = {
+  export type TaskUpdateToOneWithWhereWithoutActivitiesInput = {
     where?: TaskWhereInput
-    data: XOR<TaskUpdateWithoutActivityInput, TaskUncheckedUpdateWithoutActivityInput>
+    data: XOR<TaskUpdateWithoutActivitiesInput, TaskUncheckedUpdateWithoutActivitiesInput>
   }
 
-  export type TaskUpdateWithoutActivityInput = {
+  export type TaskUpdateWithoutActivitiesInput = {
     id?: StringFieldUpdateOperationsInput | string
     title?: StringFieldUpdateOperationsInput | string
     description?: NullableStringFieldUpdateOperationsInput | string | null
@@ -33520,17 +33526,17 @@ export namespace Prisma {
     priority?: EnumTaskPriorityFieldUpdateOperationsInput | $Enums.TaskPriority
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    project?: ProjectUpdateOneRequiredWithoutTaskNestedInput
-    assignee?: MemberUpdateOneRequiredWithoutTaskNestedInput
+    project?: ProjectUpdateOneRequiredWithoutTasksNestedInput
+    assignee?: MemberUpdateOneRequiredWithoutTasksNestedInput
     parent?: TaskUpdateOneWithoutSubtasksNestedInput
     subtasks?: TaskUpdateManyWithoutParentNestedInput
-    TaskWatcher?: TaskWatcherUpdateManyWithoutTaskNestedInput
-    Attachment?: AttachmentUpdateManyWithoutTaskNestedInput
-    TaskTag?: TaskTagUpdateManyWithoutTaskNestedInput
-    Comment?: CommentUpdateManyWithoutTaskNestedInput
+    taskWatchers?: TaskWatcherUpdateManyWithoutTaskNestedInput
+    attachments?: AttachmentUpdateManyWithoutTaskNestedInput
+    taskTags?: TaskTagUpdateManyWithoutTaskNestedInput
+    comments?: CommentUpdateManyWithoutTaskNestedInput
   }
 
-  export type TaskUncheckedUpdateWithoutActivityInput = {
+  export type TaskUncheckedUpdateWithoutActivitiesInput = {
     id?: StringFieldUpdateOperationsInput | string
     title?: StringFieldUpdateOperationsInput | string
     description?: NullableStringFieldUpdateOperationsInput | string | null
@@ -33544,33 +33550,33 @@ export namespace Prisma {
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     subtasks?: TaskUncheckedUpdateManyWithoutParentNestedInput
-    TaskWatcher?: TaskWatcherUncheckedUpdateManyWithoutTaskNestedInput
-    Attachment?: AttachmentUncheckedUpdateManyWithoutTaskNestedInput
-    TaskTag?: TaskTagUncheckedUpdateManyWithoutTaskNestedInput
-    Comment?: CommentUncheckedUpdateManyWithoutTaskNestedInput
+    taskWatchers?: TaskWatcherUncheckedUpdateManyWithoutTaskNestedInput
+    attachments?: AttachmentUncheckedUpdateManyWithoutTaskNestedInput
+    taskTags?: TaskTagUncheckedUpdateManyWithoutTaskNestedInput
+    comments?: CommentUncheckedUpdateManyWithoutTaskNestedInput
   }
 
-  export type CommentUpsertWithoutActivityInput = {
-    update: XOR<CommentUpdateWithoutActivityInput, CommentUncheckedUpdateWithoutActivityInput>
-    create: XOR<CommentCreateWithoutActivityInput, CommentUncheckedCreateWithoutActivityInput>
+  export type CommentUpsertWithoutActivitiesInput = {
+    update: XOR<CommentUpdateWithoutActivitiesInput, CommentUncheckedUpdateWithoutActivitiesInput>
+    create: XOR<CommentCreateWithoutActivitiesInput, CommentUncheckedCreateWithoutActivitiesInput>
     where?: CommentWhereInput
   }
 
-  export type CommentUpdateToOneWithWhereWithoutActivityInput = {
+  export type CommentUpdateToOneWithWhereWithoutActivitiesInput = {
     where?: CommentWhereInput
-    data: XOR<CommentUpdateWithoutActivityInput, CommentUncheckedUpdateWithoutActivityInput>
+    data: XOR<CommentUpdateWithoutActivitiesInput, CommentUncheckedUpdateWithoutActivitiesInput>
   }
 
-  export type CommentUpdateWithoutActivityInput = {
+  export type CommentUpdateWithoutActivitiesInput = {
     id?: StringFieldUpdateOperationsInput | string
     content?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    task?: TaskUpdateOneRequiredWithoutCommentNestedInput
-    author?: UserUpdateOneRequiredWithoutCommentNestedInput
+    task?: TaskUpdateOneRequiredWithoutCommentsNestedInput
+    author?: UserUpdateOneRequiredWithoutCommentsNestedInput
   }
 
-  export type CommentUncheckedUpdateWithoutActivityInput = {
+  export type CommentUncheckedUpdateWithoutActivitiesInput = {
     id?: StringFieldUpdateOperationsInput | string
     content?: StringFieldUpdateOperationsInput | string
     taskId?: StringFieldUpdateOperationsInput | string
@@ -33579,26 +33585,26 @@ export namespace Prisma {
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
 
-  export type AttachmentUpsertWithoutActivityInput = {
-    update: XOR<AttachmentUpdateWithoutActivityInput, AttachmentUncheckedUpdateWithoutActivityInput>
-    create: XOR<AttachmentCreateWithoutActivityInput, AttachmentUncheckedCreateWithoutActivityInput>
+  export type AttachmentUpsertWithoutActivitiesInput = {
+    update: XOR<AttachmentUpdateWithoutActivitiesInput, AttachmentUncheckedUpdateWithoutActivitiesInput>
+    create: XOR<AttachmentCreateWithoutActivitiesInput, AttachmentUncheckedCreateWithoutActivitiesInput>
     where?: AttachmentWhereInput
   }
 
-  export type AttachmentUpdateToOneWithWhereWithoutActivityInput = {
+  export type AttachmentUpdateToOneWithWhereWithoutActivitiesInput = {
     where?: AttachmentWhereInput
-    data: XOR<AttachmentUpdateWithoutActivityInput, AttachmentUncheckedUpdateWithoutActivityInput>
+    data: XOR<AttachmentUpdateWithoutActivitiesInput, AttachmentUncheckedUpdateWithoutActivitiesInput>
   }
 
-  export type AttachmentUpdateWithoutActivityInput = {
+  export type AttachmentUpdateWithoutActivitiesInput = {
     id?: StringFieldUpdateOperationsInput | string
     url?: StringFieldUpdateOperationsInput | string
     type?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    task?: TaskUpdateOneRequiredWithoutAttachmentNestedInput
+    task?: TaskUpdateOneRequiredWithoutAttachmentsNestedInput
   }
 
-  export type AttachmentUncheckedUpdateWithoutActivityInput = {
+  export type AttachmentUncheckedUpdateWithoutActivitiesInput = {
     id?: StringFieldUpdateOperationsInput | string
     url?: StringFieldUpdateOperationsInput | string
     type?: NullableStringFieldUpdateOperationsInput | string | null
@@ -33622,7 +33628,7 @@ export namespace Prisma {
     data: XOR<NotificationUpdateManyMutationInput, NotificationUncheckedUpdateManyWithoutActivityInput>
   }
 
-  export type UserCreateWithoutNotificationInput = {
+  export type UserCreateWithoutNotificationsInput = {
     id?: string
     name: string
     email: string
@@ -33634,13 +33640,13 @@ export namespace Prisma {
     accounts?: AccountCreateNestedManyWithoutUserInput
     members?: MemberCreateNestedManyWithoutUserInput
     invitations?: InvitationCreateNestedManyWithoutUserInput
-    ProjectWatcher?: ProjectWatcherCreateNestedManyWithoutUserInput
-    TaskWatcher?: TaskWatcherCreateNestedManyWithoutUserInput
-    Comment?: CommentCreateNestedManyWithoutAuthorInput
-    Activity?: ActivityCreateNestedManyWithoutActorInput
+    projectWatchers?: ProjectWatcherCreateNestedManyWithoutUserInput
+    taskWatchers?: TaskWatcherCreateNestedManyWithoutUserInput
+    comments?: CommentCreateNestedManyWithoutAuthorInput
+    activities?: ActivityCreateNestedManyWithoutActorInput
   }
 
-  export type UserUncheckedCreateWithoutNotificationInput = {
+  export type UserUncheckedCreateWithoutNotificationsInput = {
     id?: string
     name: string
     email: string
@@ -33652,28 +33658,28 @@ export namespace Prisma {
     accounts?: AccountUncheckedCreateNestedManyWithoutUserInput
     members?: MemberUncheckedCreateNestedManyWithoutUserInput
     invitations?: InvitationUncheckedCreateNestedManyWithoutUserInput
-    ProjectWatcher?: ProjectWatcherUncheckedCreateNestedManyWithoutUserInput
-    TaskWatcher?: TaskWatcherUncheckedCreateNestedManyWithoutUserInput
-    Comment?: CommentUncheckedCreateNestedManyWithoutAuthorInput
-    Activity?: ActivityUncheckedCreateNestedManyWithoutActorInput
+    projectWatchers?: ProjectWatcherUncheckedCreateNestedManyWithoutUserInput
+    taskWatchers?: TaskWatcherUncheckedCreateNestedManyWithoutUserInput
+    comments?: CommentUncheckedCreateNestedManyWithoutAuthorInput
+    activities?: ActivityUncheckedCreateNestedManyWithoutActorInput
   }
 
-  export type UserCreateOrConnectWithoutNotificationInput = {
+  export type UserCreateOrConnectWithoutNotificationsInput = {
     where: UserWhereUniqueInput
-    create: XOR<UserCreateWithoutNotificationInput, UserUncheckedCreateWithoutNotificationInput>
+    create: XOR<UserCreateWithoutNotificationsInput, UserUncheckedCreateWithoutNotificationsInput>
   }
 
-  export type ActivityCreateWithoutNotificationInput = {
+  export type ActivityCreateWithoutNotificationsInput = {
     id?: string
     type: $Enums.ActivityType
     createdAt?: Date | string
-    actor: UserCreateNestedOneWithoutActivityInput
-    task?: TaskCreateNestedOneWithoutActivityInput
-    comment?: CommentCreateNestedOneWithoutActivityInput
-    attachment?: AttachmentCreateNestedOneWithoutActivityInput
+    actor: UserCreateNestedOneWithoutActivitiesInput
+    task?: TaskCreateNestedOneWithoutActivitiesInput
+    comment?: CommentCreateNestedOneWithoutActivitiesInput
+    attachment?: AttachmentCreateNestedOneWithoutActivitiesInput
   }
 
-  export type ActivityUncheckedCreateWithoutNotificationInput = {
+  export type ActivityUncheckedCreateWithoutNotificationsInput = {
     id?: string
     type: $Enums.ActivityType
     actorId: string
@@ -33683,23 +33689,23 @@ export namespace Prisma {
     createdAt?: Date | string
   }
 
-  export type ActivityCreateOrConnectWithoutNotificationInput = {
+  export type ActivityCreateOrConnectWithoutNotificationsInput = {
     where: ActivityWhereUniqueInput
-    create: XOR<ActivityCreateWithoutNotificationInput, ActivityUncheckedCreateWithoutNotificationInput>
+    create: XOR<ActivityCreateWithoutNotificationsInput, ActivityUncheckedCreateWithoutNotificationsInput>
   }
 
-  export type UserUpsertWithoutNotificationInput = {
-    update: XOR<UserUpdateWithoutNotificationInput, UserUncheckedUpdateWithoutNotificationInput>
-    create: XOR<UserCreateWithoutNotificationInput, UserUncheckedCreateWithoutNotificationInput>
+  export type UserUpsertWithoutNotificationsInput = {
+    update: XOR<UserUpdateWithoutNotificationsInput, UserUncheckedUpdateWithoutNotificationsInput>
+    create: XOR<UserCreateWithoutNotificationsInput, UserUncheckedCreateWithoutNotificationsInput>
     where?: UserWhereInput
   }
 
-  export type UserUpdateToOneWithWhereWithoutNotificationInput = {
+  export type UserUpdateToOneWithWhereWithoutNotificationsInput = {
     where?: UserWhereInput
-    data: XOR<UserUpdateWithoutNotificationInput, UserUncheckedUpdateWithoutNotificationInput>
+    data: XOR<UserUpdateWithoutNotificationsInput, UserUncheckedUpdateWithoutNotificationsInput>
   }
 
-  export type UserUpdateWithoutNotificationInput = {
+  export type UserUpdateWithoutNotificationsInput = {
     id?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     email?: StringFieldUpdateOperationsInput | string
@@ -33711,13 +33717,13 @@ export namespace Prisma {
     accounts?: AccountUpdateManyWithoutUserNestedInput
     members?: MemberUpdateManyWithoutUserNestedInput
     invitations?: InvitationUpdateManyWithoutUserNestedInput
-    ProjectWatcher?: ProjectWatcherUpdateManyWithoutUserNestedInput
-    TaskWatcher?: TaskWatcherUpdateManyWithoutUserNestedInput
-    Comment?: CommentUpdateManyWithoutAuthorNestedInput
-    Activity?: ActivityUpdateManyWithoutActorNestedInput
+    projectWatchers?: ProjectWatcherUpdateManyWithoutUserNestedInput
+    taskWatchers?: TaskWatcherUpdateManyWithoutUserNestedInput
+    comments?: CommentUpdateManyWithoutAuthorNestedInput
+    activities?: ActivityUpdateManyWithoutActorNestedInput
   }
 
-  export type UserUncheckedUpdateWithoutNotificationInput = {
+  export type UserUncheckedUpdateWithoutNotificationsInput = {
     id?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     email?: StringFieldUpdateOperationsInput | string
@@ -33729,34 +33735,34 @@ export namespace Prisma {
     accounts?: AccountUncheckedUpdateManyWithoutUserNestedInput
     members?: MemberUncheckedUpdateManyWithoutUserNestedInput
     invitations?: InvitationUncheckedUpdateManyWithoutUserNestedInput
-    ProjectWatcher?: ProjectWatcherUncheckedUpdateManyWithoutUserNestedInput
-    TaskWatcher?: TaskWatcherUncheckedUpdateManyWithoutUserNestedInput
-    Comment?: CommentUncheckedUpdateManyWithoutAuthorNestedInput
-    Activity?: ActivityUncheckedUpdateManyWithoutActorNestedInput
+    projectWatchers?: ProjectWatcherUncheckedUpdateManyWithoutUserNestedInput
+    taskWatchers?: TaskWatcherUncheckedUpdateManyWithoutUserNestedInput
+    comments?: CommentUncheckedUpdateManyWithoutAuthorNestedInput
+    activities?: ActivityUncheckedUpdateManyWithoutActorNestedInput
   }
 
-  export type ActivityUpsertWithoutNotificationInput = {
-    update: XOR<ActivityUpdateWithoutNotificationInput, ActivityUncheckedUpdateWithoutNotificationInput>
-    create: XOR<ActivityCreateWithoutNotificationInput, ActivityUncheckedCreateWithoutNotificationInput>
+  export type ActivityUpsertWithoutNotificationsInput = {
+    update: XOR<ActivityUpdateWithoutNotificationsInput, ActivityUncheckedUpdateWithoutNotificationsInput>
+    create: XOR<ActivityCreateWithoutNotificationsInput, ActivityUncheckedCreateWithoutNotificationsInput>
     where?: ActivityWhereInput
   }
 
-  export type ActivityUpdateToOneWithWhereWithoutNotificationInput = {
+  export type ActivityUpdateToOneWithWhereWithoutNotificationsInput = {
     where?: ActivityWhereInput
-    data: XOR<ActivityUpdateWithoutNotificationInput, ActivityUncheckedUpdateWithoutNotificationInput>
+    data: XOR<ActivityUpdateWithoutNotificationsInput, ActivityUncheckedUpdateWithoutNotificationsInput>
   }
 
-  export type ActivityUpdateWithoutNotificationInput = {
+  export type ActivityUpdateWithoutNotificationsInput = {
     id?: StringFieldUpdateOperationsInput | string
     type?: EnumActivityTypeFieldUpdateOperationsInput | $Enums.ActivityType
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    actor?: UserUpdateOneRequiredWithoutActivityNestedInput
-    task?: TaskUpdateOneWithoutActivityNestedInput
-    comment?: CommentUpdateOneWithoutActivityNestedInput
-    attachment?: AttachmentUpdateOneWithoutActivityNestedInput
+    actor?: UserUpdateOneRequiredWithoutActivitiesNestedInput
+    task?: TaskUpdateOneWithoutActivitiesNestedInput
+    comment?: CommentUpdateOneWithoutActivitiesNestedInput
+    attachment?: AttachmentUpdateOneWithoutActivitiesNestedInput
   }
 
-  export type ActivityUncheckedUpdateWithoutNotificationInput = {
+  export type ActivityUncheckedUpdateWithoutNotificationsInput = {
     id?: StringFieldUpdateOperationsInput | string
     type?: EnumActivityTypeFieldUpdateOperationsInput | $Enums.ActivityType
     actorId?: StringFieldUpdateOperationsInput | string
@@ -33929,8 +33935,8 @@ export namespace Prisma {
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     organization?: OrganizationUpdateOneRequiredWithoutMembersNestedInput
-    Task?: TaskUpdateManyWithoutAssigneeNestedInput
-    SpaceMember?: SpaceMemberUpdateManyWithoutMemberNestedInput
+    tasks?: TaskUpdateManyWithoutAssigneeNestedInput
+    spaceMembers?: SpaceMemberUpdateManyWithoutMemberNestedInput
   }
 
   export type MemberUncheckedUpdateWithoutUserInput = {
@@ -33939,8 +33945,8 @@ export namespace Prisma {
     role?: EnumMemberRoleFieldUpdateOperationsInput | $Enums.MemberRole
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    Task?: TaskUncheckedUpdateManyWithoutAssigneeNestedInput
-    SpaceMember?: SpaceMemberUncheckedUpdateManyWithoutMemberNestedInput
+    tasks?: TaskUncheckedUpdateManyWithoutAssigneeNestedInput
+    spaceMembers?: SpaceMemberUncheckedUpdateManyWithoutMemberNestedInput
   }
 
   export type MemberUncheckedUpdateManyWithoutUserInput = {
@@ -33981,7 +33987,7 @@ export namespace Prisma {
   export type ProjectWatcherUpdateWithoutUserInput = {
     id?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    project?: ProjectUpdateOneRequiredWithoutProjectWatcherNestedInput
+    project?: ProjectUpdateOneRequiredWithoutProjectWatchersNestedInput
   }
 
   export type ProjectWatcherUncheckedUpdateWithoutUserInput = {
@@ -33999,7 +34005,7 @@ export namespace Prisma {
   export type TaskWatcherUpdateWithoutUserInput = {
     id?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    task?: TaskUpdateOneRequiredWithoutTaskWatcherNestedInput
+    task?: TaskUpdateOneRequiredWithoutTaskWatchersNestedInput
   }
 
   export type TaskWatcherUncheckedUpdateWithoutUserInput = {
@@ -34019,8 +34025,8 @@ export namespace Prisma {
     content?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    task?: TaskUpdateOneRequiredWithoutCommentNestedInput
-    Activity?: ActivityUpdateManyWithoutCommentNestedInput
+    task?: TaskUpdateOneRequiredWithoutCommentsNestedInput
+    activities?: ActivityUpdateManyWithoutCommentNestedInput
   }
 
   export type CommentUncheckedUpdateWithoutAuthorInput = {
@@ -34029,7 +34035,7 @@ export namespace Prisma {
     taskId?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    Activity?: ActivityUncheckedUpdateManyWithoutCommentNestedInput
+    activities?: ActivityUncheckedUpdateManyWithoutCommentNestedInput
   }
 
   export type CommentUncheckedUpdateManyWithoutAuthorInput = {
@@ -34044,10 +34050,10 @@ export namespace Prisma {
     id?: StringFieldUpdateOperationsInput | string
     type?: EnumActivityTypeFieldUpdateOperationsInput | $Enums.ActivityType
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    task?: TaskUpdateOneWithoutActivityNestedInput
-    comment?: CommentUpdateOneWithoutActivityNestedInput
-    attachment?: AttachmentUpdateOneWithoutActivityNestedInput
-    Notification?: NotificationUpdateManyWithoutActivityNestedInput
+    task?: TaskUpdateOneWithoutActivitiesNestedInput
+    comment?: CommentUpdateOneWithoutActivitiesNestedInput
+    attachment?: AttachmentUpdateOneWithoutActivitiesNestedInput
+    notifications?: NotificationUpdateManyWithoutActivityNestedInput
   }
 
   export type ActivityUncheckedUpdateWithoutActorInput = {
@@ -34057,7 +34063,7 @@ export namespace Prisma {
     commentId?: NullableStringFieldUpdateOperationsInput | string | null
     attachmentId?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    Notification?: NotificationUncheckedUpdateManyWithoutActivityNestedInput
+    notifications?: NotificationUncheckedUpdateManyWithoutActivityNestedInput
   }
 
   export type ActivityUncheckedUpdateManyWithoutActorInput = {
@@ -34073,7 +34079,7 @@ export namespace Prisma {
     id?: StringFieldUpdateOperationsInput | string
     read?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    activity?: ActivityUpdateOneRequiredWithoutNotificationNestedInput
+    activity?: ActivityUpdateOneRequiredWithoutNotificationsNestedInput
   }
 
   export type NotificationUncheckedUpdateWithoutUserInput = {
@@ -34122,8 +34128,8 @@ export namespace Prisma {
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     user?: UserUpdateOneRequiredWithoutMembersNestedInput
-    Task?: TaskUpdateManyWithoutAssigneeNestedInput
-    SpaceMember?: SpaceMemberUpdateManyWithoutMemberNestedInput
+    tasks?: TaskUpdateManyWithoutAssigneeNestedInput
+    spaceMembers?: SpaceMemberUpdateManyWithoutMemberNestedInput
   }
 
   export type MemberUncheckedUpdateWithoutOrganizationInput = {
@@ -34132,8 +34138,8 @@ export namespace Prisma {
     role?: EnumMemberRoleFieldUpdateOperationsInput | $Enums.MemberRole
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    Task?: TaskUncheckedUpdateManyWithoutAssigneeNestedInput
-    SpaceMember?: SpaceMemberUncheckedUpdateManyWithoutMemberNestedInput
+    tasks?: TaskUncheckedUpdateManyWithoutAssigneeNestedInput
+    spaceMembers?: SpaceMemberUncheckedUpdateManyWithoutMemberNestedInput
   }
 
   export type MemberUncheckedUpdateManyWithoutOrganizationInput = {
@@ -34178,8 +34184,8 @@ export namespace Prisma {
     color?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    Project?: ProjectUpdateManyWithoutSpaceNestedInput
-    SpaceMember?: SpaceMemberUpdateManyWithoutSpaceNestedInput
+    projects?: ProjectUpdateManyWithoutSpaceNestedInput
+    spaceMembers?: SpaceMemberUpdateManyWithoutSpaceNestedInput
   }
 
   export type SpaceUncheckedUpdateWithoutOrganizationInput = {
@@ -34189,8 +34195,8 @@ export namespace Prisma {
     color?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    Project?: ProjectUncheckedUpdateManyWithoutSpaceNestedInput
-    SpaceMember?: SpaceMemberUncheckedUpdateManyWithoutSpaceNestedInput
+    projects?: ProjectUncheckedUpdateManyWithoutSpaceNestedInput
+    spaceMembers?: SpaceMemberUncheckedUpdateManyWithoutSpaceNestedInput
   }
 
   export type SpaceUncheckedUpdateManyWithoutOrganizationInput = {
@@ -34234,14 +34240,14 @@ export namespace Prisma {
     priority?: EnumTaskPriorityFieldUpdateOperationsInput | $Enums.TaskPriority
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    project?: ProjectUpdateOneRequiredWithoutTaskNestedInput
+    project?: ProjectUpdateOneRequiredWithoutTasksNestedInput
     parent?: TaskUpdateOneWithoutSubtasksNestedInput
     subtasks?: TaskUpdateManyWithoutParentNestedInput
-    TaskWatcher?: TaskWatcherUpdateManyWithoutTaskNestedInput
-    Attachment?: AttachmentUpdateManyWithoutTaskNestedInput
-    TaskTag?: TaskTagUpdateManyWithoutTaskNestedInput
-    Comment?: CommentUpdateManyWithoutTaskNestedInput
-    Activity?: ActivityUpdateManyWithoutTaskNestedInput
+    taskWatchers?: TaskWatcherUpdateManyWithoutTaskNestedInput
+    attachments?: AttachmentUpdateManyWithoutTaskNestedInput
+    taskTags?: TaskTagUpdateManyWithoutTaskNestedInput
+    comments?: CommentUpdateManyWithoutTaskNestedInput
+    activities?: ActivityUpdateManyWithoutTaskNestedInput
   }
 
   export type TaskUncheckedUpdateWithoutAssigneeInput = {
@@ -34257,11 +34263,11 @@ export namespace Prisma {
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     subtasks?: TaskUncheckedUpdateManyWithoutParentNestedInput
-    TaskWatcher?: TaskWatcherUncheckedUpdateManyWithoutTaskNestedInput
-    Attachment?: AttachmentUncheckedUpdateManyWithoutTaskNestedInput
-    TaskTag?: TaskTagUncheckedUpdateManyWithoutTaskNestedInput
-    Comment?: CommentUncheckedUpdateManyWithoutTaskNestedInput
-    Activity?: ActivityUncheckedUpdateManyWithoutTaskNestedInput
+    taskWatchers?: TaskWatcherUncheckedUpdateManyWithoutTaskNestedInput
+    attachments?: AttachmentUncheckedUpdateManyWithoutTaskNestedInput
+    taskTags?: TaskTagUncheckedUpdateManyWithoutTaskNestedInput
+    comments?: CommentUncheckedUpdateManyWithoutTaskNestedInput
+    activities?: ActivityUncheckedUpdateManyWithoutTaskNestedInput
   }
 
   export type TaskUncheckedUpdateManyWithoutAssigneeInput = {
@@ -34283,7 +34289,7 @@ export namespace Prisma {
     role?: EnumMemberRoleFieldUpdateOperationsInput | $Enums.MemberRole
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    space?: SpaceUpdateOneRequiredWithoutSpaceMemberNestedInput
+    space?: SpaceUpdateOneRequiredWithoutSpaceMembersNestedInput
   }
 
   export type SpaceMemberUncheckedUpdateWithoutMemberInput = {
@@ -34324,8 +34330,8 @@ export namespace Prisma {
     icon?: NullableStringFieldUpdateOperationsInput | string | null
     image?: NullableStringFieldUpdateOperationsInput | string | null
     color?: NullableStringFieldUpdateOperationsInput | string | null
-    ProjectWatcher?: ProjectWatcherUpdateManyWithoutProjectNestedInput
-    Task?: TaskUpdateManyWithoutProjectNestedInput
+    projectWatchers?: ProjectWatcherUpdateManyWithoutProjectNestedInput
+    tasks?: TaskUpdateManyWithoutProjectNestedInput
   }
 
   export type ProjectUncheckedUpdateWithoutSpaceInput = {
@@ -34334,8 +34340,8 @@ export namespace Prisma {
     icon?: NullableStringFieldUpdateOperationsInput | string | null
     image?: NullableStringFieldUpdateOperationsInput | string | null
     color?: NullableStringFieldUpdateOperationsInput | string | null
-    ProjectWatcher?: ProjectWatcherUncheckedUpdateManyWithoutProjectNestedInput
-    Task?: TaskUncheckedUpdateManyWithoutProjectNestedInput
+    projectWatchers?: ProjectWatcherUncheckedUpdateManyWithoutProjectNestedInput
+    tasks?: TaskUncheckedUpdateManyWithoutProjectNestedInput
   }
 
   export type ProjectUncheckedUpdateManyWithoutSpaceInput = {
@@ -34351,7 +34357,7 @@ export namespace Prisma {
     role?: EnumMemberRoleFieldUpdateOperationsInput | $Enums.MemberRole
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    member?: MemberUpdateOneRequiredWithoutSpaceMemberNestedInput
+    member?: MemberUpdateOneRequiredWithoutSpaceMembersNestedInput
   }
 
   export type SpaceMemberUncheckedUpdateWithoutSpaceInput = {
@@ -34393,7 +34399,7 @@ export namespace Prisma {
   export type ProjectWatcherUpdateWithoutProjectInput = {
     id?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    user?: UserUpdateOneRequiredWithoutProjectWatcherNestedInput
+    user?: UserUpdateOneRequiredWithoutProjectWatchersNestedInput
   }
 
   export type ProjectWatcherUncheckedUpdateWithoutProjectInput = {
@@ -34418,14 +34424,14 @@ export namespace Prisma {
     priority?: EnumTaskPriorityFieldUpdateOperationsInput | $Enums.TaskPriority
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    assignee?: MemberUpdateOneRequiredWithoutTaskNestedInput
+    assignee?: MemberUpdateOneRequiredWithoutTasksNestedInput
     parent?: TaskUpdateOneWithoutSubtasksNestedInput
     subtasks?: TaskUpdateManyWithoutParentNestedInput
-    TaskWatcher?: TaskWatcherUpdateManyWithoutTaskNestedInput
-    Attachment?: AttachmentUpdateManyWithoutTaskNestedInput
-    TaskTag?: TaskTagUpdateManyWithoutTaskNestedInput
-    Comment?: CommentUpdateManyWithoutTaskNestedInput
-    Activity?: ActivityUpdateManyWithoutTaskNestedInput
+    taskWatchers?: TaskWatcherUpdateManyWithoutTaskNestedInput
+    attachments?: AttachmentUpdateManyWithoutTaskNestedInput
+    taskTags?: TaskTagUpdateManyWithoutTaskNestedInput
+    comments?: CommentUpdateManyWithoutTaskNestedInput
+    activities?: ActivityUpdateManyWithoutTaskNestedInput
   }
 
   export type TaskUncheckedUpdateWithoutProjectInput = {
@@ -34441,11 +34447,11 @@ export namespace Prisma {
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     subtasks?: TaskUncheckedUpdateManyWithoutParentNestedInput
-    TaskWatcher?: TaskWatcherUncheckedUpdateManyWithoutTaskNestedInput
-    Attachment?: AttachmentUncheckedUpdateManyWithoutTaskNestedInput
-    TaskTag?: TaskTagUncheckedUpdateManyWithoutTaskNestedInput
-    Comment?: CommentUncheckedUpdateManyWithoutTaskNestedInput
-    Activity?: ActivityUncheckedUpdateManyWithoutTaskNestedInput
+    taskWatchers?: TaskWatcherUncheckedUpdateManyWithoutTaskNestedInput
+    attachments?: AttachmentUncheckedUpdateManyWithoutTaskNestedInput
+    taskTags?: TaskTagUncheckedUpdateManyWithoutTaskNestedInput
+    comments?: CommentUncheckedUpdateManyWithoutTaskNestedInput
+    activities?: ActivityUncheckedUpdateManyWithoutTaskNestedInput
   }
 
   export type TaskUncheckedUpdateManyWithoutProjectInput = {
@@ -34520,14 +34526,14 @@ export namespace Prisma {
     priority?: EnumTaskPriorityFieldUpdateOperationsInput | $Enums.TaskPriority
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    project?: ProjectUpdateOneRequiredWithoutTaskNestedInput
-    assignee?: MemberUpdateOneRequiredWithoutTaskNestedInput
+    project?: ProjectUpdateOneRequiredWithoutTasksNestedInput
+    assignee?: MemberUpdateOneRequiredWithoutTasksNestedInput
     subtasks?: TaskUpdateManyWithoutParentNestedInput
-    TaskWatcher?: TaskWatcherUpdateManyWithoutTaskNestedInput
-    Attachment?: AttachmentUpdateManyWithoutTaskNestedInput
-    TaskTag?: TaskTagUpdateManyWithoutTaskNestedInput
-    Comment?: CommentUpdateManyWithoutTaskNestedInput
-    Activity?: ActivityUpdateManyWithoutTaskNestedInput
+    taskWatchers?: TaskWatcherUpdateManyWithoutTaskNestedInput
+    attachments?: AttachmentUpdateManyWithoutTaskNestedInput
+    taskTags?: TaskTagUpdateManyWithoutTaskNestedInput
+    comments?: CommentUpdateManyWithoutTaskNestedInput
+    activities?: ActivityUpdateManyWithoutTaskNestedInput
   }
 
   export type TaskUncheckedUpdateWithoutParentInput = {
@@ -34543,11 +34549,11 @@ export namespace Prisma {
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     subtasks?: TaskUncheckedUpdateManyWithoutParentNestedInput
-    TaskWatcher?: TaskWatcherUncheckedUpdateManyWithoutTaskNestedInput
-    Attachment?: AttachmentUncheckedUpdateManyWithoutTaskNestedInput
-    TaskTag?: TaskTagUncheckedUpdateManyWithoutTaskNestedInput
-    Comment?: CommentUncheckedUpdateManyWithoutTaskNestedInput
-    Activity?: ActivityUncheckedUpdateManyWithoutTaskNestedInput
+    taskWatchers?: TaskWatcherUncheckedUpdateManyWithoutTaskNestedInput
+    attachments?: AttachmentUncheckedUpdateManyWithoutTaskNestedInput
+    taskTags?: TaskTagUncheckedUpdateManyWithoutTaskNestedInput
+    comments?: CommentUncheckedUpdateManyWithoutTaskNestedInput
+    activities?: ActivityUncheckedUpdateManyWithoutTaskNestedInput
   }
 
   export type TaskUncheckedUpdateManyWithoutParentInput = {
@@ -34567,7 +34573,7 @@ export namespace Prisma {
   export type TaskWatcherUpdateWithoutTaskInput = {
     id?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    user?: UserUpdateOneRequiredWithoutTaskWatcherNestedInput
+    user?: UserUpdateOneRequiredWithoutTaskWatchersNestedInput
   }
 
   export type TaskWatcherUncheckedUpdateWithoutTaskInput = {
@@ -34587,7 +34593,7 @@ export namespace Prisma {
     url?: StringFieldUpdateOperationsInput | string
     type?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    Activity?: ActivityUpdateManyWithoutAttachmentNestedInput
+    activities?: ActivityUpdateManyWithoutAttachmentNestedInput
   }
 
   export type AttachmentUncheckedUpdateWithoutTaskInput = {
@@ -34595,7 +34601,7 @@ export namespace Prisma {
     url?: StringFieldUpdateOperationsInput | string
     type?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    Activity?: ActivityUncheckedUpdateManyWithoutAttachmentNestedInput
+    activities?: ActivityUncheckedUpdateManyWithoutAttachmentNestedInput
   }
 
   export type AttachmentUncheckedUpdateManyWithoutTaskInput = {
@@ -34622,8 +34628,8 @@ export namespace Prisma {
     content?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    author?: UserUpdateOneRequiredWithoutCommentNestedInput
-    Activity?: ActivityUpdateManyWithoutCommentNestedInput
+    author?: UserUpdateOneRequiredWithoutCommentsNestedInput
+    activities?: ActivityUpdateManyWithoutCommentNestedInput
   }
 
   export type CommentUncheckedUpdateWithoutTaskInput = {
@@ -34632,7 +34638,7 @@ export namespace Prisma {
     authorId?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    Activity?: ActivityUncheckedUpdateManyWithoutCommentNestedInput
+    activities?: ActivityUncheckedUpdateManyWithoutCommentNestedInput
   }
 
   export type CommentUncheckedUpdateManyWithoutTaskInput = {
@@ -34647,10 +34653,10 @@ export namespace Prisma {
     id?: StringFieldUpdateOperationsInput | string
     type?: EnumActivityTypeFieldUpdateOperationsInput | $Enums.ActivityType
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    actor?: UserUpdateOneRequiredWithoutActivityNestedInput
-    comment?: CommentUpdateOneWithoutActivityNestedInput
-    attachment?: AttachmentUpdateOneWithoutActivityNestedInput
-    Notification?: NotificationUpdateManyWithoutActivityNestedInput
+    actor?: UserUpdateOneRequiredWithoutActivitiesNestedInput
+    comment?: CommentUpdateOneWithoutActivitiesNestedInput
+    attachment?: AttachmentUpdateOneWithoutActivitiesNestedInput
+    notifications?: NotificationUpdateManyWithoutActivityNestedInput
   }
 
   export type ActivityUncheckedUpdateWithoutTaskInput = {
@@ -34660,7 +34666,7 @@ export namespace Prisma {
     commentId?: NullableStringFieldUpdateOperationsInput | string | null
     attachmentId?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    Notification?: NotificationUncheckedUpdateManyWithoutActivityNestedInput
+    notifications?: NotificationUncheckedUpdateManyWithoutActivityNestedInput
   }
 
   export type ActivityUncheckedUpdateManyWithoutTaskInput = {
@@ -34685,10 +34691,10 @@ export namespace Prisma {
     id?: StringFieldUpdateOperationsInput | string
     type?: EnumActivityTypeFieldUpdateOperationsInput | $Enums.ActivityType
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    actor?: UserUpdateOneRequiredWithoutActivityNestedInput
-    task?: TaskUpdateOneWithoutActivityNestedInput
-    comment?: CommentUpdateOneWithoutActivityNestedInput
-    Notification?: NotificationUpdateManyWithoutActivityNestedInput
+    actor?: UserUpdateOneRequiredWithoutActivitiesNestedInput
+    task?: TaskUpdateOneWithoutActivitiesNestedInput
+    comment?: CommentUpdateOneWithoutActivitiesNestedInput
+    notifications?: NotificationUpdateManyWithoutActivityNestedInput
   }
 
   export type ActivityUncheckedUpdateWithoutAttachmentInput = {
@@ -34698,7 +34704,7 @@ export namespace Prisma {
     taskId?: NullableStringFieldUpdateOperationsInput | string | null
     commentId?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    Notification?: NotificationUncheckedUpdateManyWithoutActivityNestedInput
+    notifications?: NotificationUncheckedUpdateManyWithoutActivityNestedInput
   }
 
   export type ActivityUncheckedUpdateManyWithoutAttachmentInput = {
@@ -34715,7 +34721,7 @@ export namespace Prisma {
   }
 
   export type TaskTagUpdateWithoutTagInput = {
-    task?: TaskUpdateOneRequiredWithoutTaskTagNestedInput
+    task?: TaskUpdateOneRequiredWithoutTaskTagsNestedInput
   }
 
   export type TaskTagUncheckedUpdateWithoutTagInput = {
@@ -34739,10 +34745,10 @@ export namespace Prisma {
     id?: StringFieldUpdateOperationsInput | string
     type?: EnumActivityTypeFieldUpdateOperationsInput | $Enums.ActivityType
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    actor?: UserUpdateOneRequiredWithoutActivityNestedInput
-    task?: TaskUpdateOneWithoutActivityNestedInput
-    attachment?: AttachmentUpdateOneWithoutActivityNestedInput
-    Notification?: NotificationUpdateManyWithoutActivityNestedInput
+    actor?: UserUpdateOneRequiredWithoutActivitiesNestedInput
+    task?: TaskUpdateOneWithoutActivitiesNestedInput
+    attachment?: AttachmentUpdateOneWithoutActivitiesNestedInput
+    notifications?: NotificationUpdateManyWithoutActivityNestedInput
   }
 
   export type ActivityUncheckedUpdateWithoutCommentInput = {
@@ -34752,7 +34758,7 @@ export namespace Prisma {
     taskId?: NullableStringFieldUpdateOperationsInput | string | null
     attachmentId?: NullableStringFieldUpdateOperationsInput | string | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    Notification?: NotificationUncheckedUpdateManyWithoutActivityNestedInput
+    notifications?: NotificationUncheckedUpdateManyWithoutActivityNestedInput
   }
 
   export type ActivityUncheckedUpdateManyWithoutCommentInput = {
@@ -34775,7 +34781,7 @@ export namespace Prisma {
     id?: StringFieldUpdateOperationsInput | string
     read?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    user?: UserUpdateOneRequiredWithoutNotificationNestedInput
+    user?: UserUpdateOneRequiredWithoutNotificationsNestedInput
   }
 
   export type NotificationUncheckedUpdateWithoutActivityInput = {
